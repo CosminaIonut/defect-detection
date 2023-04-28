@@ -1,0 +1,1460 @@
+2023-04-25 17:12:29,180 INFO    StreamThr :14620 [internal.py:wandb_internal():86] W&B internal server running at pid: 14620, started at: 2023-04-25 17:12:29.179935
+2023-04-25 17:12:29,183 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status
+2023-04-25 17:12:29,214 INFO    WriterThread:14620 [datastore.py:open_for_write():85] open: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\run-nbf1ki81.wandb
+2023-04-25 17:12:29,216 DEBUG   SenderThread:14620 [sender.py:send():375] send: header
+2023-04-25 17:12:29,218 DEBUG   SenderThread:14620 [sender.py:send():375] send: run
+2023-04-25 17:12:29,747 INFO    SenderThread:14620 [dir_watcher.py:__init__():219] watching files in: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files
+2023-04-25 17:12:29,747 INFO    SenderThread:14620 [sender.py:_start_run_threads():1124] run started: nbf1ki81 with start time 1682431949.190203
+2023-04-25 17:12:29,747 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:29,748 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:29,748 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: check_version
+2023-04-25 17:12:29,749 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: check_version
+2023-04-25 17:12:30,003 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: run_start
+2023-04-25 17:12:30,757 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:31,152 DEBUG   HandlerThread:14620 [system_info.py:__init__():31] System info init
+2023-04-25 17:12:31,152 DEBUG   HandlerThread:14620 [system_info.py:__init__():46] System info init done
+2023-04-25 17:12:31,153 INFO    HandlerThread:14620 [system_monitor.py:start():181] Starting system monitor
+2023-04-25 17:12:31,153 INFO    SystemMonitor:14620 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-04-25 17:12:31,153 INFO    HandlerThread:14620 [system_monitor.py:probe():201] Collecting system info
+2023-04-25 17:12:31,158 INFO    SystemMonitor:14620 [interfaces.py:start():190] Started cpu monitoring
+2023-04-25 17:12:31,158 INFO    SystemMonitor:14620 [interfaces.py:start():190] Started disk monitoring
+2023-04-25 17:12:31,158 INFO    SystemMonitor:14620 [interfaces.py:start():190] Started gpu monitoring
+2023-04-25 17:12:31,164 INFO    SystemMonitor:14620 [interfaces.py:start():190] Started memory monitoring
+2023-04-25 17:12:31,175 INFO    SystemMonitor:14620 [interfaces.py:start():190] Started network monitoring
+2023-04-25 17:12:31,180 DEBUG   HandlerThread:14620 [system_info.py:probe():195] Probing system
+2023-04-25 17:12:31,181 DEBUG   HandlerThread:14620 [git.py:repo():40] git repository is invalid
+2023-04-25 17:12:31,181 DEBUG   HandlerThread:14620 [system_info.py:probe():240] Probing system done
+2023-04-25 17:12:31,181 DEBUG   HandlerThread:14620 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.10.5', 'heartbeatAt': '2023-04-25T14:12:31.180692', 'startedAt': '2023-04-25T14:12:29.142967', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\MyDocuments\\Disertatie\\segments\\wandb_visualization\\sweeps_RNN_configuration.py', 'codePath': 'sweeps_RNN_configuration.py', 'host': 'LAPTOP-FDVI9MUH', 'username': 'cosmi', 'executable': 'C:\\Python310\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3302.0, 'min': 0.0, 'max': 3302.0}, 'cpu_freq_per_core': [{'current': 3302.0, 'min': 0.0, 'max': 3302.0}], 'disk': {'total': 952.3772621154785, 'used': 414.2746124267578}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 15.698577880859375}}
+2023-04-25 17:12:31,181 INFO    HandlerThread:14620 [system_monitor.py:probe():211] Finished collecting system info
+2023-04-25 17:12:31,181 INFO    HandlerThread:14620 [system_monitor.py:probe():214] Publishing system info
+2023-04-25 17:12:31,182 DEBUG   HandlerThread:14620 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-25 17:12:31,182 DEBUG   HandlerThread:14620 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-25 17:12:31,183 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:31,184 INFO    HandlerThread:14620 [system_monitor.py:probe():216] Finished publishing system info
+2023-04-25 17:12:31,197 DEBUG   SenderThread:14620 [sender.py:send():375] send: files
+2023-04-25 17:12:31,197 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-04-25 17:12:31,209 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 17:12:31,210 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: stop_status
+2023-04-25 17:12:31,534 DEBUG   SenderThread:14620 [sender.py:send():375] send: telemetry
+2023-04-25 17:12:31,764 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\requirements.txt
+2023-04-25 17:12:31,764 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-metadata.json
+2023-04-25 17:12:31,831 INFO    wandb-upload_0:14620 [upload_job.py:push():137] Uploaded file C:\Users\cosmi\AppData\Local\Temp\tmpq2fgrs9xwandb\1rkfpgtp-wandb-metadata.json
+2023-04-25 17:12:32,387 DEBUG   SenderThread:14620 [sender.py:send():375] send: telemetry
+2023-04-25 17:12:32,388 DEBUG   SenderThread:14620 [sender.py:send():375] send: telemetry
+2023-04-25 17:12:32,388 DEBUG   SenderThread:14620 [sender.py:send():375] send: files
+2023-04-25 17:12:32,389 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: get_summary
+2023-04-25 17:12:32,389 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file model-best.h5 with policy live
+2023-04-25 17:12:32,389 DEBUG   SenderThread:14620 [sender.py:send():375] send: telemetry
+2023-04-25 17:12:32,767 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:33,195 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:33,678 DEBUG   SenderThread:14620 [sender.py:send():375] send: files
+2023-04-25 17:12:33,678 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file media\graph\graph_summary_b7d1b1a777096601df8e.graph.json with policy now
+2023-04-25 17:12:33,679 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:33,681 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:33,779 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:33,779 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\media\graph\graph_summary_b7d1b1a777096601df8e.graph.json
+2023-04-25 17:12:33,780 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\media
+2023-04-25 17:12:33,780 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\media\graph
+2023-04-25 17:12:34,208 INFO    wandb-upload_0:14620 [upload_job.py:push():137] Uploaded file C:\Users\cosmi\AppData\Local\Temp\tmpq2fgrs9xwandb\ai76hiha-media/graph/graph_summary_b7d1b1a777096601df8e.graph.json
+2023-04-25 17:12:34,472 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:34,472 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:34,474 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:34,474 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:34,474 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:12:34,475 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:34,475 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:34,476 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:34,476 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:34,476 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:34,782 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:34,783 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:34,784 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\model-best.h5
+2023-04-25 17:12:35,215 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:35,341 INFO    wandb-upload_0:14620 [upload_job.py:push():137] Uploaded file C:\Users\cosmi\AppData\Local\Temp\tmpq2fgrs9xwandb\9m5traq7-model-best.h5
+2023-04-25 17:12:36,520 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-25 17:12:36,520 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: log_artifact
+2023-04-25 17:12:36,789 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:37,142 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:37,142 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:37,255 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:37,764 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:37,765 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:38,228 INFO    wandb-upload_4:14620 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp4pxoc8yi
+2023-04-25 17:12:38,236 INFO    wandb-upload_0:14620 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp6m81xual
+2023-04-25 17:12:38,236 INFO    wandb-upload_1:14620 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpj2g3gcx0
+2023-04-25 17:12:38,240 INFO    wandb-upload_3:14620 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpt0n_s_hr
+2023-04-25 17:12:38,315 INFO    wandb-upload_2:14620 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpvisn1r3x
+2023-04-25 17:12:38,357 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:38,358 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:38,808 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:38,987 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:38,987 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:39,292 INFO    SenderThread:14620 [sender.py:send_request_log_artifact():1438] logged artifact model-laced-sweep-1 - {'id': 'QXJ0aWZhY3Q6NDMzMTAzNjkx', 'digest': '511dbaed61af95cd0428e39a5ae3c412', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY0NDU5NTc3', 'latestArtifact': None}, 'version': 'latest'}
+2023-04-25 17:12:39,293 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:39,293 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:39,295 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:39,296 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:39,297 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:39,298 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:39,299 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:39,300 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:39,301 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:39,302 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:39,302 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:39,302 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:39,304 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:39,619 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:39,619 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:12:39,620 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:39,621 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:39,621 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:39,623 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:39,816 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:40,152 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:40,153 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:40,154 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:40,154 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:40,154 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:40,804 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:40,804 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:40,806 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:40,807 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:40,811 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:40,827 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:40,827 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:41,323 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:41,435 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:41,435 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:41,436 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:41,437 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:41,439 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:41,839 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:42,078 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:42,078 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:42,081 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:42,081 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:42,083 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:42,594 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:42,594 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:42,596 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:42,597 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:42,598 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:42,853 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:42,854 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:43,211 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:43,212 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:43,213 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:43,213 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:43,217 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:43,788 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:43,796 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:43,796 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:43,799 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:43,799 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:43,801 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:43,858 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:44,312 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:44,313 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:44,314 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:44,315 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:44,317 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:44,632 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:12:44,857 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:44,858 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:44,859 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:44,860 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:44,862 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:44,871 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:44,872 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:45,518 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:45,519 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:45,521 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:45,522 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:45,526 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:45,801 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:45,885 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:46,183 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:46,183 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:46,185 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:46,185 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:46,187 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:46,222 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 17:12:46,223 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: stop_status
+2023-04-25 17:12:46,794 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:46,795 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:46,796 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:46,796 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:46,797 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:46,890 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:46,890 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:47,440 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:47,440 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:47,442 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:47,443 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:47,444 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:47,815 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:47,901 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:48,039 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:48,039 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:48,041 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:48,042 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:48,046 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:48,593 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:48,593 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:48,596 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:48,596 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:48,597 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:48,917 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:48,918 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:49,233 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:49,233 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:49,234 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:49,234 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:49,236 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:49,665 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:12:49,837 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:49,872 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:49,872 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:49,874 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:49,875 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:49,877 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:49,923 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:50,494 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:50,495 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:50,496 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:50,497 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:50,498 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:50,935 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:50,935 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:51,144 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:51,144 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:51,146 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:51,147 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:51,149 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:51,815 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:51,815 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:51,818 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:51,819 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:51,820 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:51,860 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:51,946 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:52,415 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:52,416 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:52,419 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:52,420 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:52,421 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:52,955 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:52,956 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:53,042 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:53,043 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:53,045 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:53,045 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:53,047 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:53,697 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:53,698 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:53,700 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:53,701 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:53,703 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:53,888 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:53,957 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:54,284 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:54,285 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:54,286 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:54,287 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:54,288 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:54,826 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:54,827 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:12:54,827 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:54,829 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:54,829 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:54,831 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:54,972 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:54,972 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:55,317 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:55,317 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:55,317 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:55,318 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:55,318 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:55,932 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:55,933 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:55,934 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:55,934 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:55,936 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:55,984 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:56,335 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:56,392 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:56,392 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:56,394 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:56,394 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:56,395 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:56,998 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:56,998 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:57,017 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:57,017 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:57,020 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:57,020 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:57,022 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:57,664 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:57,664 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:57,666 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:57,667 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:57,669 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:58,010 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:58,257 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:58,258 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:58,259 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:58,259 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:58,259 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:58,347 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:12:58,927 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:58,928 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:58,929 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:58,930 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:58,932 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:59,026 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:12:59,026 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:12:59,570 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:59,570 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:12:59,571 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:12:59,571 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:12:59,572 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:12:59,843 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:13:00,039 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:00,208 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:00,209 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:00,210 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:00,210 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:00,211 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:00,362 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:00,855 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:00,855 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:00,856 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:00,857 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:00,858 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:01,055 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:01,056 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:01,056 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\config.yaml
+2023-04-25 17:13:01,225 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 17:13:01,225 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: stop_status
+2023-04-25 17:13:01,435 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:01,436 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:01,438 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:01,439 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:01,440 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:02,040 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:02,040 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:02,042 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:02,043 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:02,045 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:02,065 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:02,475 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:02,692 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:02,693 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:02,694 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:02,694 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:02,696 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:03,077 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:03,078 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:03,377 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:03,377 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:03,379 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:03,379 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:03,380 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:03,994 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:03,994 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:03,997 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:03,997 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:03,999 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:04,093 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:04,492 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:04,597 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:04,597 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:04,598 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:04,599 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:04,600 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:05,103 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:05,103 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:05,106 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:05,106 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:05,107 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:13:05,108 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:05,110 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:05,111 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:05,786 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:05,786 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:05,788 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:05,788 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:05,790 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:06,118 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:06,378 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:06,378 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:06,380 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:06,381 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:06,383 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:06,518 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:07,015 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:07,016 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:07,017 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:07,017 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:07,018 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:07,133 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:07,133 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:07,568 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:07,568 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:07,570 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:07,570 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:07,572 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:08,144 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:08,199 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:08,199 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:08,200 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:08,201 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:08,202 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:08,763 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:08,763 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:08,764 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:08,764 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:08,765 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:08,978 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:09,151 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:09,152 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:09,177 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:09,177 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:09,179 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:09,179 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:09,181 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:09,818 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:09,819 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:09,821 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:09,821 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:09,823 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:10,144 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:13:10,165 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:10,364 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:10,365 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:10,366 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:10,367 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:10,368 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:10,967 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:10,967 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:10,969 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:10,969 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:10,971 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:11,002 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:11,178 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:11,179 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:11,670 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:11,671 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:11,673 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:11,674 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:11,676 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:12,189 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:12,294 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:12,295 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:12,296 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:12,297 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:12,298 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:12,898 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:12,898 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:12,900 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:12,900 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:12,902 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:13,024 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:13,205 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:13,206 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:13,476 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:13,476 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:13,479 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:13,479 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:13,481 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:14,082 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:14,082 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:14,084 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:14,085 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:14,086 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:14,215 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:14,632 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:14,632 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:14,635 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:14,635 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:14,637 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:15,047 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:15,183 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:15,184 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:15,185 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:15,186 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:15,186 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:13:15,187 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:15,224 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:15,224 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:15,792 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:15,792 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:15,794 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:15,795 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:15,796 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:16,240 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 17:13:16,241 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: stop_status
+2023-04-25 17:13:16,246 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:16,409 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:16,409 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:17,015 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:17,015 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:17,059 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:17,253 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:17,658 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:17,658 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:18,293 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:18,293 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:18,867 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:18,867 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:19,072 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:19,409 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:19,410 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:19,412 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:19,413 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:19,414 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:19,416 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:19,416 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:19,417 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:19,418 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:19,419 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:19,421 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:19,422 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:19,422 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:19,422 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:19,424 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:19,499 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:19,500 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:19,501 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:19,501 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:19,503 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:20,082 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:20,083 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:20,083 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:20,084 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:20,085 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:20,199 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:13:20,296 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:20,582 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:20,583 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:20,584 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:20,585 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:20,590 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:21,219 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:21,219 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:21,222 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:21,223 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:21,225 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:21,311 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:21,311 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:21,520 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:21,742 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:21,743 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:21,745 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:21,745 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:21,747 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:22,312 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:22,365 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:22,366 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:22,367 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:22,368 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:22,369 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:22,959 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:22,959 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:22,960 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:22,960 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:22,961 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:23,328 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:23,329 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:23,540 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:23,598 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:23,599 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:23,600 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:23,600 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:23,601 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:24,188 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:24,189 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:24,190 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:24,191 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:24,192 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:24,339 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:24,634 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:24,636 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:24,638 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:24,639 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:24,641 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:25,104 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:25,104 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:25,106 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:25,107 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:25,108 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:25,216 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:13:25,350 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:25,351 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:25,562 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:25,674 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:25,674 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:25,676 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:25,676 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:25,678 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:26,350 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:26,350 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:26,353 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:26,353 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:26,355 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:26,363 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:26,994 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:26,994 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:26,996 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:26,996 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:26,998 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:27,377 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:27,378 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:27,578 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:27,659 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:27,660 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:27,662 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:27,663 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:27,665 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:28,332 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:28,333 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:28,334 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:28,335 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:28,336 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:28,390 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:28,919 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:28,919 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:28,922 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:28,922 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:28,924 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:29,404 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:29,405 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:29,536 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:29,537 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:29,538 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:29,539 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:29,540 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:29,600 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:30,167 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:30,167 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:30,168 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:30,168 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:30,169 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:30,227 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:13:30,408 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:30,785 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:30,785 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:30,786 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:30,787 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:30,789 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:31,185 DEBUG   SystemMonitor:14620 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-04-25 17:13:31,188 DEBUG   SenderThread:14620 [sender.py:send():375] send: stats
+2023-04-25 17:13:31,250 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 17:13:31,251 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: stop_status
+2023-04-25 17:13:31,421 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:31,422 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:31,462 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:31,462 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:31,465 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:31,465 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:31,467 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:31,619 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:32,106 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:32,107 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:32,108 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:32,109 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:32,110 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:32,437 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:32,669 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:32,670 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:32,671 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:32,671 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:32,673 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:33,266 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:33,266 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:33,269 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:33,269 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:33,271 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:33,452 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:33,453 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:33,933 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:33,933 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:33,934 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:33,935 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:33,937 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:34,109 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:34,409 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:34,409 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:34,411 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:34,411 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:34,413 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:34,454 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:34,930 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:34,931 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:34,933 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:34,934 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:34,936 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:35,255 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:13:35,457 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:35,457 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:35,565 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:35,566 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:35,568 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:35,569 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:35,571 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:36,131 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:36,247 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:36,247 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:36,250 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:36,251 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:36,252 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:36,471 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:36,863 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:36,863 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:36,865 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:36,866 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:36,867 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:37,481 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:37,482 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:37,524 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:37,525 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:37,526 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:37,526 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:37,528 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:38,107 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:38,108 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:38,109 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:38,110 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:38,111 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:38,146 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:38,492 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:38,648 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:38,648 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:38,650 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:38,650 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:38,652 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:39,196 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:39,196 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:39,198 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:39,199 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:39,201 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:39,516 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:39,517 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:39,792 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:39,792 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:39,793 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:39,793 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:39,793 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:40,171 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:40,411 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:40,411 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:40,413 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:40,414 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:40,415 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:13:40,416 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:40,517 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:41,029 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:41,030 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:41,032 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:41,033 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:41,035 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:41,519 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:41,519 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:41,668 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:41,669 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:41,671 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:41,671 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:41,673 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:42,189 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:42,341 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:42,341 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:42,343 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:42,344 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:42,346 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:42,535 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:42,950 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:42,951 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:42,952 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:42,953 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:42,954 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:43,551 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:43,551 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:43,562 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:43,563 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:43,565 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:43,566 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:43,567 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:44,196 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:44,196 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:44,197 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:44,197 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:44,199 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:44,210 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:44,560 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:44,719 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:44,719 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:44,720 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:44,721 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:44,723 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:45,222 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:45,222 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:45,224 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:45,224 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:45,225 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:45,435 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:13:45,575 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:45,575 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:45,846 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:45,847 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:45,849 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:45,849 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:45,850 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:46,258 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 17:13:46,258 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: stop_status
+2023-04-25 17:13:46,455 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:46,455 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:46,456 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:46,456 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:46,457 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:46,588 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:46,669 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:46,969 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:46,970 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:46,972 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:46,973 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:46,975 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:47,602 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:47,603 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:47,603 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:47,603 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:47,604 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:47,605 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:47,606 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:48,243 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:48,243 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:48,245 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:48,246 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:48,248 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:48,615 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:48,685 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:48,887 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:48,888 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:48,889 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:48,890 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:48,892 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:49,476 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:49,476 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:49,478 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:49,479 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:49,481 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:49,624 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:49,625 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:50,100 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:50,100 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:50,103 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:50,103 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:50,103 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:50,472 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:50,473 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:50,474 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:50,475 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:50,475 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:13:50,476 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:50,635 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:50,706 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:50,972 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:50,972 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:50,972 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:50,973 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:50,974 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:51,285 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:51,285 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:51,286 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:51,286 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:51,287 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:51,519 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:51,520 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:51,521 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:51,521 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:51,522 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:51,643 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:51,643 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:52,102 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:52,102 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:52,104 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:52,104 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:52,106 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:52,616 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:52,616 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:52,617 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:52,617 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:52,618 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:52,654 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:52,721 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:52,946 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:52,947 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:52,949 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:52,950 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:52,951 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:53,298 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:53,299 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:53,300 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:53,301 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:53,301 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:53,658 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:53,659 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:53,788 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:53,788 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:53,790 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:53,790 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:53,791 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:54,178 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:54,178 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:54,179 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:54,179 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:54,180 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:54,560 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:54,561 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:54,561 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:54,562 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:54,563 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:54,661 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:54,730 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:55,145 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:55,145 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:55,146 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:55,147 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:55,148 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:55,519 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:13:55,681 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:55,682 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:55,864 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:55,864 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:55,866 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:55,867 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:55,869 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:56,559 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:56,559 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:56,561 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:56,562 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:56,565 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:56,686 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:56,747 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:57,295 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:57,296 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:57,297 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:57,297 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:57,298 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:57,706 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:57,707 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:57,947 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:57,947 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:57,949 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:57,949 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:57,950 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:58,612 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:58,612 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:58,613 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:58,614 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:58,615 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:58,710 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:13:59,201 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:13:59,203 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:59,204 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:59,205 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:59,205 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:59,206 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:59,632 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:59,633 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:13:59,634 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:13:59,635 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:13:59,636 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:13:59,725 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:13:59,726 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:00,309 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:00,310 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:00,312 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:00,313 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:00,315 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:00,533 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:14:00,744 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:01,033 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:01,033 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:01,036 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:01,036 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:01,037 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:01,197 DEBUG   SenderThread:14620 [sender.py:send():375] send: stats
+2023-04-25 17:14:01,225 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:01,274 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 17:14:01,275 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: stop_status
+2023-04-25 17:14:01,751 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:01,752 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:01,754 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:01,755 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:01,757 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:01,760 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:01,760 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:02,450 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:02,451 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:02,453 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:02,454 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:02,455 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:02,767 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:03,171 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:03,172 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:03,173 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:03,174 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:03,176 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:03,245 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:03,779 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:03,780 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:03,839 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:03,839 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:03,841 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:03,842 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:03,844 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:04,546 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:04,546 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:04,547 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:04,548 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:04,550 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:04,784 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:05,256 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:05,256 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:05,272 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:05,273 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:05,288 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:05,333 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:05,571 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:14:05,793 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:05,794 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:05,966 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:05,967 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:05,969 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:05,970 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:05,972 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:06,598 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:06,598 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:06,601 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:06,601 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:06,603 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:06,807 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:07,248 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:07,250 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:07,250 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:07,251 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:07,251 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:07,356 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:07,646 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:07,646 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:07,647 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:07,647 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:07,648 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:07,817 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:07,818 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:08,310 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:08,310 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:08,312 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:08,313 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:08,315 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:08,823 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:09,008 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:09,009 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:09,022 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:09,023 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:09,025 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:09,382 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:09,697 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:09,697 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:09,699 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:09,699 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:09,701 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:09,836 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:09,836 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:10,196 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:10,197 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:10,198 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:10,198 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:10,199 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:10,712 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:10,713 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:10,714 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:10,714 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:10,714 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:14:10,715 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:10,840 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:11,070 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:11,070 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:11,071 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:11,071 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:11,072 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:11,475 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:11,476 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:11,477 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:11,477 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:11,478 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:11,840 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:11,849 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:11,849 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:11,943 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:11,944 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:11,945 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:11,945 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:11,946 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:12,481 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:12,481 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:12,482 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:12,483 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:12,485 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:12,859 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:13,093 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:13,093 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:13,093 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:13,094 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:13,095 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:13,441 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:13,441 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:13,442 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:13,443 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:13,443 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:13,816 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:13,817 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:13,818 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:13,818 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:13,819 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:13,854 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:13,867 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:13,867 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:14,155 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:14,155 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:14,156 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:14,156 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:14,158 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:14,628 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:14,628 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:14,629 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:14,630 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:14,631 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:14,877 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:15,234 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:15,235 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:15,235 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:15,236 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:15,236 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:15,810 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:15,811 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:15,817 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:15,817 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:15,818 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:14:15,818 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:15,866 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:15,892 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:15,892 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:16,145 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:16,145 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:16,146 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:16,147 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:16,149 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:16,276 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-25 17:14:16,276 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: stop_status
+2023-04-25 17:14:16,569 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:16,575 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:16,578 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:16,579 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:16,580 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:16,897 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:16,980 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:16,981 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:16,982 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:16,982 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:16,983 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:17,600 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:17,601 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:17,603 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:17,603 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:17,604 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:17,885 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:17,910 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:17,912 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:18,449 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:18,449 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:18,450 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:18,450 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:18,451 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:18,885 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:18,885 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:18,886 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:18,887 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:18,889 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:18,916 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:19,333 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:19,333 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:19,334 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:19,334 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:19,335 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:19,747 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:19,747 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:19,748 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:19,748 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:19,750 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:19,893 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:19,919 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:19,919 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:20,068 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:20,068 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:20,069 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:20,069 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:20,072 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:20,471 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:20,471 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:20,472 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:20,472 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:20,473 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:20,825 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:20,826 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:20,826 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:20,827 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:20,827 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:14:20,827 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:20,926 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:21,273 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:21,274 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:21,275 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:21,275 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:21,276 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:21,674 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:21,674 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:21,676 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:21,676 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:21,678 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:21,913 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:21,937 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:21,938 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:22,011 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:22,011 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:22,013 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:22,014 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:22,015 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:22,423 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:22,424 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:22,425 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:22,426 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:22,427 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:22,844 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:22,844 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:22,846 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:22,846 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:22,848 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:22,946 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:23,188 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:23,188 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:23,190 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:23,190 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:23,191 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:23,952 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:23,953 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:24,140 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:24,140 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:24,141 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:24,141 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:24,143 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:24,371 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:24,494 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:24,494 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:24,495 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:24,495 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:24,496 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:24,839 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:24,840 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:24,842 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:24,842 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:24,843 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:24,956 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:25,293 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:25,293 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:25,295 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:25,295 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:25,297 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:25,754 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:25,754 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:25,755 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:25,756 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:25,758 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:25,867 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:14:25,971 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:25,971 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:26,240 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:26,242 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:26,244 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:26,244 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:26,245 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:26,390 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:26,980 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:27,054 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:27,055 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:27,057 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:27,058 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:27,059 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:27,483 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:27,484 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:27,485 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:27,486 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:27,487 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:27,910 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:27,910 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:27,912 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:27,912 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:27,914 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:28,003 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:28,004 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:28,311 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:28,312 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:28,313 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:28,313 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:28,315 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:28,402 ERROR   gpu       :14620 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-25 17:14:28,726 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:28,726 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:28,728 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:28,729 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:28,729 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:29,024 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:29,137 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:29,137 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:29,138 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:29,138 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:29,146 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:29,489 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:29,489 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-25 17:14:29,490 DEBUG   SenderThread:14620 [sender.py:send():375] send: history
+2023-04-25 17:14:29,490 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: summary_record
+2023-04-25 17:14:29,491 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:29,491 DEBUG   SenderThread:14620 [sender.py:send():375] send: telemetry
+2023-04-25 17:14:29,492 DEBUG   SenderThread:14620 [sender.py:send():375] send: exit
+2023-04-25 17:14:29,492 INFO    SenderThread:14620 [sender.py:send_exit():598] handling exit code: 1
+2023-04-25 17:14:29,492 INFO    SenderThread:14620 [sender.py:send_exit():600] handling runtime: 119
+2023-04-25 17:14:29,493 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:29,493 INFO    SenderThread:14620 [sender.py:send_exit():606] send defer
+2023-04-25 17:14:29,493 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:29,493 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 0
+2023-04-25 17:14:29,493 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:29,493 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-04-25 17:14:29,493 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 1
+2023-04-25 17:14:29,493 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:29,493 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 1
+2023-04-25 17:14:29,494 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:29,494 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-04-25 17:14:29,494 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 2
+2023-04-25 17:14:29,494 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:29,494 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 2
+2023-04-25 17:14:29,494 INFO    HandlerThread:14620 [system_monitor.py:finish():190] Stopping system monitor
+2023-04-25 17:14:29,494 INFO    HandlerThread:14620 [interfaces.py:finish():202] Joined cpu monitor
+2023-04-25 17:14:29,494 DEBUG   SystemMonitor:14620 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-04-25 17:14:29,494 INFO    HandlerThread:14620 [interfaces.py:finish():202] Joined disk monitor
+2023-04-25 17:14:29,502 DEBUG   SystemMonitor:14620 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-04-25 17:14:29,527 INFO    HandlerThread:14620 [interfaces.py:finish():202] Joined gpu monitor
+2023-04-25 17:14:29,527 INFO    HandlerThread:14620 [interfaces.py:finish():202] Joined memory monitor
+2023-04-25 17:14:29,527 INFO    HandlerThread:14620 [interfaces.py:finish():202] Joined network monitor
+2023-04-25 17:14:29,527 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:29,527 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-04-25 17:14:29,527 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 3
+2023-04-25 17:14:29,528 DEBUG   SenderThread:14620 [sender.py:send():375] send: stats
+2023-04-25 17:14:29,533 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:29,533 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 3
+2023-04-25 17:14:29,533 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:29,533 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-04-25 17:14:29,533 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 4
+2023-04-25 17:14:29,534 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:29,534 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 4
+2023-04-25 17:14:29,534 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:29,534 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-04-25 17:14:29,534 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 5
+2023-04-25 17:14:29,534 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:29,534 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 5
+2023-04-25 17:14:29,534 DEBUG   SenderThread:14620 [sender.py:send():375] send: summary
+2023-04-25 17:14:29,535 INFO    SenderThread:14620 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-25 17:14:29,535 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:29,535 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-04-25 17:14:29,535 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 6
+2023-04-25 17:14:29,535 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:29,535 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 6
+2023-04-25 17:14:29,535 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:29,535 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-04-25 17:14:29,538 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: status_report
+2023-04-25 17:14:29,811 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 7
+2023-04-25 17:14:29,811 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:29,811 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 7
+2023-04-25 17:14:29,812 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:29,812 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-04-25 17:14:30,033 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:30,033 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:30,033 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\config.yaml
+2023-04-25 17:14:30,499 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-25 17:14:32,059 INFO    Thread-16 :14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:32,939 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 8
+2023-04-25 17:14:32,941 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: poll_exit
+2023-04-25 17:14:32,941 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:32,941 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 8
+2023-04-25 17:14:32,942 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:32,942 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-04-25 17:14:32,943 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 9
+2023-04-25 17:14:32,943 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:32,943 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 9
+2023-04-25 17:14:32,943 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:32,944 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-04-25 17:14:32,944 INFO    SenderThread:14620 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-04-25 17:14:33,066 INFO    SenderThread:14620 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:33,067 INFO    SenderThread:14620 [dir_watcher.py:finish():395] scan: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files
+2023-04-25 17:14:33,068 INFO    SenderThread:14620 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\config.yaml config.yaml
+2023-04-25 17:14:33,069 INFO    SenderThread:14620 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\model-best.h5 model-best.h5
+2023-04-25 17:14:33,070 INFO    SenderThread:14620 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log output.log
+2023-04-25 17:14:33,075 INFO    SenderThread:14620 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\requirements.txt requirements.txt
+2023-04-25 17:14:33,078 INFO    SenderThread:14620 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-metadata.json wandb-metadata.json
+2023-04-25 17:14:33,078 INFO    SenderThread:14620 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json wandb-summary.json
+2023-04-25 17:14:33,097 INFO    SenderThread:14620 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\media\graph\graph_summary_b7d1b1a777096601df8e.graph.json media\graph\graph_summary_b7d1b1a777096601df8e.graph.json
+2023-04-25 17:14:33,097 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 10
+2023-04-25 17:14:33,099 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:33,099 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 10
+2023-04-25 17:14:33,100 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:33,100 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-04-25 17:14:33,100 INFO    SenderThread:14620 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-25 17:14:33,590 INFO    wandb-upload_4:14620 [upload_job.py:push():137] Uploaded file C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\config.yaml
+2023-04-25 17:14:33,712 INFO    wandb-upload_1:14620 [upload_job.py:push():137] Uploaded file C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\output.log
+2023-04-25 17:14:34,785 INFO    wandb-upload_0:14620 [upload_job.py:push():137] Uploaded file C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\wandb-summary.json
+2023-04-25 17:14:34,813 INFO    wandb-upload_3:14620 [upload_job.py:push():137] Uploaded file C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\files\requirements.txt
+2023-04-25 17:14:35,021 INFO    Thread-15 (_thread_body):14620 [sender.py:transition_state():626] send defer: 11
+2023-04-25 17:14:35,022 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:35,023 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 11
+2023-04-25 17:14:35,024 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:35,024 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-04-25 17:14:35,025 INFO    SenderThread:14620 [file_pusher.py:join():173] waiting for file pusher
+2023-04-25 17:14:35,025 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 12
+2023-04-25 17:14:35,026 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:35,026 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 12
+2023-04-25 17:14:35,027 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:35,027 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-04-25 17:14:35,550 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-25 17:14:35,696 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 13
+2023-04-25 17:14:35,696 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:35,696 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 13
+2023-04-25 17:14:35,697 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:35,697 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-04-25 17:14:35,697 INFO    SenderThread:14620 [sender.py:transition_state():626] send defer: 14
+2023-04-25 17:14:35,697 DEBUG   SenderThread:14620 [sender.py:send():375] send: final
+2023-04-25 17:14:35,697 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: defer
+2023-04-25 17:14:35,697 DEBUG   SenderThread:14620 [sender.py:send():375] send: footer
+2023-04-25 17:14:35,697 INFO    HandlerThread:14620 [handler.py:handle_request_defer():170] handle defer: 14
+2023-04-25 17:14:35,698 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: defer
+2023-04-25 17:14:35,698 INFO    SenderThread:14620 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-04-25 17:14:35,698 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-25 17:14:35,698 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: server_info
+2023-04-25 17:14:35,699 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: get_summary
+2023-04-25 17:14:35,699 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: sampled_history
+2023-04-25 17:14:35,700 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: poll_exit
+2023-04-25 17:14:35,703 DEBUG   SenderThread:14620 [sender.py:send_request():402] send_request: server_info
+2023-04-25 17:14:35,877 DEBUG   HandlerThread:14620 [handler.py:handle_request():144] handle_request: shutdown
+2023-04-25 17:14:35,877 INFO    HandlerThread:14620 [handler.py:finish():845] shutting down handler
+2023-04-25 17:14:36,701 INFO    WriterThread:14620 [datastore.py:close():298] close: C:\MyDocuments\Disertatie\segments\wandb_visualization\wandb\run-20230425_171229-nbf1ki81\run-nbf1ki81.wandb
+2023-04-25 17:14:36,885 INFO    SenderThread:14620 [sender.py:finish():1550] shutting down sender
+2023-04-25 17:14:36,885 INFO    SenderThread:14620 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-25 17:14:36,886 INFO    SenderThread:14620 [file_pusher.py:join():173] waiting for file pusher

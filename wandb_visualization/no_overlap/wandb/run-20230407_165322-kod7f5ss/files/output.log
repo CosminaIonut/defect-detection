@@ -1,0 +1,43 @@
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_1.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_2.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_3.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_4.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_5.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_6.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_7.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_8.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_9.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_10.h5
+Loaded 10 models
+0.468
+0.5064
+Traceback (most recent call last):
+  File "C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\test_mode_visualization.py", line 93, in <module>
+    fig.update_layout(xaxis=dict(domain=[0, x1]), yaxis=dict(domain=[0, y1]))
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\plotly\graph_objs\_figure.py", line 775, in update_layout
+    return super(Figure, self).update_layout(dict1, overwrite, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\plotly\basedatatypes.py", line 1393, in update_layout
+    self.layout.update(dict1, overwrite=overwrite, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\plotly\basedatatypes.py", line 5113, in update
+    BaseFigure._perform_update(self, kwargs, overwrite=overwrite)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\plotly\basedatatypes.py", line 3899, in _perform_update
+    BaseFigure._perform_update(plotly_obj[key], val)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\plotly\basedatatypes.py", line 3920, in _perform_update
+    plotly_obj[key] = val
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\plotly\basedatatypes.py", line 4850, in __setitem__
+    self._set_prop(prop, value)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\plotly\basedatatypes.py", line 5194, in _set_prop
+    raise err
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\plotly\basedatatypes.py", line 5189, in _set_prop
+    val = validator.validate_coerce(val)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\_plotly_utils\basevalidators.py", line 2204, in validate_coerce
+    v[i] = validator.validate_coerce(el)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\_plotly_utils\basevalidators.py", line 799, in validate_coerce
+    self.raise_invalid_val(v)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\_plotly_utils\basevalidators.py", line 288, in raise_invalid_val
+    raise ValueError(
+ValueError:
+    Invalid value of type 'builtins.str' received for the 'domain[1]' property of layout.xaxis
+        Received value: '0.468'
+    The 'domain[1]' property is a number and may be specified as:
+      - An int or float in the interval [0, 1]

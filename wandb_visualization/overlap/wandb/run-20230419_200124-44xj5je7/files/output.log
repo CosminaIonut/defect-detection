@@ -1,0 +1,24 @@
+wandb: WARNING The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 80, in <module>
+    train_models_and_save(n_members,data,test_size,train_group, epochs, batch_size, learning_rate,optimizer,hidden_layer_size,patience,monitor)
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\test_and_train.py", line 17, in train_models_and_save
+    network, history = train_model_sweep(build_nn_sweep(optimizer, learning_rate, hidden_layer_size), x_train,
+  File "C:\MyDocuments\Disertatie\segments\model_training\overlap\model_generating.py", line 184, in train_model_sweep
+    history = network.fit(x_train, y_train, epochs=epochs, batch_size = batch_size, validation_data=(x_test, y_test),
+  File "C:\Python310\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Python310\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Python310\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Python310\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Python310\lib\csv.py", line 143, in writeheader
+    return self.writerow(header)
+  File "C:\Python310\lib\csv.py", line 154, in writerow
+    return self.writer.writerow(self._dict_to_list(rowdict))
+tensorflow.python.framework.errors_impl.NotFoundError: Failed to create a NewWriteableFile: logs/train_log.csv : The system cannot find the path specified.
+; No such process
+Epoch 1/150
+ 67/122 [===============>..............] - ETA: 0s - loss: 0.0479 - mae: 0.0512 - mse: 0.0065

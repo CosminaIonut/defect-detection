@@ -1,0 +1,979 @@
+2023-04-08 18:32:02,480 INFO    StreamThr :3376 [internal.py:wandb_internal():86] W&B internal server running at pid: 3376, started at: 2023-04-08 18:32:02.479249
+2023-04-08 18:32:02,483 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status
+2023-04-08 18:32:02,486 INFO    WriterThread:3376 [datastore.py:open_for_write():85] open: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\run-9p5mwpas.wandb
+2023-04-08 18:32:02,490 DEBUG   SenderThread:3376 [sender.py:send():375] send: header
+2023-04-08 18:32:02,490 DEBUG   SenderThread:3376 [sender.py:send():375] send: run
+2023-04-08 18:32:02,939 INFO    SenderThread:3376 [dir_watcher.py:__init__():219] watching files in: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files
+2023-04-08 18:32:02,939 INFO    SenderThread:3376 [sender.py:_start_run_threads():1124] run started: 9p5mwpas with start time 1680967921.96012
+2023-04-08 18:32:02,939 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:02,940 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:02,946 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: check_version
+2023-04-08 18:32:02,947 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: check_version
+2023-04-08 18:32:03,124 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: run_start
+2023-04-08 18:32:03,134 DEBUG   HandlerThread:3376 [system_info.py:__init__():31] System info init
+2023-04-08 18:32:03,134 DEBUG   HandlerThread:3376 [system_info.py:__init__():46] System info init done
+2023-04-08 18:32:03,134 INFO    HandlerThread:3376 [system_monitor.py:start():181] Starting system monitor
+2023-04-08 18:32:03,135 INFO    SystemMonitor:3376 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-04-08 18:32:03,135 INFO    HandlerThread:3376 [system_monitor.py:probe():201] Collecting system info
+2023-04-08 18:32:03,142 INFO    SystemMonitor:3376 [interfaces.py:start():190] Started cpu monitoring
+2023-04-08 18:32:03,143 INFO    SystemMonitor:3376 [interfaces.py:start():190] Started disk monitoring
+2023-04-08 18:32:03,144 INFO    SystemMonitor:3376 [interfaces.py:start():190] Started gpu monitoring
+2023-04-08 18:32:03,153 INFO    SystemMonitor:3376 [interfaces.py:start():190] Started memory monitoring
+2023-04-08 18:32:03,164 INFO    SystemMonitor:3376 [interfaces.py:start():190] Started network monitoring
+2023-04-08 18:32:03,592 DEBUG   HandlerThread:3376 [system_info.py:probe():195] Probing system
+2023-04-08 18:32:03,592 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:03,594 DEBUG   HandlerThread:3376 [git.py:repo():40] git repository is invalid
+2023-04-08 18:32:03,594 DEBUG   HandlerThread:3376 [system_info.py:probe():240] Probing system done
+2023-04-08 18:32:03,594 DEBUG   HandlerThread:3376 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.10.5', 'heartbeatAt': '2023-04-08T15:32:03.592106', 'startedAt': '2023-04-08T15:32:01.923318', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\MyDocuments\\Dizertatie\\segments\\wandb_visualization\\no_overlap\\train_model_visualization_no_overlap.py', 'codePath': 'train_model_visualization_no_overlap.py', 'host': 'LAPTOP-FDVI9MUH', 'username': 'cosmi', 'executable': 'C:\\MyDocuments\\Dizertatie\\segments\\venv\\Scripts\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3302.0, 'min': 0.0, 'max': 3302.0}, 'cpu_freq_per_core': [{'current': 3302.0, 'min': 0.0, 'max': 3302.0}], 'disk': {'total': 952.3772621154785, 'used': 391.60240936279297}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 15.698577880859375}}
+2023-04-08 18:32:03,594 INFO    HandlerThread:3376 [system_monitor.py:probe():211] Finished collecting system info
+2023-04-08 18:32:03,594 INFO    HandlerThread:3376 [system_monitor.py:probe():214] Publishing system info
+2023-04-08 18:32:03,594 DEBUG   HandlerThread:3376 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-08 18:32:03,595 DEBUG   HandlerThread:3376 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-08 18:32:03,597 INFO    HandlerThread:3376 [system_monitor.py:probe():216] Finished publishing system info
+2023-04-08 18:32:03,598 DEBUG   SenderThread:3376 [sender.py:send():375] send: files
+2023-04-08 18:32:03,598 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-04-08 18:32:03,619 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-08 18:32:03,621 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: stop_status
+2023-04-08 18:32:03,895 DEBUG   SenderThread:3376 [sender.py:send():375] send: telemetry
+2023-04-08 18:32:03,943 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:03,943 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\requirements.txt
+2023-04-08 18:32:03,944 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-metadata.json
+2023-04-08 18:32:04,235 INFO    wandb-upload_0:3376 [upload_job.py:push():137] Uploaded file C:\Users\cosmi\AppData\Local\Temp\tmpumf299g1wandb\tnf4mcgu-wandb-metadata.json
+2023-04-08 18:32:04,248 DEBUG   SenderThread:3376 [sender.py:send():375] send: telemetry
+2023-04-08 18:32:04,249 DEBUG   SenderThread:3376 [sender.py:send():375] send: telemetry
+2023-04-08 18:32:04,249 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: get_summary
+2023-04-08 18:32:04,249 DEBUG   SenderThread:3376 [sender.py:send():375] send: files
+2023-04-08 18:32:04,250 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file model-best.h5 with policy live
+2023-04-08 18:32:04,250 DEBUG   SenderThread:3376 [sender.py:send():375] send: telemetry
+2023-04-08 18:32:04,944 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:05,542 DEBUG   SenderThread:3376 [sender.py:send():375] send: files
+2023-04-08 18:32:05,543 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file media\graph\graph_summary_659d6965810bece9df8d.graph.json with policy now
+2023-04-08 18:32:05,545 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:05,549 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:05,610 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:05,960 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:05,961 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\media\graph\graph_summary_659d6965810bece9df8d.graph.json
+2023-04-08 18:32:05,962 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\media\graph
+2023-04-08 18:32:05,962 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\media
+2023-04-08 18:32:06,075 INFO    wandb-upload_0:3376 [upload_job.py:push():137] Uploaded file C:\Users\cosmi\AppData\Local\Temp\tmpumf299g1wandb\yr1l8ifj-media/graph/graph_summary_659d6965810bece9df8d.graph.json
+2023-04-08 18:32:06,492 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:06,492 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:06,496 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:06,497 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:06,498 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:06,499 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:06,500 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:06,501 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:06,502 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:06,974 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:06,975 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:06,976 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:07,506 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:32:07,624 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:07,769 INFO    wandb-upload_0:3376 [upload_job.py:push():137] Uploaded file C:\Users\cosmi\AppData\Local\Temp\tmpumf299g1wandb\4bx7ku3u-model-best.h5
+2023-04-08 18:32:07,977 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\fingerprint.pb
+2023-04-08 18:32:07,978 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\keras_metadata.pb
+2023-04-08 18:32:07,978 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.data-00000-of-00001
+2023-04-08 18:32:07,979 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\saved_model.pb
+2023-04-08 18:32:07,979 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.index
+2023-04-08 18:32:07,980 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best
+2023-04-08 18:32:07,981 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\assets
+2023-04-08 18:32:07,981 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables
+2023-04-08 18:32:08,141 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:08,142 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:08,993 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:09,002 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:09,002 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:09,612 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp0413r1c2
+2023-04-08 18:32:09,637 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:09,669 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp78h4hzk8
+2023-04-08 18:32:09,669 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp91ejfweu
+2023-04-08 18:32:09,675 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpbd_lzr3i
+2023-04-08 18:32:09,853 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmptozhmj75
+2023-04-08 18:32:10,004 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:10,004 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:10,607 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:10,732 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2MzM4', 'digest': '5e84656eee1ce6441f308e3f8de44e9d', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDQ1MDEy', 'versionIndex': 554}}, 'version': 'latest'}
+2023-04-08 18:32:10,732 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:10,733 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:10,733 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:10,733 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:10,734 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:10,734 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:10,736 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:10,736 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:11,018 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:11,397 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:11,397 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:11,668 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:11,727 INFO    wandb-upload_0:3376 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpaggqyn22
+2023-04-08 18:32:12,024 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:12,158 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpsjt96ahq
+2023-04-08 18:32:12,159 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:12,160 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:12,183 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpmapqvt3l
+2023-04-08 18:32:12,212 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpz8s0eh24
+2023-04-08 18:32:12,333 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpj9kl7y6t
+2023-04-08 18:32:12,975 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:12,976 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:13,040 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:13,300 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2Mzcy', 'digest': '243f468e6c5bfdf38590d48ad68b757b', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2MzM4', 'versionIndex': 555}}, 'version': 'latest'}
+2023-04-08 18:32:13,301 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:13,302 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:32:13,302 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:13,305 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:13,306 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:13,307 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:13,309 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:13,310 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:13,310 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:13,312 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:13,683 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:13,791 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:13,792 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:13,795 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:13,795 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:13,797 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:13,797 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:13,798 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:13,799 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:13,800 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:14,051 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:14,052 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:15,061 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:15,062 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\fingerprint.pb
+2023-04-08 18:32:15,063 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\keras_metadata.pb
+2023-04-08 18:32:15,063 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.data-00000-of-00001
+2023-04-08 18:32:15,064 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\saved_model.pb
+2023-04-08 18:32:15,065 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.index
+2023-04-08 18:32:15,065 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best
+2023-04-08 18:32:15,066 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\assets
+2023-04-08 18:32:15,066 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables
+2023-04-08 18:32:15,410 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:15,411 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:16,034 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:16,034 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:16,073 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:16,074 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:16,141 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:16,735 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpuhh55o4n
+2023-04-08 18:32:16,748 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpx3vl4y16
+2023-04-08 18:32:16,783 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpmlon_qwa
+2023-04-08 18:32:16,800 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp41xy5olj
+2023-04-08 18:32:16,967 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpnzj618i0
+2023-04-08 18:32:17,084 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:17,878 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2NDI2', 'digest': 'ab6fd331d1089b8911bb15a68eb772f8', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2Mzcy', 'versionIndex': 556}}, 'version': 'latest'}
+2023-04-08 18:32:17,879 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:17,880 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:17,881 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:17,882 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:17,883 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:17,884 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:17,885 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:18,091 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:18,092 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\fingerprint.pb
+2023-04-08 18:32:18,092 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\keras_metadata.pb
+2023-04-08 18:32:18,092 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.data-00000-of-00001
+2023-04-08 18:32:18,093 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\saved_model.pb
+2023-04-08 18:32:18,093 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.index
+2023-04-08 18:32:18,094 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best
+2023-04-08 18:32:18,094 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\assets
+2023-04-08 18:32:18,094 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables
+2023-04-08 18:32:18,162 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:18,329 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:18,330 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:18,622 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-08 18:32:19,094 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:19,214 INFO    wandb-upload_4:3376 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp1h8zi484
+2023-04-08 18:32:19,225 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:19,225 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:19,636 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmph3fakyfy
+2023-04-08 18:32:19,670 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp9c0e3otk
+2023-04-08 18:32:19,710 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpb2tvj281
+2023-04-08 18:32:19,843 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp4v_ewxzi
+2023-04-08 18:32:19,993 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:19,993 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:20,103 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:20,104 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:20,176 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:20,740 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2NDYx', 'digest': '296e63e3b7165b6bacea7d3dbeea4aea', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2NDI2', 'versionIndex': 557}}, 'version': 'latest'}
+2023-04-08 18:32:20,740 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: stop_status
+2023-04-08 18:32:20,743 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:32:20,905 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:20,906 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:20,908 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:20,909 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:20,909 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:20,910 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:20,911 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:20,911 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:20,912 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:20,912 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:21,118 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:21,680 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:21,681 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:22,135 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:22,194 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:22,493 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:22,494 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:23,010 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpmz8a2gwi
+2023-04-08 18:32:23,050 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp_usojszd
+2023-04-08 18:32:23,074 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp_61v45go
+2023-04-08 18:32:23,088 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp1o6fkpwc
+2023-04-08 18:32:23,139 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:23,140 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:23,292 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpk5e87z92
+2023-04-08 18:32:24,145 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\fingerprint.pb
+2023-04-08 18:32:24,146 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\keras_metadata.pb
+2023-04-08 18:32:24,146 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.data-00000-of-00001
+2023-04-08 18:32:24,146 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\saved_model.pb
+2023-04-08 18:32:24,147 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.index
+2023-04-08 18:32:24,147 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best
+2023-04-08 18:32:24,147 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\assets
+2023-04-08 18:32:24,148 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables
+2023-04-08 18:32:24,216 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2NDk5', 'digest': 'b7f6ef5e164ae1296c9161c470bd57f5', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2NDYx', 'versionIndex': 558}}, 'version': 'latest'}
+2023-04-08 18:32:24,217 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:24,218 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:24,221 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:24,222 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:24,223 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:24,224 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:24,224 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:24,225 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:24,336 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:24,337 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:25,147 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:25,148 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:25,158 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:25,159 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:25,311 INFO    wandb-upload_0:3376 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpfh9k43c8
+2023-04-08 18:32:25,732 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp3h9xkaal
+2023-04-08 18:32:25,754 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpia3q02b_
+2023-04-08 18:32:25,782 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp06bomg2n
+2023-04-08 18:32:25,907 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:25,907 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:25,931 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpp9b0h8i4
+2023-04-08 18:32:26,172 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:26,172 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:26,243 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:26,916 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2NTI3', 'digest': 'f88686c9620483be36ed1ab63a997dd8', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2NDk5', 'versionIndex': 559}}, 'version': 'latest'}
+2023-04-08 18:32:26,917 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:26,917 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:26,919 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:32:26,921 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:26,923 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:26,923 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:26,925 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:26,925 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:26,926 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:26,926 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:26,927 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:27,182 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:27,182 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\fingerprint.pb
+2023-04-08 18:32:27,183 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\keras_metadata.pb
+2023-04-08 18:32:27,183 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.data-00000-of-00001
+2023-04-08 18:32:27,184 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\saved_model.pb
+2023-04-08 18:32:27,184 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.index
+2023-04-08 18:32:27,184 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best
+2023-04-08 18:32:27,184 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\assets
+2023-04-08 18:32:27,185 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables
+2023-04-08 18:32:27,387 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:27,387 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:28,183 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:28,183 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:28,192 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:28,698 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:28,734 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpx527rirg
+2023-04-08 18:32:28,745 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpsq2938yn
+2023-04-08 18:32:28,774 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp72nj2r9_
+2023-04-08 18:32:28,785 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp7yy0ecfc
+2023-04-08 18:32:28,935 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp13lqzcpf
+2023-04-08 18:32:29,205 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:29,205 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:29,873 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2NTU3', 'digest': '85781895c2d96176b558dbf774374807', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2NTI3', 'versionIndex': 560}}, 'version': 'latest'}
+2023-04-08 18:32:29,875 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:29,875 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:29,877 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:29,877 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:29,878 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:29,878 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:29,879 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:30,216 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:30,666 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:30,667 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:30,722 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:31,227 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:31,446 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:31,446 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:31,547 INFO    wandb-upload_4:3376 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp92bcayi4
+2023-04-08 18:32:31,960 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmprxg95w6m
+2023-04-08 18:32:31,964 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpagb_jw6g
+2023-04-08 18:32:31,991 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpndqj2yvm
+2023-04-08 18:32:32,165 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmptl24jqiu
+2023-04-08 18:32:32,236 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:32,292 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:32,292 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:32,745 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:33,002 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2NTk1', 'digest': '655a2afb58b4001de15cbce3bc2e067e', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2NTU3', 'versionIndex': 561}}, 'version': 'latest'}
+2023-04-08 18:32:33,012 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:32:33,214 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:33,215 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:33,216 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:33,217 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:33,217 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:33,218 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:33,219 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:33,220 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:33,220 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:33,222 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:33,238 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:33,239 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\config.yaml
+2023-04-08 18:32:33,240 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:33,669 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-08 18:32:33,669 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: stop_status
+2023-04-08 18:32:34,199 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:34,200 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:34,255 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:34,842 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:35,083 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:35,084 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:35,255 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:35,255 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:35,556 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpg6x9uopw
+2023-04-08 18:32:35,560 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpjvovd_qn
+2023-04-08 18:32:35,584 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp9btgknr_
+2023-04-08 18:32:35,604 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp0_xu4nhx
+2023-04-08 18:32:35,753 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp0xshm8av
+2023-04-08 18:32:36,270 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001.tempstate7425207213590574040
+2023-04-08 18:32:36,270 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best
+2023-04-08 18:32:36,270 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables_temp
+2023-04-08 18:32:36,271 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables
+2023-04-08 18:32:36,672 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:36,724 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2NjM2', 'digest': '10eabfce4791c9d0a00edce4b206d334', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2NTk1', 'versionIndex': 562}}, 'version': 'latest'}
+2023-04-08 18:32:36,726 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:36,726 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:36,731 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:36,732 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:36,732 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:36,733 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:36,733 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:36,734 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:36,859 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:37,282 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:37,587 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:37,588 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:37,592 INFO    wandb-upload_3:3376 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpakuztyb3
+2023-04-08 18:32:38,007 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpwnwtpmpw
+2023-04-08 18:32:38,024 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp8qtl9aoo
+2023-04-08 18:32:38,041 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmppr6s4np8
+2023-04-08 18:32:38,211 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpbtmv5xmc
+2023-04-08 18:32:38,295 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:38,404 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:38,404 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:38,871 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:39,095 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2NjY3', 'digest': 'f94268a8e7047473715486c41dc49167', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2NjM2', 'versionIndex': 563}}, 'version': 'latest'}
+2023-04-08 18:32:39,096 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:39,096 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:32:39,097 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:39,101 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:39,103 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:39,104 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:39,106 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:39,107 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:39,108 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:39,109 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:39,110 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:39,304 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:39,304 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:39,305 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:40,169 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:40,170 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:40,320 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:41,106 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:41,106 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:41,329 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:41,333 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:41,333 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:41,465 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpk3goue9u
+2023-04-08 18:32:41,481 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpf2c1kyd_
+2023-04-08 18:32:41,495 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpxdr_46j4
+2023-04-08 18:32:41,546 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpcyqnaitx
+2023-04-08 18:32:41,756 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpk377eyg4
+2023-04-08 18:32:42,653 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2NzAz', 'digest': '4d5b51848873065480aad406ad8abfa2', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2NjY3', 'versionIndex': 564}}, 'version': 'latest'}
+2023-04-08 18:32:42,653 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:42,654 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:42,655 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:42,656 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:42,656 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:42,657 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:42,658 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:43,327 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:43,327 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:43,348 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:43,358 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:44,141 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:44,141 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:44,204 INFO    wandb-upload_1:3376 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpfratzque
+2023-04-08 18:32:44,371 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:44,371 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:44,640 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmptyqeus8g
+2023-04-08 18:32:44,660 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpur9a4mu3
+2023-04-08 18:32:44,686 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpj4udu685
+2023-04-08 18:32:44,897 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpq_zariu0
+2023-04-08 18:32:45,367 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:45,375 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:45,780 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2NzQy', 'digest': 'b845f4162c85107fc238741fdd8f7f5e', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2NzAz', 'versionIndex': 565}}, 'version': 'latest'}
+2023-04-08 18:32:45,780 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:45,780 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:32:45,781 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:45,783 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:45,784 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:45,786 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:45,787 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:45,788 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:46,174 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:46,175 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:46,377 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:47,194 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:47,195 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:47,386 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:47,388 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:47,389 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:47,514 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpnps38_2_
+2023-04-08 18:32:47,524 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp8yoxqo51
+2023-04-08 18:32:47,525 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpxxcjdcw0
+2023-04-08 18:32:47,555 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpgkxtunf5
+2023-04-08 18:32:47,761 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpbdgyaus9
+2023-04-08 18:32:48,400 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:48,400 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.index
+2023-04-08 18:32:48,400 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.data-00000-of-00001
+2023-04-08 18:32:48,401 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best
+2023-04-08 18:32:48,401 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\assets
+2023-04-08 18:32:48,401 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables
+2023-04-08 18:32:48,655 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2Nzc3', 'digest': 'ab8845ec4f37ce7a7a684ced2034a144', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2NzQy', 'versionIndex': 566}}, 'version': 'latest'}
+2023-04-08 18:32:48,656 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:48,657 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:48,660 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:48,661 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:48,662 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:48,663 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:48,664 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:48,664 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-08 18:32:48,665 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: stop_status
+2023-04-08 18:32:48,757 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:48,820 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:49,410 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:49,414 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:49,700 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:49,701 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:49,826 INFO    wandb-upload_1:3376 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpz0ru851j
+2023-04-08 18:32:50,217 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpid0pspxk
+2023-04-08 18:32:50,235 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp01zlnyqi
+2023-04-08 18:32:50,238 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp_7_cdh1a
+2023-04-08 18:32:50,427 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:50,428 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:50,436 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpwl42q6bl
+2023-04-08 18:32:51,340 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:51,357 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2ODEy', 'digest': '619e1bc49927220cab50d84316b228c8', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2Nzc3', 'versionIndex': 567}}, 'version': 'latest'}
+2023-04-08 18:32:51,358 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:51,358 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:32:51,358 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:51,364 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:51,365 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:51,367 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:51,367 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:51,369 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:51,369 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:51,433 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:51,439 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:51,439 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:52,196 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:52,197 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:52,276 INFO    wandb-upload_3:3376 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmphgbyez4u
+2023-04-08 18:32:52,441 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:52,670 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp7c5i65hx
+2023-04-08 18:32:52,692 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpmwn8e890
+2023-04-08 18:32:52,760 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp4sctklw5
+2023-04-08 18:32:52,880 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpvwcmvytp
+2023-04-08 18:32:52,923 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:52,924 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:53,455 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:53,455 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:53,814 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2ODUw', 'digest': 'c466078d6e4f0942c845a5c9f55ff4da', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2ODEy', 'versionIndex': 568}}, 'version': 'latest'}
+2023-04-08 18:32:53,814 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:53,815 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:53,818 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:53,819 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:53,820 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:53,820 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:53,821 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:53,821 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:53,821 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:53,822 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:53,881 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:54,472 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:54,932 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:54,933 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:55,492 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:55,594 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:55,594 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:55,897 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:56,138 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:56,143 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:56,216 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp2i6pvicc
+2023-04-08 18:32:56,224 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpqmm9o2wu
+2023-04-08 18:32:56,233 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp3ftnwmxp
+2023-04-08 18:32:56,300 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp61_mpy4j
+2023-04-08 18:32:56,426 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpd3p9jhd4
+2023-04-08 18:32:56,498 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:56,499 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:57,379 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2ODkw', 'digest': 'eaa1094a6fd3aef576f62ffe2c066066', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2ODUw', 'versionIndex': 569}}, 'version': 'latest'}
+2023-04-08 18:32:57,380 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:57,381 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:57,381 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:32:57,382 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:57,383 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:32:57,383 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:57,384 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:57,384 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:57,385 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:57,386 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:32:57,388 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:32:57,508 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:32:57,911 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:32:58,333 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:32:58,333 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:32:59,069 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:59,069 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:32:59,523 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:32:59,524 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:32:59,644 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp2lh2c5zh
+2023-04-08 18:32:59,657 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp2u_adqlm
+2023-04-08 18:32:59,668 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpamfs17q9
+2023-04-08 18:32:59,704 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp93f24wsi
+2023-04-08 18:32:59,840 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp93zqz78e
+2023-04-08 18:32:59,919 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:00,541 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:00,541 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\fingerprint.pb
+2023-04-08 18:33:00,542 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\keras_metadata.pb
+2023-04-08 18:33:00,542 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.data-00000-of-00001
+2023-04-08 18:33:00,543 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\saved_model.pb
+2023-04-08 18:33:00,543 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.index
+2023-04-08 18:33:00,543 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best
+2023-04-08 18:33:00,544 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\assets
+2023-04-08 18:33:00,544 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables
+2023-04-08 18:33:00,658 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:33:00,820 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2OTMx', 'digest': '4d81982d0abde8f47f8fad220de1aa74', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2ODkw', 'versionIndex': 570}}, 'version': 'latest'}
+2023-04-08 18:33:00,822 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:00,822 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:00,825 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:00,826 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:00,827 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:00,828 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:00,828 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:00,829 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:33:01,543 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:01,546 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:01,547 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:01,796 INFO    wandb-upload_4:3376 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp18zfcz6g
+2023-04-08 18:33:01,950 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:02,205 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp2z9vetlw
+2023-04-08 18:33:02,238 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmph0d31_pe
+2023-04-08 18:33:02,288 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpgme2n856
+2023-04-08 18:33:02,400 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:02,400 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:02,425 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpit_1oq1c
+2023-04-08 18:33:02,547 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:03,183 DEBUG   SystemMonitor:3376 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-04-08 18:33:03,266 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:03,267 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:03,381 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2OTU0', 'digest': 'c48cfde02fa5849da29405d1cbabf781', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2OTMx', 'versionIndex': 571}}, 'version': 'latest'}
+2023-04-08 18:33:03,381 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:03,382 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:33:03,382 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:03,384 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:03,385 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:03,386 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:03,387 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:03,389 DEBUG   SenderThread:3376 [sender.py:send():375] send: stats
+2023-04-08 18:33:03,389 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:03,390 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:03,391 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:03,391 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:03,392 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:03,392 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:03,393 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:03,559 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:03,559 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:03,560 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:33:03,686 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-08 18:33:03,687 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: stop_status
+2023-04-08 18:33:03,963 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:04,568 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\fingerprint.pb
+2023-04-08 18:33:04,569 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.index
+2023-04-08 18:33:04,570 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.data-00000-of-00001
+2023-04-08 18:33:04,570 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best
+2023-04-08 18:33:04,571 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\assets
+2023-04-08 18:33:04,571 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables
+2023-04-08 18:33:04,958 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:33:04,959 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:33:05,577 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:05,700 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:05,701 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:06,365 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp_fruo2mb
+2023-04-08 18:33:06,376 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpiptqgz2e
+2023-04-08 18:33:06,378 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:06,379 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:06,394 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp5u504tsl
+2023-04-08 18:33:06,431 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp8behiifu
+2023-04-08 18:33:06,466 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:06,572 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpv4sl9yxw
+2023-04-08 18:33:06,596 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:06,985 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:06,986 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:07,523 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU2OTk4', 'digest': '5ab7aa8c272e3bff5501dc51300ac4ab', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2OTU0', 'versionIndex': 572}}, 'version': 'latest'}
+2023-04-08 18:33:07,524 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:07,525 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:07,527 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:07,528 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:07,529 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:07,530 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:07,531 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:07,531 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:07,532 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:07,532 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:07,533 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:07,533 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:07,534 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:07,606 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:07,606 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:33:08,485 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:08,610 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\fingerprint.pb
+2023-04-08 18:33:08,611 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\keras_metadata.pb
+2023-04-08 18:33:08,611 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.data-00000-of-00001
+2023-04-08 18:33:08,611 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\saved_model.pb
+2023-04-08 18:33:08,611 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.index
+2023-04-08 18:33:08,612 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best
+2023-04-08 18:33:08,612 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\assets
+2023-04-08 18:33:08,612 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables
+2023-04-08 18:33:08,861 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:33:08,862 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:33:09,556 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:09,557 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:09,620 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:09,620 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:33:10,192 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpljzr6us1
+2023-04-08 18:33:10,225 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpkea9ivpb
+2023-04-08 18:33:10,235 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpx8wors6t
+2023-04-08 18:33:10,271 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp2mq1p_5o
+2023-04-08 18:33:10,403 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp26pf_k2u
+2023-04-08 18:33:10,509 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:10,623 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:11,290 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU3MDM2', 'digest': '14dba45d99fee213c778e4f93b038bd5', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU2OTk4', 'versionIndex': 573}}, 'version': 'latest'}
+2023-04-08 18:33:11,291 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:11,291 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:33:11,291 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:11,293 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:11,294 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:11,296 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:11,297 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:11,298 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:11,638 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:11,639 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\fingerprint.pb
+2023-04-08 18:33:11,640 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.index
+2023-04-08 18:33:11,640 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.data-00000-of-00001
+2023-04-08 18:33:11,640 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\saved_model.pb
+2023-04-08 18:33:11,641 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best
+2023-04-08 18:33:11,641 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\assets
+2023-04-08 18:33:11,642 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables
+2023-04-08 18:33:11,959 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:33:11,960 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:33:12,530 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:12,647 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:12,913 INFO    wandb-upload_3:3376 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpzaf0mtxe
+2023-04-08 18:33:12,974 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:12,975 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:13,325 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpnr5wum57
+2023-04-08 18:33:13,333 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpur6a9nx6
+2023-04-08 18:33:13,371 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpshtumvkr
+2023-04-08 18:33:13,549 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpzse97scp
+2023-04-08 18:33:13,813 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:13,814 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:14,523 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU3MDc2', 'digest': 'af1c3e72176a979b46c5b0ed85e45b88', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU3MDM2', 'versionIndex': 574}}, 'version': 'latest'}
+2023-04-08 18:33:14,524 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:14,524 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:14,525 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:14,525 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:14,526 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:14,526 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:14,526 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:14,527 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:14,527 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:14,528 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:14,548 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:14,657 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:14,657 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:14,658 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:33:15,123 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:33:15,124 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:33:15,954 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:15,955 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:16,125 INFO    wandb-upload_4:3376 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp9s67r53l
+2023-04-08 18:33:16,536 INFO    wandb-upload_0:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpcfd0p69i
+2023-04-08 18:33:16,558 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpjbmgitwv
+2023-04-08 18:33:16,565 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:16,587 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp1dy9zidk
+2023-04-08 18:33:16,678 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:16,744 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpm8qfakst
+2023-04-08 18:33:16,761 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:16,762 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:17,614 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU3MTI0', 'digest': '98f53a324502b7b640987b9afa5ab489', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU3MDc2', 'versionIndex': 575}}, 'version': 'latest'}
+2023-04-08 18:33:17,615 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:17,615 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:33:17,615 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:17,617 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:17,617 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:17,617 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:17,617 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:17,618 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:17,620 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:17,620 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:17,623 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:17,730 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:17,730 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5
+2023-04-08 18:33:18,572 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:18,694 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-08 18:33:18,694 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: stop_status
+2023-04-08 18:33:18,734 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:18,734 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\fingerprint.pb
+2023-04-08 18:33:18,734 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\keras_metadata.pb
+2023-04-08 18:33:18,734 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.data-00000-of-00001
+2023-04-08 18:33:18,734 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\saved_model.pb
+2023-04-08 18:33:18,734 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables\variables.index
+2023-04-08 18:33:18,734 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best
+2023-04-08 18:33:18,734 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\assets
+2023-04-08 18:33:18,734 INFO    Thread-126:3376 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best\variables
+2023-04-08 18:33:18,804 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 18:33:18,849 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 18:33:19,874 INFO    wandb-upload_0:3376 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpqsphjycy
+2023-04-08 18:33:20,074 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:20,074 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:20,339 INFO    wandb-upload_2:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp28r5rtul
+2023-04-08 18:33:20,339 INFO    wandb-upload_4:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpulge9ke7
+2023-04-08 18:33:20,401 INFO    wandb-upload_3:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp4igjnihh
+2023-04-08 18:33:20,530 INFO    wandb-upload_1:3376 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpn58l63op
+2023-04-08 18:33:20,602 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:20,760 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:21,274 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:21,274 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:21,473 INFO    SenderThread:3376 [sender.py:send_request_log_artifact():1438] logged artifact model-model-4 - {'id': 'QXJ0aWZhY3Q6NDE4MDU3MTY5', 'digest': 'ae00974f32fe1dfe44e8dc63bdab69d0', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg3MjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDE4MDU3MTI0', 'versionIndex': 576}}, 'version': 'latest'}
+2023-04-08 18:33:21,475 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:21,475 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:21,475 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:21,485 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:21,485 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:21,485 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:21,768 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:22,492 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:22,492 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:22,492 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:22,500 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:22,500 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:22,618 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:33:22,627 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:22,780 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:22,780 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:23,808 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:23,808 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:23,808 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:23,808 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:23,808 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:24,649 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:24,802 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:24,802 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:25,072 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:25,072 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:25,072 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:25,079 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:25,081 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:25,814 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:26,278 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:26,278 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:26,286 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:26,286 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:26,286 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:26,675 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:26,826 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:26,826 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:27,482 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:27,482 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:27,490 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:27,490 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:27,490 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:27,618 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:33:27,837 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:28,660 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:28,660 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:28,660 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:28,660 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:28,668 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:28,691 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:28,846 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:28,846 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:29,844 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:29,844 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:29,844 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:29,852 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:29,852 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:29,860 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:30,880 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:31,005 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:31,005 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:31,005 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:31,013 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:31,015 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:31,172 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:31,894 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:32,159 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:32,159 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:32,159 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:32,159 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:32,167 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:32,644 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:33:32,913 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:32,913 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:33,191 ERROR   gpu       :3376 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-04-08 18:33:33,199 DEBUG   SenderThread:3376 [sender.py:send():375] send: stats
+2023-04-08 18:33:33,375 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:33,375 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-08 18:33:33,375 DEBUG   SenderThread:3376 [sender.py:send():375] send: history
+2023-04-08 18:33:33,383 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 18:33:33,383 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:33,431 DEBUG   SenderThread:3376 [sender.py:send():375] send: telemetry
+2023-04-08 18:33:33,439 DEBUG   SenderThread:3376 [sender.py:send():375] send: exit
+2023-04-08 18:33:33,439 INFO    SenderThread:3376 [sender.py:send_exit():598] handling exit code: 0
+2023-04-08 18:33:33,439 INFO    SenderThread:3376 [sender.py:send_exit():600] handling runtime: 90
+2023-04-08 18:33:33,439 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:33,439 INFO    SenderThread:3376 [sender.py:send_exit():606] send defer
+2023-04-08 18:33:33,439 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:33,439 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 0
+2023-04-08 18:33:33,439 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:33,439 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-04-08 18:33:33,439 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 1
+2023-04-08 18:33:33,439 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:33,439 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 1
+2023-04-08 18:33:33,439 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:33,439 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-04-08 18:33:33,439 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 2
+2023-04-08 18:33:33,439 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:33,439 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 2
+2023-04-08 18:33:33,448 INFO    HandlerThread:3376 [system_monitor.py:finish():190] Stopping system monitor
+2023-04-08 18:33:33,449 INFO    HandlerThread:3376 [interfaces.py:finish():202] Joined cpu monitor
+2023-04-08 18:33:33,449 DEBUG   SystemMonitor:3376 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-04-08 18:33:33,465 INFO    HandlerThread:3376 [interfaces.py:finish():202] Joined disk monitor
+2023-04-08 18:33:33,465 DEBUG   SystemMonitor:3376 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-04-08 18:33:33,542 INFO    HandlerThread:3376 [interfaces.py:finish():202] Joined gpu monitor
+2023-04-08 18:33:33,542 INFO    HandlerThread:3376 [interfaces.py:finish():202] Joined memory monitor
+2023-04-08 18:33:33,542 INFO    HandlerThread:3376 [interfaces.py:finish():202] Joined network monitor
+2023-04-08 18:33:33,550 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:33,550 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-04-08 18:33:33,550 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 3
+2023-04-08 18:33:33,550 DEBUG   SenderThread:3376 [sender.py:send():375] send: stats
+2023-04-08 18:33:33,550 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:33,550 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 3
+2023-04-08 18:33:33,550 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:33,550 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-04-08 18:33:33,550 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 4
+2023-04-08 18:33:33,550 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:33,550 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 4
+2023-04-08 18:33:33,550 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:33,550 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-04-08 18:33:33,550 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 5
+2023-04-08 18:33:33,550 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:33,550 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 5
+2023-04-08 18:33:33,550 DEBUG   SenderThread:3376 [sender.py:send():375] send: summary
+2023-04-08 18:33:33,558 INFO    SenderThread:3376 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 18:33:33,558 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:33,558 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-04-08 18:33:33,558 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 6
+2023-04-08 18:33:33,558 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:33,558 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 6
+2023-04-08 18:33:33,558 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:33,558 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-04-08 18:33:33,566 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 18:33:33,768 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 7
+2023-04-08 18:33:33,768 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:33,768 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 7
+2023-04-08 18:33:33,768 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:33,776 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-04-08 18:33:33,921 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:33,921 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\config.yaml
+2023-04-08 18:33:34,441 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-08 18:33:34,922 INFO    Thread-126:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:36,378 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 8
+2023-04-08 18:33:36,378 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: poll_exit
+2023-04-08 18:33:36,378 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:36,378 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 8
+2023-04-08 18:33:36,386 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:36,386 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-04-08 18:33:36,386 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 9
+2023-04-08 18:33:36,386 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:36,386 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 9
+2023-04-08 18:33:36,386 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:36,386 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-04-08 18:33:36,386 INFO    SenderThread:3376 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-04-08 18:33:36,937 INFO    SenderThread:3376 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:36,939 INFO    SenderThread:3376 [dir_watcher.py:finish():395] scan: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files
+2023-04-08 18:33:36,939 INFO    SenderThread:3376 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\config.yaml config.yaml
+2023-04-08 18:33:36,939 INFO    SenderThread:3376 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\model-best.h5 model-best.h5
+2023-04-08 18:33:36,947 INFO    SenderThread:3376 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log output.log
+2023-04-08 18:33:36,953 INFO    SenderThread:3376 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\requirements.txt requirements.txt
+2023-04-08 18:33:36,953 INFO    SenderThread:3376 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-metadata.json wandb-metadata.json
+2023-04-08 18:33:36,953 INFO    SenderThread:3376 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json wandb-summary.json
+2023-04-08 18:33:36,953 INFO    SenderThread:3376 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\media\graph\graph_summary_659d6965810bece9df8d.graph.json media\graph\graph_summary_659d6965810bece9df8d.graph.json
+2023-04-08 18:33:36,953 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 10
+2023-04-08 18:33:36,957 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:36,958 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 10
+2023-04-08 18:33:36,958 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:36,958 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-04-08 18:33:36,958 INFO    SenderThread:3376 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-08 18:33:37,535 INFO    wandb-upload_0:3376 [upload_job.py:push():137] Uploaded file C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\config.yaml
+2023-04-08 18:33:37,741 INFO    wandb-upload_1:3376 [upload_job.py:push():137] Uploaded file C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\requirements.txt
+2023-04-08 18:33:37,790 INFO    wandb-upload_2:3376 [upload_job.py:push():137] Uploaded file C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\wandb-summary.json
+2023-04-08 18:33:37,814 INFO    wandb-upload_3:3376 [upload_job.py:push():137] Uploaded file C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\files\output.log
+2023-04-08 18:33:37,911 INFO    wandb-upload_4:3376 [upload_job.py:push():137] Uploaded file C:\Users\cosmi\AppData\Local\Temp\tmpumf299g1wandb\34pn0pga-model-best.h5
+2023-04-08 18:33:38,120 INFO    Thread-125 (_thread_body):3376 [sender.py:transition_state():626] send defer: 11
+2023-04-08 18:33:38,120 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:38,120 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 11
+2023-04-08 18:33:38,120 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:38,120 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-04-08 18:33:38,120 INFO    SenderThread:3376 [file_pusher.py:join():173] waiting for file pusher
+2023-04-08 18:33:38,120 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 12
+2023-04-08 18:33:38,120 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:38,120 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 12
+2023-04-08 18:33:38,120 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:38,120 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-04-08 18:33:38,668 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 13
+2023-04-08 18:33:38,668 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:38,668 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 13
+2023-04-08 18:33:38,668 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:38,668 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-04-08 18:33:38,668 INFO    SenderThread:3376 [sender.py:transition_state():626] send defer: 14
+2023-04-08 18:33:38,668 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 18:33:38,676 DEBUG   SenderThread:3376 [sender.py:send():375] send: final
+2023-04-08 18:33:38,676 INFO    HandlerThread:3376 [handler.py:handle_request_defer():170] handle defer: 14
+2023-04-08 18:33:38,676 DEBUG   SenderThread:3376 [sender.py:send():375] send: footer
+2023-04-08 18:33:38,676 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: defer
+2023-04-08 18:33:38,676 INFO    SenderThread:3376 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-04-08 18:33:38,676 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-08 18:33:38,676 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: server_info
+2023-04-08 18:33:38,676 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: get_summary
+2023-04-08 18:33:38,676 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: poll_exit
+2023-04-08 18:33:38,684 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: sampled_history
+2023-04-08 18:33:38,684 DEBUG   SenderThread:3376 [sender.py:send_request():402] send_request: server_info
+2023-04-08 18:33:38,859 DEBUG   HandlerThread:3376 [handler.py:handle_request():144] handle_request: shutdown
+2023-04-08 18:33:38,859 INFO    HandlerThread:3376 [handler.py:finish():845] shutting down handler
+2023-04-08 18:33:39,687 INFO    WriterThread:3376 [datastore.py:close():298] close: C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230408_183201-9p5mwpas\run-9p5mwpas.wandb
+2023-04-08 18:33:39,877 INFO    SenderThread:3376 [sender.py:finish():1550] shutting down sender
+2023-04-08 18:33:39,878 INFO    SenderThread:3376 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-08 18:33:39,878 INFO    SenderThread:3376 [file_pusher.py:join():173] waiting for file pusher

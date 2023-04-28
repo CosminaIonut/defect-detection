@@ -1,0 +1,63 @@
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_1.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_2.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_3.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_4.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_5.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_6.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_7.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_8.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_9.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_10.h5
+Loaded 10 models
+[[0.414 ]
+ [0.414 ]
+ [0.4132]
+ [0.4168]
+ [0.414 ]
+ [0.414 ]
+ [0.4324]
+ [0.4332]
+ [0.4332]
+ [0.4324]
+ [0.432 ]
+ [0.434 ]
+ [0.4304]
+ [0.5064]
+ [0.468 ]
+ [0.468 ]
+ [0.482 ]
+ [0.494 ]
+ [0.494 ]
+ [0.4932]]
+[[0.414]
+ [0.414]
+ [0.414]
+ [0.414]
+ [0.414]
+ [0.414]
+ [0.432]
+ [0.432]
+ [0.432]
+ [0.432]
+ [0.432]
+ [0.432]
+ [0.432]
+ [0.468]
+ [0.468]
+ [0.468]
+ [0.468]
+ [0.468]
+ [0.468]
+ [0.468]]
+['0.414', '0.414', '0.4132', '0.4168', '0.414', '0.414', '0.4324', '0.4332', '0.4332', '0.4324', '0.432', '0.434', '0.4304', '0.5064', '0.468', '0.468', '0.482', '0.494', '0.494', '0.4932']
+['0.414', '0.414', '0.4132', '0.4168', '0.414', '0.414', '0.4324', '0.4332', '0.4332', '0.4324', '0.432', '0.434', '0.4304', '0.5064', '0.468', '0.468', '0.482', '0.494', '0.494', '0.4932']
+Traceback (most recent call last):
+  File "C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\test_mode_visualization.py", line 77, in <module>
+    wandb_config.log({"predicted" : wandb_config.Table(data=[index_column,prediction_column],
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\data_types.py", line 285, in __init__
+    self._init_from_list(data, columns, optional, dtype)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\data_types.py", line 310, in _init_from_list
+    self.add_data(*row)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\data_types.py", line 461, in add_data
+    raise ValueError(
+ValueError: This table expects 2 columns: ['index_id', 'prediction'], found 20

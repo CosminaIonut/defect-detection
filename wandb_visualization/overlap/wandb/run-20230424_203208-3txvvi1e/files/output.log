@@ -1,0 +1,47 @@
+wandb: WARNING The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 80, in <module>
+    train_models_and_save(n_members,data,test_size,train_group, epochs, batch_size, learning_rate,optimizer,hidden_layer_size,patience,monitor)
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\test_and_train.py", line 21, in train_models_and_save
+    network, history = train_model_sweep(build_nn_sweep(optimizer, learning_rate, hidden_layer_size), x_train,
+  File "C:\MyDocuments\Disertatie\segments\model_training\overlap\model_generating.py", line 199, in train_model_sweep
+    history = network.fit(x_train, y_train, epochs=epochs, batch_size = batch_size, validation_data=(x_test, y_test),
+  File "C:\Python310\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Python310\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Python310\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Python310\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\cosmi\AppData\Local\Temp\__autograph_generated_file_z8ih7va.py", line 15, in tf__train_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+    File "C:\Python310\lib\site-packages\keras\engine\training.py", line 1284, in train_function  *
+        return step_function(self, iterator)
+    File "C:\Python310\lib\site-packages\keras\engine\training.py", line 1268, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Python310\lib\site-packages\keras\engine\training.py", line 1249, in run_step  **
+        outputs = model.train_step(data)
+    File "C:\Python310\lib\site-packages\keras\engine\training.py", line 1055, in train_step
+        return self.compute_metrics(x, y, y_pred, sample_weight)
+    File "C:\Python310\lib\site-packages\keras\engine\training.py", line 1149, in compute_metrics
+        self.compiled_metrics.update_state(y, y_pred, sample_weight)
+    File "C:\Python310\lib\site-packages\keras\engine\compile_utils.py", line 577, in update_state
+        self.build(y_pred, y_true)
+    File "C:\Python310\lib\site-packages\keras\engine\compile_utils.py", line 483, in build
+        self._metrics = tf.__internal__.nest.map_structure_up_to(
+    File "C:\Python310\lib\site-packages\keras\engine\compile_utils.py", line 631, in _get_metric_objects
+        return [self._get_metric_object(m, y_t, y_p) for m in metrics]
+    File "C:\Python310\lib\site-packages\keras\engine\compile_utils.py", line 631, in <listcomp>
+        return [self._get_metric_object(m, y_t, y_p) for m in metrics]
+    File "C:\Python310\lib\site-packages\keras\engine\compile_utils.py", line 650, in _get_metric_object
+        metric_obj = metrics_mod.get(metric)
+    File "C:\Python310\lib\site-packages\keras\metrics\__init__.py", line 204, in get
+        return deserialize(str(identifier))
+    File "C:\Python310\lib\site-packages\keras\metrics\__init__.py", line 158, in deserialize
+        return deserialize_keras_object(
+    File "C:\Python310\lib\site-packages\keras\saving\legacy\serialization.py", line 543, in deserialize_keras_object
+        raise ValueError(
+    ValueError: Unknown metric function: 'rmse'. Please ensure you are using a `keras.utils.custom_object_scope` and that this object is included in the scope. See https://www.tensorflow.org/guide/keras/save_and_serialize#registering_the_custom_object for details.
+Epoch 1/10

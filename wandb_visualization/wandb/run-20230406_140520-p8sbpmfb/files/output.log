@@ -1,0 +1,171 @@
+Y [[0.296]
+ [0.214]
+ [0.226]
+ ...
+ [0.22 ]
+ [0.274]
+ [0.286]]
+X [[0.0182882  0.00473865 0.02211658 ... 0.0223316  0.01884855 0.00023106]
+ [0.03406256 0.00102707 0.01487339 ... 0.00247679 0.00735794 0.02798943]
+ [0.02507582 0.00064567 0.01368136 ... 0.00056875 0.01117072 0.02570779]
+ ...
+ [0.00099347 0.00041288 0.00068923 ... 0.00041979 0.00058872 0.00095584]
+ [0.0047433  0.00150399 0.00482519 ... 0.00354627 0.00575795 0.00259891]
+ [0.00455493 0.00170686 0.00501392 ... 0.00449312 0.00525996 0.00152137]]
+Epoch 1/10
+80/86 [==========================>...] - ETA: 0s - loss: 14.4943 - mae: 0.1345 - mse: 0.0224
+86/86 [==============================] - 2s 20ms/step - loss: 14.4514 - mae: 0.1293 - mse: 0.0212 - val_loss: 13.7275 - val_mae: 0.0464 - val_mse: 0.0031 - lr: 1.0000e-04
+Epoch 2/10
+84/86 [============================>.] - ETA: 0s - loss: 13.1262 - mae: 0.0284 - mse: 0.0012
+wandb: Adding directory to artifact (C:\MyDocuments\Dizertatie\segments\wandb_visualization\wandb\run-20230406_140520-p8sbpmfb\files\model-best)... Done. 0.0s
+86/86 [==============================] - 1s 17ms/step - loss: 13.1181 - mae: 0.0283 - mse: 0.0012 - val_loss: 12.5135 - val_mae: 0.0239 - val_mse: 8.1110e-04 - lr: 1.0000e-04
+Epoch 3/10
+86/86 [==============================] - 1s 11ms/step - loss: 11.9877 - mae: 0.0211 - mse: 6.2929e-04 - val_loss: 11.4661 - val_mae: 0.0220 - val_mse: 6.7249e-04 - lr: 1.0000e-04
+Epoch 4/10
+62/86 [====================>.........] - ETA: 0s - loss: 11.1343 - mae: 0.0205 - mse: 5.9923e-04
+Traceback (most recent call last):
+  File "C:\MyDocuments\Dizertatie\segments\wandb_visualization\train_model_visualization_no_overlap.py", line 23, in <module>
+    network, history = train_model(build_nn(), x_train, y_train, x_test, y_test, epochs)
+  File "C:\MyDocuments\Dizertatie\segments\model_generation_no_overlap.py", line 52, in train_model
+    history = network.fit(x_train, y_train, epochs=epochs, batch_size=30, validation_data=(x_test, y_test),
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\engine\training.py", line 1712, in fit
+    callbacks.on_epoch_end(epoch, epoch_logs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\callbacks.py", line 454, in on_epoch_end
+    callback.on_epoch_end(epoch, logs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 630, in on_epoch_end
+    self._save_model_as_artifact(epoch)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 1032, in _save_model_as_artifact
+    self.model.save(self.filepath[:-3], overwrite=True, save_format="tf")
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\engine\training.py", line 2795, in save
+    save.save_model(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\save.py", line 167, in save_model
+    saved_model_save.save(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\save.py", line 97, in save
+    saved_nodes, node_paths = save_lib.save_and_return_nodes(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\saved_model\save.py", line 1267, in save_and_return_nodes
+    _build_meta_graph(obj, signatures, options, meta_graph_def))
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\saved_model\save.py", line 1440, in _build_meta_graph
+    return _build_meta_graph_impl(obj, signatures, options, meta_graph_def)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\saved_model\save.py", line 1383, in _build_meta_graph_impl
+    signatures = signature_serialization.find_function_to_export(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\saved_model\signature_serialization.py", line 103, in find_function_to_export
+    for name, child in children:
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\saved_model\save.py", line 177, in list_children
+    for name, child in super(_AugmentedGraphView, self).list_children(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\checkpoint\graph_view.py", line 75, in list_children
+    for name, ref in super(ObjectGraphView,
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\checkpoint\trackable_view.py", line 84, in children
+    for name, ref in obj._trackable_children(save_type, **kwargs).items():
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\engine\functional.py", line 460, in _trackable_children
+    dependencies.update(super()._trackable_children(save_type, **kwargs))
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\engine\training.py", line 3738, in _trackable_children
+    children = super()._trackable_children(save_type, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\engine\base_layer.py", line 3393, in _trackable_children
+    children = self._trackable_saved_model_saver.trackable_children(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\base_serialization.py", line 61, in trackable_children
+    children = self.objects_to_serialize(serialization_cache)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\layer_serialization.py", line 79, in objects_to_serialize
+    return self._get_serialized_attributes(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\layer_serialization.py", line 106, in _get_serialized_attributes
+    object_dict, function_dict = self._get_serialized_attributes_internal(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\model_serialization.py", line 57, in _get_serialized_attributes_internal
+    objects, functions = super()._get_serialized_attributes_internal(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\layer_serialization.py", line 117, in _get_serialized_attributes_internal
+    functions = save_impl.wrap_layer_functions(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\save_impl.py", line 216, in wrap_layer_functions
+    with tracing_scope():
+  File "C:\Python310\lib\contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\save_impl.py", line 390, in tracing_scope
+    fn.get_concrete_function(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 1215, in get_concrete_function
+    concrete = self._get_concrete_function_garbage_collected(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 1206, in _get_concrete_function_garbage_collected
+    concrete = self._variable_creation_fn._get_concrete_function_garbage_collected(  # pylint: disable=protected-access
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\tracing_compiler.py", line 192, in _get_concrete_function_garbage_collected
+    concrete_function, _ = self._maybe_define_concrete_function(args, kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\tracing_compiler.py", line 157, in _maybe_define_concrete_function
+    return self._maybe_define_function(args, kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\tracing_compiler.py", line 360, in _maybe_define_function
+    concrete_function = self._create_concrete_function(args, kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\tracing_compiler.py", line 284, in _create_concrete_function
+    func_graph_module.func_graph_from_py_func(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\framework\func_graph.py", line 1283, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 645, in wrapped_fn
+    out = weak_wrapped_fn().__wrapped__(*args, **kwds)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\save_impl.py", line 632, in wrapper
+    ret = method(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\utils.py", line 190, in wrap_with_training_arg
+    return control_flow_util.smart_cond(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\utils\control_flow_util.py", line 108, in smart_cond
+    return tf.__internal__.smart_cond.smart_cond(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\framework\smart_cond.py", line 54, in smart_cond
+    return false_fn()
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\utils.py", line 193, in <lambda>
+    lambda: replace_training_and_call(False),
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\utils.py", line 188, in replace_training_and_call
+    return wrapped_call(*new_args, **new_kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\save_impl.py", line 698, in call_and_return_conditional_losses
+    call_output = layer_call(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\engine\sequential.py", line 413, in call
+    return super().call(inputs, training=training, mask=mask)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\engine\functional.py", line 511, in call
+    return self._run_internal_graph(inputs, training=training, mask=mask)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\engine\functional.py", line 668, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\engine\base_layer.py", line 1132, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\utils\traceback_utils.py", line 96, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\utils.py", line 65, in return_outputs_and_add_losses
+    outputs, losses = fn(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\saving\legacy\saved_model\save_impl.py", line 672, in __call__
+    return self.wrapped_call(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\util\traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 919, in _call
+    results = self._variable_creation_fn(*args, **kwds)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\tracing_compiler.py", line 134, in __call__
+    return concrete_function._call_flat(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\monomorphic_function.py", line 1759, in _call_flat
+    flat_outputs = forward_function.call(ctx, args_with_tangents)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\monomorphic_function.py", line 406, in call
+    outputs = functional_ops.partitioned_call(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\ops\functional_ops.py", line 1222, in partitioned_call
+    op = graph.create_op(op_name, args, tout, name=op_name, attrs=op_attrs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\util\deprecation.py", line 561, in new_func
+    return func(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\util\traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\framework\ops.py", line 3736, in create_op
+    return self._create_op_internal(op_type, inputs, dtypes, input_types, name,
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\framework\func_graph.py", line 749, in _create_op_internal
+    return super(FuncGraph, self)._create_op_internal(  # pylint: disable=protected-access
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\framework\ops.py", line 3798, in _create_op_internal
+    ret = Operation(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\framework\ops.py", line 2107, in __init__
+    self._init_from_c_op(c_op=c_op, g=g)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\framework\ops.py", line 2185, in _init_from_c_op
+    self._id_value = g._add_op(self, self.name)  # pylint: disable=protected-access
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\framework\ops.py", line 3380, in _add_op
+    self._check_not_finalized()
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\framework\ops.py", line 3367, in _check_not_finalized
+    if self._finalized:
+KeyboardInterrupt

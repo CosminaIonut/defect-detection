@@ -1,0 +1,84 @@
+wandb: WARNING Calling wandb.login() after wandb.init() has no effect.
+wandb: WARNING The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+Epoch 1/100
+81/86 [===========================>..] - ETA: 0s - loss: 10.0596 - mae: 0.0252 - mse: 8.8792e-04
+wandb: Adding directory to artifact (C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230406_202935-htoirsbv\files\model-best)... Done. 0.0s
+86/86 [==============================] - 1s 12ms/step - loss: 9.9297 - mae: 0.0252 - mse: 8.8716e-04 - val_loss: 7.2845 - val_mae: 0.0266 - val_mse: 9.9708e-04 - lr: 0.0010
+Epoch 2/100
+80/86 [==========================>...] - ETA: 0s - loss: 6.1964 - mae: 0.0250 - mse: 8.6135e-04
+wandb: Adding directory to artifact (C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230406_202935-htoirsbv\files\model-best)... Done. 0.0s
+Traceback (most recent call last):
+  File "C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\train_model_visualization_no_overlap.py", line 30, in <module>
+    network, history = train_model(build_nn(), x_train, y_train, x_test, y_test, epochs)
+  File "C:\MyDocuments\Dizertatie\segments\model_training\no_overlap\model_generation_no_overlap.py", line 37, in train_model
+    history = network.fit(x_train, y_train, epochs=epochs, batch_size=30, validation_data=(x_test, y_test),
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\engine\training.py", line 1712, in fit
+    callbacks.on_epoch_end(epoch, epoch_logs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\callbacks.py", line 454, in on_epoch_end
+    callback.on_epoch_end(epoch, logs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 630, in on_epoch_end
+    self._save_model_as_artifact(epoch)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 1038, in _save_model_as_artifact
+    wandb.run.log_artifact(model_artifact, aliases=["latest", f"epoch_{epoch}"])
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\wandb_run.py", line 344, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\wandb_run.py", line 334, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\wandb_run.py", line 2774, in log_artifact
+    return self._log_artifact(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\wandb_run.py", line 2913, in _log_artifact
+    self._assert_can_log_artifact(artifact)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\wandb_run.py", line 2959, in _assert_can_log_artifact
+    expected_type = public.Artifact.expected_type(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\apis\public.py", line 4525, in expected_type
+    response = client.execute(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\lib\retry.py", line 212, in wrapped_fn
+    return retrier(*args, **kargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\apis\public.py", line 251, in execute
+    return self._client.execute(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\lib\gql_request.py", line 55, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\requests\sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\urllib3\connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\urllib3\connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Python310\lib\http\client.py", line 1374, in getresponse
+    response.begin()
+  File "C:\Python310\lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "C:\Python310\lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Python310\lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Python310\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Python310\lib\ssl.py", line 1130, in read
+    return self._sslobj.read(len, buffer)
+86/86 [==============================] - 1s 11ms/step - loss: 6.1339 - mae: 0.0251 - mse: 8.6571e-04 - val_loss: 5.0787 - val_mae: 0.0255 - val_mse: 8.6125e-04 - lr: 0.0010
+Epoch 3/100
+79/86 [==========================>...] - ETA: 0s - loss: 4.2857 - mae: 0.0252 - mse: 8.6515e-04

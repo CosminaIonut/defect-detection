@@ -1,0 +1,23 @@
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_1.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_2.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_3.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_4.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_5.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_6.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_7.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_8.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_9.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_10.h5
+Loaded 10 models
+Traceback (most recent call last):
+  File "C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\test_mode_visualization.py", line 86, in <module>
+    fig = px.scatter(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\plotly\express\_chart_types.py", line 66, in scatter
+    return make_figure(args=locals(), constructor=go.Scatter)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\plotly\express\_core.py", line 1996, in make_figure
+    args = build_dataframe(args, constructor)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\plotly\express\_core.py", line 1409, in build_dataframe
+    df_output, wide_id_vars = process_args_into_dataframe(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\plotly\express\_core.py", line 1208, in process_args_into_dataframe
+    raise ValueError(err_msg)
+ValueError: Value of 'size' is not the name of a column in 'data_frame'. Expected one of ['index_id', 'actual_pos', 'prediction'] but received: 10

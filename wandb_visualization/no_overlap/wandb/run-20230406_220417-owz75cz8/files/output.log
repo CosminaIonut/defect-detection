@@ -1,0 +1,23 @@
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_1.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_2.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_3.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_4.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_5.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_6.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_7.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_8.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_9.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_10.h5
+Loaded 10 models
+Traceback (most recent call last):
+  File "C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\test_mode_visualization.py", line 54, in <module>
+    df = pd.DataFrame(data)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\pandas\core\frame.py", line 664, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\pandas\core\internals\construction.py", line 493, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\pandas\core\internals\construction.py", line 118, in arrays_to_mgr
+    index = _extract_index(arrays)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\pandas\core\internals\construction.py", line 653, in _extract_index
+    raise ValueError("Per-column arrays must each be 1-dimensional")
+ValueError: Per-column arrays must each be 1-dimensional

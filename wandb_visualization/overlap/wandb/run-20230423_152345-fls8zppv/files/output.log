@@ -1,0 +1,40 @@
+wandb: WARNING The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+WARNING:tensorflow:Callback method `on_train_batch_end` is slow compared to the batch time (batch time: 0.0020s vs `on_train_batch_end` time: 0.0042s). Check your callbacks.
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 80, in <module>
+    train_models_and_save(n_members,data,test_size,train_group, epochs, batch_size, learning_rate,optimizer,hidden_layer_size,patience,monitor)
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\test_and_train.py", line 27, in train_models_and_save
+    network, history = train_model_sweep(
+  File "C:\MyDocuments\Disertatie\segments\model_training\overlap\model_generating.py", line 198, in train_model_sweep
+    history = network.fit(x_train, y_train, epochs=epochs, batch_size = batch_size, validation_data=(x_test, y_test),
+  File "C:\Python310\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Python310\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Python310\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Python310\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\cosmi\AppData\Local\Temp\__autograph_generated_filem2_lum2v.py", line 15, in tf__test_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+    File "C:\Python310\lib\site-packages\keras\engine\training.py", line 1852, in test_function  *
+        return step_function(self, iterator)
+    File "C:\Python310\lib\site-packages\keras\engine\training.py", line 1836, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Python310\lib\site-packages\keras\engine\training.py", line 1824, in run_step  **
+        outputs = model.test_step(data)
+    File "C:\Python310\lib\site-packages\keras\engine\training.py", line 1788, in test_step
+        y_pred = self(x, training=False)
+    File "C:\Python310\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Python310\lib\site-packages\keras\engine\input_spec.py", line 253, in assert_input_compatibility
+        raise ValueError(
+    ValueError: Exception encountered when calling layer 'sequential' (type Sequential).
+    Input 0 of layer "conv2d" is incompatible with the layer: expected min_ndim=4, found ndim=2. Full shape received: (None, 8)
+    Call arguments received by layer 'sequential' (type Sequential):
+      • inputs=tf.Tensor(shape=(None, 8), dtype=float32)
+      • training=False
+      • mask=None
+Epoch 1/150
+116/122 [===========================>..] - ETA: 0s - loss: 0.8580 - mae: 0.9253 - mse: 0.8580

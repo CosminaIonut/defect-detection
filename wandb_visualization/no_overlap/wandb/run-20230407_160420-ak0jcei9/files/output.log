@@ -1,0 +1,37 @@
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_1.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_2.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_3.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_4.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_5.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_6.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_7.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_8.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_9.h5
+>loaded ../../trained_models/models_segments_no_overlap_65%_10epochs/model_10.h5
+Loaded 10 models
+Traceback (most recent call last):
+  File "C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\test_mode_visualization.py", line 101, in <module>
+    wandb_config.log({"actual_vs_predicted" : px})
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\wandb_run.py", line 393, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\wandb_run.py", line 344, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\wandb_run.py", line 334, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\wandb_run.py", line 1750, in log
+    self._log(data=data, step=step, commit=commit)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\wandb_run.py", line 1531, in _log
+    self._partial_history_callback(data, step, commit)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\wandb_run.py", line 1401, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\interface\interface.py", line 567, in publish_partial_history
+    data = history_dict_to_json(run, data, step=user_step, ignore_copy_err=True)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\data_types\utils.py", line 52, in history_dict_to_json
+    payload[key] = val_to_json(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\data_types\utils.py", line 80, in val_to_json
+    val = Plotly.make_plot_media(val)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\data_types\plotly.py", line 49, in make_plot_media
+    return cls(val)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\sdk\data_types\plotly.py", line 64, in __init__
+    raise ValueError(
+ValueError: Logged plots must be plotly figures, or matplotlib plots convertible to plotly via mpl_to_plotly

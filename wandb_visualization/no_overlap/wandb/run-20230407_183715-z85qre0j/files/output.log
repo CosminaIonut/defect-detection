@@ -1,0 +1,40 @@
+
+wandb: WARNING The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+Epoch 1/15
+72/86 [========================>.....] - ETA: 0s - loss: 10.2290 - mae: 0.0260 - mse: 9.6320e-04
+wandb: Adding directory to artifact (C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\wandb\run-20230407_183715-z85qre0j\files\model-best)... Done. 0.0s
+86/86 [==============================] - 2s 15ms/step - loss: 9.7998 - mae: 0.0261 - mse: 9.6450e-04 - val_loss: 7.1660 - val_mae: 0.0264 - val_mse: 9.7747e-04 - lr: 0.0010
+Epoch 2/15
+86/86 [==============================] - 1s 14ms/step - loss: 6.0318 - mae: 0.0254 - mse: 8.8927e-04 - val_loss: 4.9941 - val_mae: 0.0263 - val_mse: 9.1856e-04 - lr: 0.0010
+Epoch 3/15
+ 1/86 [..............................] - ETA: 0s - loss: 4.9937 - mae: 0.0198 - mse: 5.8829e-04
+Traceback (most recent call last):
+  File "C:\MyDocuments\Dizertatie\segments\wandb_visualization\no_overlap\train_model_visualization_no_overlap.py", line 30, in <module>
+    network, history = train_model(build_nn(), x_train, y_train, x_test, y_test, epochs)
+  File "C:\MyDocuments\Dizertatie\segments\model_training\no_overlap\model_generation_no_overlap.py", line 33, in train_model
+    history = network.fit(x_train, y_train, epochs=epochs, batch_size=30, validation_data=(x_test, y_test),
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\keras\engine\training.py", line 1650, in fit
+    tmp_logs = self.train_function(iterator)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\util\traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 880, in __call__
+    result = self._call(*args, **kwds)
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 912, in _call
+    return self._no_variable_creation_fn(*args, **kwds)  # pylint: disable=not-callable
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\tracing_compiler.py", line 134, in __call__
+    return concrete_function._call_flat(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\monomorphic_function.py", line 1745, in _call_flat
+    return self._build_call_outputs(self._inference_function.call(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\polymorphic_function\monomorphic_function.py", line 378, in call
+    outputs = execute.execute(
+  File "C:\MyDocuments\Dizertatie\segments\venv\lib\site-packages\tensorflow\python\eager\execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+KeyboardInterrupt

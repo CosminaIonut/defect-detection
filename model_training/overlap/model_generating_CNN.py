@@ -29,10 +29,13 @@ def build_optimizer(optimizer, learning_rate):
 
 def build_cnn_sweep(optimizer, learning_rate, cnn_layer_size, input_nodes_cnn, dense_units, length=8):
     network = Sequential()
-    network.add(Conv2D(input_nodes_cnn, kernel_size=(3,3), activation='relu', input_shape =(length,1,1)))
+    # network.add(Conv2D(input_nodes_cnn, kernel_size=(3,1), activation='relu', input_shape =(length,1,1)))
+    network.add(Conv2D(input_nodes_cnn, kernel_size=(2,1), activation='relu', input_shape =(4,2,1), data_format='channels_first'))
 
     for neurons_numbers in cnn_layer_size:
-        network.add(Conv2D(neurons_numbers, kernel_size=(3,3), activation='relu'))
+        # network.add(Conv2D(neurons_numbers, kernel_size=(3,1), activation='relu'))
+        network.add(Conv2D(neurons_numbers, kernel_size=(2,1), activation='relu'))
+
 
     network.add(Flatten())
     network.add(Dense(dense_units, activation='softmax'))
@@ -44,11 +47,11 @@ def build_cnn_sweep(optimizer, learning_rate, cnn_layer_size, input_nodes_cnn, d
 
 def build_cnn_sweep_maxpooling(optimizer, learning_rate, cnn_layer_size, input_nodes_cnn, dense_units, length=8):
     network = Sequential()
-    network.add(Conv2D(input_nodes_cnn, kernel_size=(3,3), activation='relu', input_shape =(length,1,1)))
+    network.add(Conv2D(input_nodes_cnn, kernel_size=(2,1), activation='relu', input_shape =(4,2,1), data_format='channels_first'))
 
     for neurons_numbers in cnn_layer_size:
-        network.add(MaxPooling2D((2, 2)))
-        network.add(Conv2D(neurons_numbers, kernel_size=(3,3), activation='relu'))
+        network.add(MaxPooling2D((2, 1)))
+        network.add(Conv2D(neurons_numbers, kernel_size=(2,1), activation='relu'))
 
     network.add(Flatten())
     network.add(Dense(cnn_layer_size[0], activation='relu'))

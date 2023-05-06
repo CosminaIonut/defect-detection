@@ -42,17 +42,21 @@ sweep_config = {
 }
 wandb.login(key="44af7bf1f24c6aab99ae33b0ae4fa5a5c8a59590", relogin=True)
 sweep_id = wandb.sweep(sweep_config,   project="Defect-Detection-Sweep", entity="cosminaionut",)
-
-data = ['../data/overlap_data/1_0-150.xlsx', '../data/overlap_data/2_100-300.xlsx',
-        '../data/overlap_data/3_250-400.xlsx', '../data/overlap_data/4_350-500.xlsx',
-        '../data/overlap_data/5_450-600.xlsx', '../data/overlap_data/6_550-700.xlsx',
-        '../data/overlap_data/7_650-800.xlsx', '../data/overlap_data/8_750-900.xlsx',
-        '../data/overlap_data/9_850-1000.xlsx']
+#
+# data = ['../data/overlap_data/1_0-150.xlsx', '../data/overlap_data/2_100-300.xlsx',
+#         '../data/overlap_data/3_250-400.xlsx', '../data/overlap_data/4_350-500.xlsx',
+#         '../data/overlap_data/5_450-600.xlsx', '../data/overlap_data/6_550-700.xlsx',
+#         '../data/overlap_data/7_650-800.xlsx', '../data/overlap_data/8_750-900.xlsx',
+#         '../data/overlap_data/9_850-1000.xlsx']
+data = ['../data/overlap_data/1_0-200.xlsx', '../data/overlap_data/2_0-300.xlsx',
+        '../data/overlap_data/3_100-400.xlsx', '../data/overlap_data/4_200-500.xlsx',
+        '../data/overlap_data/5_300-600.xlsx', '../data/overlap_data/6_400-700.xlsx',
+        '../data/overlap_data/7_500-800.xlsx', '../data/overlap_data/8_600-900.xlsx',
+        '../data/overlap_data/9_700-1000.xlsx','../data/overlap_data/10_800-1000.xlsx']
 
 # create the 9 models
 # fit and save models
-n_members = 9
-
+n_members = 10
 # training parameters
 test_size = 0.30
 
@@ -69,6 +73,8 @@ def train(config=None):
             # --------------------------ANN ----------------------------
             network, history = train_model_sweep(build_nn_sweep(config.optimizer, config.learning_rate, config.hidden_layer_size), x_train, y_train, x_test,
                                            y_test, config.epochs, config.batch_size, config.patience, config.monitor)
+
+
             filename = '../trained_models/ANN/models_segments_overlap' \
                        + '_' + str(config.optimizer) + '_' + str(config.learning_rate) + 'LR_' \
                        + str(config.hidden_layer_size) + 'HN_' + str(config.batch_size) + 'BS_' \

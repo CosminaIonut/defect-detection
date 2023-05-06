@@ -2,8 +2,10 @@ import numpy as np
 from sklearn.metrics import mean_squared_error
 import pandas as pd
 
-from model_training.overlap.model_generating_CNN import build_cnn_sweep
-from model_training.overlap.model_generating_RNN import build_RNN_sweep, train_model_sweep
+from model_training.overlap.model_generating import build_nn_sweep, build_nn_baseline, train_model_sweep
+from model_training.overlap.model_generating_CNN import build_cnn_sweep,train_model_sweep
+from model_training.overlap.model_generating_RNN import build_RNN_sweep, train_model_sweep, build_RNN_sweep_LSTM, \
+    build_RNN_sweep_LSTM_bidirectional, build_RNN_sweep_GRU
 from model_training.overlap.stacked_models_performance import load_all_models, split_data, fit_stacked_model,stacked_prediction
 from wandb_visualization.wandb_config import wandb_init
 import matplotlib.pyplot as plt
@@ -21,15 +23,17 @@ def train_models_and_save(n_members,data,test_size,group, epochs, batch_size, le
         wandb_config = wandb_init(name, group)
         x_train, x_test, y_train, y_test = split_data(data[i], test_size)
 
-        network, history = train_model_sweep(build_nn_sweep(optimizer, learning_rate, hidden_layer_size), x_train,
-                                             y_train, x_test, y_test, epochs, batch_size,patience,monitor)
+        # network, history = train_model_sweep(build_nn_sweep(optimizer, learning_rate, hidden_layer_size), x_train,
+        #                                      y_train, x_test, y_test, epochs, batch_size,patience,monitor)
         # save model
-        filename = '../../trained_models/ANN/models_segments_overlap' \
-                   + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
-                   + str(hidden_layer_size) + 'HN_' + str(batch_size) + 'BS_' \
-                   + str(patience) + 'P_' + str(monitor) + 'M_' \
-                   + str(epochs) + 'epochs/model_' + str(i + 1) + '.h5'
-
+        network, history = train_model_sweep(build_nn_baseline(), x_train,
+                                             y_train, x_test, y_test, epochs, batch_size, patience, monitor)
+        # filename = '../../trained_models/ANN/models_segments_overlap' \
+        #            + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
+        #            + str(hidden_layer_size) + 'HN_' + str(batch_size) + 'BS_' \
+        #            + str(patience) + 'P_' + str(monitor) + 'M_' \
+        #            + str(epochs) + 'epochs/model_' + str(i + 1) + '.h5'
+        filename = '../../trained_models/ANN/models_segments_overlap_baseline/model_' + str(i + 1) + '.h5'
         network.save(filename)
         print('>Saved %s' % filename)
         print(history.history.keys())
@@ -48,10 +52,10 @@ def train_models_and_save_RNN(n_members,data,test_size,group, epochs, batch_size
         # --------------------------RNN ----------------------------
         # (optimizer, learning_rate, hidden_layer_size, dense_units,activation, length=8):
         network, history = train_model_sweep(
-            build_RNN_sweep(optimizer, learning_rate, hidden_layer_size, dense_units,
+            build_RNN_sweep_LSTM_bidirectional(optimizer, learning_rate, hidden_layer_size, dense_units,
                             activation), X, Y,
             X_test, Y_test, epochs, batch_size, patience, monitor)
-        filename = '../../trained_models/RNN/models_segments_overlap-rnn' \
+        filename = '../../trained_models/RNN/models_segments_overlap-LSTMBI' \
                    + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
                    + str(hidden_layer_size) + 'HL' + str(dense_units) + 'DU_' \
                    + str(batch_size) + 'BS_' + str(activation) + '_' \

@@ -36,7 +36,7 @@ sweep_config = {
         #                                  [30], [31],[32],[33],[34],[35],[36],[37],[38],[39],[40]
         #                                  ]},
         'hidden_layer_size': {'values': [[20], [3],[10],[40],
-                                      [8], [15], [6], [5]]},
+                                      [8], [15], [6], [5], [2], [1], [4]]},
         'dense_units': {'values': [1,8,5,3,2,4]},
         'optimizer': {'values': ['adam', 'sgd', 'rmsprop']},
         'patience': {'values': [1, 3, 5, 10, 15, 20]},
@@ -48,15 +48,19 @@ sweep_config = {
 wandb.login(key="44af7bf1f24c6aab99ae33b0ae4fa5a5c8a59590", relogin=True)
 sweep_id = wandb.sweep(sweep_config,   project="Defect-Detection-Sweep", entity="cosminaionut",)
 
-data = ['../data/overlap_data/1_0-150.xlsx', '../data/overlap_data/2_100-300.xlsx',
-        '../data/overlap_data/3_250-400.xlsx', '../data/overlap_data/4_350-500.xlsx',
-        '../data/overlap_data/5_450-600.xlsx', '../data/overlap_data/6_550-700.xlsx',
-        '../data/overlap_data/7_650-800.xlsx', '../data/overlap_data/8_750-900.xlsx',
-        '../data/overlap_data/9_850-1000.xlsx']
-
+# data = ['../data/overlap_data/1_0-150.xlsx', '../data/overlap_data/2_100-300.xlsx',
+#         '../data/overlap_data/3_250-400.xlsx', '../data/overlap_data/4_350-500.xlsx',
+#         '../data/overlap_data/5_450-600.xlsx', '../data/overlap_data/6_550-700.xlsx',
+#         '../data/overlap_data/7_650-800.xlsx', '../data/overlap_data/8_750-900.xlsx',
+#         '../data/overlap_data/9_850-1000.xlsx']
+data = ['../data/overlap_data/1_0-200.xlsx', '../data/overlap_data/2_0-300.xlsx',
+        '../data/overlap_data/3_100-400.xlsx', '../data/overlap_data/4_200-500.xlsx',
+        '../data/overlap_data/5_300-600.xlsx', '../data/overlap_data/6_400-700.xlsx',
+        '../data/overlap_data/7_500-800.xlsx', '../data/overlap_data/8_600-900.xlsx',
+        '../data/overlap_data/9_700-1000.xlsx','../data/overlap_data/10_800-1000.xlsx']
 # create the 9 models
 # fit and save models
-n_members = 9
+n_members = 10
 
 # training parameters
 test_size = 0.30
@@ -84,7 +88,7 @@ def train(config=None):
             # --------------------------RNN ----------------------------
             # (optimizer, learning_rate, hidden_layer_size, dense_units,activation, length=8):
             network, history = train_model_sweep(
-                build_RNN_sweep_vertical(config.optimizer, config.learning_rate, config.hidden_layer_size, config.dense_units,config.activation), X, Y,
+                build_RNN_sweep_LSTM_bidirectional(config.optimizer, config.learning_rate, config.hidden_layer_size, config.dense_units,config.activation), X, Y,
                 X_test,Y_test, config.epochs, config.batch_size, config.patience, config.monitor)
             filename = '../trained_models/RNN/models_segments_overlap-rnn' \
                        + '_' + str(config.optimizer) + '_' + str(config.learning_rate) + 'LR_' \

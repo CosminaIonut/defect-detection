@@ -1,7 +1,8 @@
 import sys
 import os
 
-from model_training.overlap.model_generating_CNN import build_cnn_sweep, train_model_sweep, split_data
+from model_training.overlap.model_generating_CNN import build_cnn_sweep, train_model_sweep, split_data, \
+    build_cnn_sweep_maxpooling
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
@@ -31,7 +32,7 @@ sweep_config = {
             'max': 0.1
         },
         'cnn_layer_size': {'values': [[20], [21],[22],[23],[24],[25],[26],[27],[28],[29],
-                                      [30], [31],[32],[33],[34],[35],[36],[37],[38],[39],[40],
+                                      [30], [31],[32],[33],[34],[35],[36],[37],[38],[39],[100],
                                       [64],[124],[516],[124,516],[100,516,200]]},
         'cnn_input_nodes': {'values': [64,32,8,16,20,50,100]},
         'optimizer': {'values': ['adam', 'sgd', 'rmsprop']},
@@ -67,10 +68,10 @@ def train(config=None):
         for i in range(n_members):
             # fit model
             x_train, x_test, y_train, y_test = split_data(data[i], test_size)
-            x_train_cnn = x_train.reshape(x_train.shape[0], 8, 1, 1)
-            x_test_cnn = x_test.reshape(x_test.shape[0], 8, 1, 1)
-            # x_train_cnn = x_train.reshape(x_train.shape[0], 4, 2, 1)
-            # x_test_cnn = x_test.reshape(x_test.shape[0], 4, 2, 1)
+            # x_train_cnn = x_train.reshape(x_train.shape[0], 8, 1, 1)
+            # x_test_cnn = x_test.reshape(x_test.shape[0], 8, 1, 1)
+            x_train_cnn = x_train.reshape(x_train.shape[0], 4, 2, 1)
+            x_test_cnn = x_test.reshape(x_test.shape[0], 4, 2, 1)
 
             # --------------------------CNN ----------------------------
             network, history = train_model_sweep(
@@ -90,4 +91,4 @@ def train(config=None):
 
 
 wandb.finish()
-wandb.agent(sweep_id, train, count=10)
+wandb.agent(sweep_id, train, count=30)

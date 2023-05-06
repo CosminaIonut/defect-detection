@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 211, in <module>
+    train_ANN()
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 104, in train_ANN
+    train_models_and_save(n_members,data,test_size,train_group, epochs, batch_size, learning_rate,optimizer,hidden_layer_size,patience,monitor)
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\test_and_train.py", line 28, in train_models_and_save
+    network, history = train_model_sweep(build_nn_baseline(), x_train,
+  File "C:\MyDocuments\Disertatie\segments\model_training\overlap\model_generating_RNN.py", line 120, in train_model_sweep
+    history = network.fit(x_train, y_train, epochs=epochs, batch_size = batch_size, validation_data=(x_test, y_test),
+AttributeError: 'NoneType' object has no attribute 'fit'

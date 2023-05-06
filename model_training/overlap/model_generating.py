@@ -133,6 +133,18 @@ def build_nn_sweep(optimizer, learning_rate, hidden_layer_size, length=8):
     name="root_mean_squared_error", dtype=None)])
     return network
 
+def build_nn_baseline():
+    network = Sequential()
+    network.add(
+        Dense(100, input_shape=(8,), activation='relu', kernel_initializer='he_uniform', kernel_regularizer=l2(0.01),
+              bias_regularizer=l2(0.01)))
+    network.add(Dense(20, activation='relu', kernel_initializer='he_uniform', kernel_regularizer=l2(0.01),
+                    bias_regularizer=l2(0.01)))
+    network.add(Dense(1, activation='sigmoid'))
+    optimizer = RMSprop(learning_rate=0.001, rho=0.9, epsilon=1e-08, decay=0.0)
+    network.compile(optimizer=optimizer, loss='mse', metrics=['mae', 'mse'])
+
+    return network
 
 def build_nn_sigmoid_new_network_more_neurons(length=8, filters=(512, 256), regularizer=None):
     network = Sequential()

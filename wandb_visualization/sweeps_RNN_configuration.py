@@ -88,7 +88,7 @@ def train(config=None):
             # --------------------------RNN ----------------------------
             # (optimizer, learning_rate, hidden_layer_size, dense_units,activation, length=8):
             network, history = train_model_sweep(
-                build_RNN_sweep_LSTM_bidirectional(config.optimizer, config.learning_rate, config.hidden_layer_size, config.dense_units,config.activation), X, Y,
+                build_RNN_sweep_LSTM(config.optimizer, config.learning_rate, config.hidden_layer_size, config.dense_units,config.activation), X, Y,
                 X_test,Y_test, config.epochs, config.batch_size, config.patience, config.monitor)
             filename = '../trained_models/RNN/models_segments_overlap-rnn' \
                        + '_' + str(config.optimizer) + '_' + str(config.learning_rate) + 'LR_' \

@@ -1,0 +1,24 @@
+[[0.00086654 0.00086654 0.00086654 ... 0.00086654 0.00086654 0.00086654]
+ [0.00119113 0.00119113 0.00119113 ... 0.00119113 0.00119113 0.00119113]
+ [0.00214098 0.00214098 0.00214098 ... 0.00214098 0.00214098 0.00214098]
+ ...
+ [0.03716586 0.0253569  0.01678278 ... 0.00258239 0.0016026  0.00215171]
+ [0.0462074  0.03139693 0.02064352 ... 0.00283378 0.00160496 0.00229364]
+ [0.05900354 0.03994516 0.02610747 ... 0.00318957 0.0016083  0.0024945 ]]
+[[0.  ]
+ [0.  ]
+ [0.  ]
+ ...
+ [0.05]
+ [0.05]
+ [0.05]]
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 357, in <module>
+    train_ANN()
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 215, in train_ANN
+    train_models_and_save(n_members,data,test_size,train_group, epochs, batch_size, learning_rate,optimizer,hidden_layer_size,patience,monitor)
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\test_and_train.py", line 33, in train_models_and_save
+    network, history = train_model_sweep(build_nn_sweep_BNN(optimizer, learning_rate, hidden_layer_size,sample_size), x_train,
+  File "C:\MyDocuments\Disertatie\segments\model_training\overlap\model_generating.py", line 197, in build_nn_sweep_BNN
+    features = keras.layers.concatenate(list(inputs.values()))
+AttributeError: 'KerasTensor' object has no attribute 'values'

@@ -89,7 +89,8 @@ def split_data(data, test_size):
 
     x = df_samples_slim.iloc[:, 3:].values
     y = df_samples_slim.iloc[:, np.r_[0]].values
-
+    print(x)
+    print(y)
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_size, random_state=0)
     return x_train, x_test, y_train, y_test
 

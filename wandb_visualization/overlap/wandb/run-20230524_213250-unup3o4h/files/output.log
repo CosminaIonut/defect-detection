@@ -1,0 +1,33 @@
+[[0.00086654 0.00086654 0.00086654 ... 0.00086654 0.00086654 0.00086654]
+ [0.00119113 0.00119113 0.00119113 ... 0.00119113 0.00119113 0.00119113]
+ [0.00214098 0.00214098 0.00214098 ... 0.00214098 0.00214098 0.00214098]
+ ...
+ [0.03716586 0.0253569  0.01678278 ... 0.00258239 0.0016026  0.00215171]
+ [0.0462074  0.03139693 0.02064352 ... 0.00283378 0.00160496 0.00229364]
+ [0.05900354 0.03994516 0.02610747 ... 0.00318957 0.0016083  0.0024945 ]]
+[[0.  ]
+ [0.  ]
+ [0.  ]
+ ...
+ [0.05]
+ [0.05]
+ [0.05]]
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 425, in <module>
+    train_1DCNN()
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 279, in train_1DCNN
+    train_models_and_save_1D_CNN(n_members,data,test_size,train_group_cnn, epochs, batch_size, learning_rate,optimizer,cnn_layer_size, cnn_input_nodes, patience,monitor,dense_units)
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\test_and_train.py", line 117, in train_models_and_save_1D_CNN
+    network, history = train_model_sweep(build_1Dcnn_sweep_maxpooling(optimizer, learning_rate, cnn_layer_size,cnn_input_nodes,dense_units,n_timesteps), x_train_cnn,
+  File "C:\MyDocuments\Disertatie\segments\model_training\overlap\model_generating_CNN.py", line 73, in build_1Dcnn_sweep_maxpooling
+    network.add(Conv1D(neurons_numbers, kernel_size=3, activation='relu'))
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\trackable\base.py", line 205, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\framework\ops.py", line 1969, in _create_c_op
+    raise ValueError(e.message)
+ValueError: Exception encountered when calling layer "conv1d_2" (type Conv1D).
+Negative dimension size caused by subtracting 3 from 2 for '{{node conv1d_2/Conv1D}} = Conv2D[T=DT_FLOAT, data_format="NHWC", dilations=[1, 1, 1, 1], explicit_paddings=[], padding="VALID", strides=[1, 1, 1, 1], use_cudnn_on_gpu=true](conv1d_2/Conv1D/ExpandDims, conv1d_2/Conv1D/ExpandDims_1)' with input shapes: [?,1,2,100], [1,3,100,23].
+Call arguments received by layer "conv1d_2" (type Conv1D):
+  • inputs=tf.Tensor(shape=(None, 2, 100), dtype=float32)

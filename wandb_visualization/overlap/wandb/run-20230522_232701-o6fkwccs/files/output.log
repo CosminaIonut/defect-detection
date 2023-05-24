@@ -1,0 +1,29 @@
+C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow_probability\python\layers\util.py:99: UserWarning: `layer.add_variable` is deprecated and will be removed in a future version. Please use the `layer.add_weight()` method instead.
+  loc = add_variable_fn(
+C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow_probability\python\layers\util.py:109: UserWarning: `layer.add_variable` is deprecated and will be removed in a future version. Please use the `layer.add_weight()` method instead.
+  untransformed_scale = add_variable_fn(
+WARNING:tensorflow:Please fix your imports. Module tensorflow.python.training.tracking.data_structures has been moved to tensorflow.python.trackable.data_structures. The old module will be deleted in version 2.11.
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 369, in <module>
+    train_models_and_save_bnn(n_members,data,test_size,"BNN")
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\test_bnn.py", line 41, in train_models_and_save_bnn
+    Mean_Y, Stdv_Y = b.test_bnn(x_test)
+AttributeError: 'list' object has no attribute 'test_bnn'
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 8)]               0
+ dense_flipout (DenseFlipout  (None, 8)                144
+ )
+ dense_flipout_1 (DenseFlipo  (None, 36)               648
+ ut)
+ dense_flipout_2 (DenseFlipo  (None, 2)                148
+ ut)
+ distribution_lambda (Distri  ((None, 1),              0
+ butionLambda)                (None, 1))
+=================================================================
+Total params: 940
+Trainable params: 940
+Non-trainable params: 0
+_________________________________________________________________

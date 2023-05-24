@@ -1,0 +1,38 @@
+[[0.00086654 0.00086654 0.00086654 ... 0.00086654 0.00086654 0.00086654]
+ [0.00119113 0.00119113 0.00119113 ... 0.00119113 0.00119113 0.00119113]
+ [0.00214098 0.00214098 0.00214098 ... 0.00214098 0.00214098 0.00214098]
+ ...
+ [0.03716586 0.0253569  0.01678278 ... 0.00258239 0.0016026  0.00215171]
+ [0.0462074  0.03139693 0.02064352 ... 0.00283378 0.00160496 0.00229364]
+ [0.05900354 0.03994516 0.02610747 ... 0.00318957 0.0016083  0.0024945 ]]
+[[0.  ]
+ [0.  ]
+ [0.  ]
+ ...
+ [0.05]
+ [0.05]
+ [0.05]]
+WARNING:tensorflow:Please fix your imports. Module tensorflow.python.training.tracking.data_structures has been moved to tensorflow.python.trackable.data_structures. The old module will be deleted in version 2.11.
+WARNING:tensorflow:From C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow_probability\python\distributions\distribution.py:345: calling MultivariateNormalDiag.__init__ (from tensorflow_probability.python.distributions.mvn_diag) with scale_identity_multiplier is deprecated and will be removed after 2020-01-01.
+Instructions for updating:
+`scale_identity_multiplier` is deprecated; please combine it into `scale_diag` directly instead.
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 357, in <module>
+    train_ANN()
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 215, in train_ANN
+    train_models_and_save(n_members,data,test_size,train_group, epochs, batch_size, learning_rate,optimizer,hidden_layer_size,patience,monitor)
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\test_and_train.py", line 33, in train_models_and_save
+    network, history = train_model_sweep(build_nn_sweep_BNN(optimizer, learning_rate, hidden_layer_size,sample_size), x_train,
+  File "C:\MyDocuments\Disertatie\segments\model_training\overlap\model_generating.py", line 213, in build_nn_sweep_BNN
+    model = keras.Model(inputs=inputs, outputs=outputs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\trackable\base.py", line 205, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\engine\functional.py", line 165, in __init__
+    self._init_graph_network(inputs, outputs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\trackable\base.py", line 205, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\engine\functional.py", line 264, in _init_graph_network
+    nodes, nodes_by_depth, layers, _ = _map_graph_network(
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\engine\functional.py", line 1128, in _map_graph_network
+    raise ValueError(
+ValueError: Graph disconnected: cannot obtain value for tensor KerasTensor(type_spec=TensorSpec(shape=(None, 1), dtype=tf.float32, name='Mod 1'), name='Mod 1', description="created by layer 'Mod 1'") at layer "concatenate". The following previous layers were accessed without issue: []

@@ -1,0 +1,45 @@
+[[0.00086654 0.00086654 0.00086654 ... 0.00086654 0.00086654 0.00086654]
+ [0.00119113 0.00119113 0.00119113 ... 0.00119113 0.00119113 0.00119113]
+ [0.00214098 0.00214098 0.00214098 ... 0.00214098 0.00214098 0.00214098]
+ ...
+ [0.03716586 0.0253569  0.01678278 ... 0.00258239 0.0016026  0.00215171]
+ [0.0462074  0.03139693 0.02064352 ... 0.00283378 0.00160496 0.00229364]
+ [0.05900354 0.03994516 0.02610747 ... 0.00318957 0.0016083  0.0024945 ]]
+[[0.  ]
+ [0.  ]
+ [0.  ]
+ ...
+ [0.05]
+ [0.05]
+ [0.05]]
+N 324
+WARNING:tensorflow:Please fix your imports. Module tensorflow.python.training.tracking.data_structures has been moved to tensorflow.python.trackable.data_structures. The old module will be deleted in version 2.11.
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 358, in <module>
+    train_ANN()
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 216, in train_ANN
+    train_models_and_save(n_members,data,test_size,train_group, epochs, batch_size, learning_rate,optimizer,hidden_layer_size,patience,monitor)
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\test_and_train.py", line 33, in train_models_and_save
+    network, history = train_model_sweep(build_nn_sweep_BNN(optimizer, learning_rate, hidden_layer_size,sample_size), x_train,
+  File "C:\MyDocuments\Disertatie\segments\model_training\overlap\model_generating.py", line 212, in build_nn_sweep_BNN
+    features = tfp.layers.DenseVariational(
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow_probability\python\layers\dense_variational_v2.py", line 123, in call
+    self.add_loss(self._kl_divergence_fn(q, r))
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow_probability\python\layers\dense_variational_v2.py", line 168, in _fn
+    kl = kl_divergence_fn(distribution_a, distribution_b)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow_probability\python\layers\dense_variational_v2.py", line 161, in kl_divergence_fn
+    distribution_a.log_prob(z) - distribution_b.log_prob(z),
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow_probability\python\distributions\distribution.py", line 1315, in log_prob
+    return self._call_log_prob(value, name, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow_probability\python\distributions\distribution.py", line 1297, in _call_log_prob
+    return self._log_prob(value, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow_probability\python\layers\internal\distribution_tensor_coercible.py", line 116, in _log_prob
+    return self.tensor_distribution._log_prob(value, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow_probability\python\distributions\normal.py", line 190, in _log_prob
+    x / scale, self.loc / scale)
+ValueError: Exception encountered when calling layer "dense_variational" (type DenseVariational).
+Dimensions must be equal, but are 324 and 6 for '{{node dense_variational/kldivergence_loss/dense_variational_sequential_1_distribution_lambda_tensor_coercible/log_prob/truediv}} = RealDiv[T=DT_FLOAT](dense_variational/sequential/multivariate_normal_tri_l/dense_variational_sequential_multivariate_normal_tri_l_tensor_coercible_1/value/dense_variational_sequential_multivariate_normal_tri_l_MultivariateNormalTriL_MultivariateNormalTriL/sample/dense_variational_sequential_multivariate_normal_tri_l_MultivariateNormalTriL_MultivariateNormalTriL_chain_of_dense_variational_sequential_multivariate_normal_tri_l_MultivariateNormalTriL_MultivariateNormalTriL_shift_of_dense_variational_sequential_multivariate_normal_tri_l_MultivariateNormalTriL_MultivariateNormalTriL_scale_matvec_linear_operator/forward/dense_variational_sequential_multivariate_normal_tri_l_MultivariateNormalTriL_MultivariateNormalTriL_shift/forward/add, dense_variational/sequential_1/distribution_lambda/Normal/scale)' with input shapes: [324], [6].
+Call arguments received by layer "dense_variational" (type DenseVariational):
+  • inputs=tf.Tensor(shape=(None, 8), dtype=float32)

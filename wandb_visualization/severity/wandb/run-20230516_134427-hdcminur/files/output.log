@@ -1,0 +1,50 @@
+(5161, 8)
+(2212, 8)
+(5161, 8, 1)
+(5161, 2, 1)
+(2212, 8, 1)
+(2212, 2, 1)
+Epoch 1/150
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+wandb: WARNING The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\severity\wrapper_test_and_train.py", line 288, in <module>
+    train_RNN()
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\severity\wrapper_test_and_train.py", line 153, in train_RNN
+    train_models_and_save_RNN(n_members,data,test_size,train_group_RNN, epochs, batch_size, learning_rate,optimizer,hidden_layer_size,patience,monitor,activation,dense_units)
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\severity\test_and_train.py", line 56, in train_models_and_save_RNN
+    network, history = train_model_sweep(
+  File "C:\MyDocuments\Disertatie\segments\model_training\overlap\model_generating_RNN.py", line 122, in train_model_sweep
+    history = network.fit(x_train, y_train, epochs=epochs, batch_size = batch_size, validation_data=(x_test, y_test),
+  File "C:\Users\cosmi\AppData\Roaming\Python\Python39\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Users\cosmi\AppData\Roaming\Python\Python39\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Users\cosmi\AppData\Roaming\Python\Python39\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\cosmi\AppData\Local\Temp\__autograph_generated_file672utidg.py", line 15, in tf__train_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+    File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\engine\training.py", line 1160, in train_function  *
+        return step_function(self, iterator)
+    File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\engine\training.py", line 1146, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\engine\training.py", line 1135, in run_step  **
+        outputs = model.train_step(data)
+    File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\engine\training.py", line 994, in train_step
+        loss = self.compute_loss(x, y, y_pred, sample_weight)
+    File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\engine\training.py", line 1052, in compute_loss
+        return self.compiled_loss(
+    File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\engine\compile_utils.py", line 265, in __call__
+        loss_value = loss_obj(y_t, y_p, sample_weight=sw)
+    File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\losses.py", line 152, in __call__
+        losses = call_fn(y_true, y_pred)
+    File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\losses.py", line 272, in call  **
+        return ag_fn(y_true, y_pred, **self._fn_kwargs)
+    File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\losses.py", line 1486, in mean_squared_error
+        return backend.mean(tf.math.squared_difference(y_pred, y_true), axis=-1)
+    ValueError: Dimensions must be equal, but are 8 and 2 for '{{node mean_squared_error/SquaredDifference}} = SquaredDifference[T=DT_FLOAT](sequential/dense/Tanh, mean_squared_error/remove_squeezable_dimensions/Squeeze)' with input shapes: [?,8], [?,2].

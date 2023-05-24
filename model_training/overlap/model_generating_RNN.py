@@ -61,7 +61,7 @@ def build_RNN_sweep_LSTM(optimizer, learning_rate, hidden_layer_size, dense_unit
     network = Sequential()
     for hidden_units in hidden_layer_size:
         network.add(
-            LSTM(hidden_units, input_shape=(time_steps, 1), activation=activation[0]))
+            LSTM(hidden_units,return_sequences=True, input_shape=(time_steps, 1), activation=activation[0]))
 
     # network.add(SimpleRNN(hidden_layer_size[0], activation=activation[0], return_sequences=True))
     # network.add(SimpleRNN(hidden_layer_size[0], activation=activation[0], return_sequences=False))
@@ -78,7 +78,7 @@ def build_RNN_sweep_LSTM_bidirectional(optimizer, learning_rate, hidden_layer_si
     network = Sequential()
     for hidden_units in hidden_layer_size:
         network.add(
-            Bidirectional(LSTM(hidden_units, input_shape=(time_steps, 1), activation=activation[0])))
+            Bidirectional(LSTM(hidden_units, return_sequences=False, input_shape=(time_steps, 1), activation=activation[0])))
 
     # network.add(SimpleRNN(hidden_layer_size[0], activation=activation[0], return_sequences=True))
     # network.add(SimpleRNN(hidden_layer_size[0], activation=activation[0], return_sequences=False))
@@ -86,8 +86,7 @@ def build_RNN_sweep_LSTM_bidirectional(optimizer, learning_rate, hidden_layer_si
     # network.add(Dense(units=1, activation=activation[2]))
 
     optimizer = build_optimizer(optimizer, learning_rate)
-    network.compile(optimizer=optimizer, loss='mse', metrics=['mae', 'mse', tf.keras.metrics.RootMeanSquaredError(
-        name="root_mean_squared_error", dtype=None)])
+    network.compile(optimizer=optimizer, loss='mse', metrics=['mae', 'mse'])
 
     return network
 
@@ -116,7 +115,10 @@ def train_model_sweep(network, x_train, y_train,x_test, y_test, epochs, batch_si
 
     # early_stop = EarlyStopping(monitor='val_mse', patience=3, verbose=1)
     csv_logger = CSVLogger('train_log.csv', separator=",", append=False)
-
+    print(x_train.shape)
+    print(y_train.shape)
+    print(x_test.shape)
+    print(y_test.shape)
     history = network.fit(x_train, y_train, epochs=epochs, batch_size = batch_size, validation_data=(x_test, y_test),
                           verbose=1, callbacks=[learning_rate_reduction, WandbCallback()])
     return network, history

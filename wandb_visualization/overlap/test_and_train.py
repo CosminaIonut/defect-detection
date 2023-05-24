@@ -2,8 +2,11 @@ import numpy as np
 from sklearn.metrics import mean_squared_error
 import pandas as pd
 
-from model_training.overlap.model_generating import build_nn_sweep, build_nn_baseline, train_model_sweep
-from model_training.overlap.model_generating_CNN import build_cnn_sweep,train_model_sweep
+from model_training.overlap.bayesian_models import Pbnn
+from model_training.overlap.model_generating import build_nn_sweep, build_nn_baseline, train_model_sweep, \
+    build_nn_sweep_levenberg, build_nn_sweep_BNN
+from model_training.overlap.model_generating_CNN import build_cnn_sweep, train_model_sweep, build_cnn_sweep_maxpooling, \
+    build_1Dcnn_sweep_maxpooling
 from model_training.overlap.model_generating_RNN import build_RNN_sweep, train_model_sweep, build_RNN_sweep_LSTM, \
     build_RNN_sweep_LSTM_bidirectional, build_RNN_sweep_GRU
 from model_training.overlap.stacked_models_performance import load_all_models, split_data, fit_stacked_model,stacked_prediction
@@ -22,18 +25,29 @@ def train_models_and_save(n_members,data,test_size,group, epochs, batch_size, le
         name = "model-"+str(i+1)
         wandb_config = wandb_init(name, group)
         x_train, x_test, y_train, y_test = split_data(data[i], test_size)
+        # config = {"n_infeatures": 8,
+        #           "n_outfeatures": 1,
+        #           "n_samples": len(x_train),
+        #           "learn_all_params": True,
+        #           "fixed_param": 0.3}
+        #
+        # mybnn = Pbnn(config)
+        # mybnn.build_bnn(2, [8, 36])
 
         # network, history = train_model_sweep(build_nn_sweep(optimizer, learning_rate, hidden_layer_size), x_train,
         #                                      y_train, x_test, y_test, epochs, batch_size,patience,monitor)
         # save model
-        network, history = train_model_sweep(build_nn_baseline(), x_train,
+        network, history = train_model_sweep(build_nn_sweep(optimizer, learning_rate, hidden_layer_size), x_train,
                                              y_train, x_test, y_test, epochs, batch_size, patience, monitor)
-        # filename = '../../trained_models/ANN/models_segments_overlap' \
-        #            + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
-        #            + str(hidden_layer_size) + 'HN_' + str(batch_size) + 'BS_' \
-        #            + str(patience) + 'P_' + str(monitor) + 'M_' \
-        #            + str(epochs) + 'epochs/model_' + str(i + 1) + '.h5'
-        filename = '../../trained_models/ANN/models_segments_overlap_baseline/model_' + str(i + 1) + '.h5'
+        # sample_size = int(len(x_train)*test_size)
+        # network, history = train_model_sweep(build_nn_sweep_BNN(optimizer, learning_rate, hidden_layer_size,sample_size), x_train,
+        #                                      y_train, x_test, y_test, epochs, batch_size, patience, monitor)
+        filename = '../../trained_models/ANN/best-models_segments_overlap' \
+                   + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
+                   + str(hidden_layer_size) + 'HN_' + str(batch_size) + 'BS_' \
+                   + str(patience) + 'P_' + str(monitor) + 'M_' \
+                   + str(epochs) + 'epochs/model_' + str(i + 1) + '.h5'
+        # filename = '../../trained_models/ANN/models_segments_overlap/model_' + str(i + 1) + '.h5'
         network.save(filename)
         print('>Saved %s' % filename)
         print(history.history.keys())
@@ -41,9 +55,10 @@ def train_models_and_save(n_members,data,test_size,group, epochs, batch_size, le
 
 def train_models_and_save_RNN(n_members,data,test_size,group, epochs, batch_size, learning_rate, optimizer, hidden_layer_size,patience,monitor, activation, dense_units):
 
-    for i in range(n_members):
+    for i in range(9,n_members):
         # fit model
         name = "model-"+str(i+1)
+        print(name)
         wandb_config = wandb_init(name, group)
         x_train, x_test, y_train, y_test = split_data(data[i], test_size)
         time_steps = x_train.shape[1]
@@ -55,7 +70,7 @@ def train_models_and_save_RNN(n_members,data,test_size,group, epochs, batch_size
             build_RNN_sweep_LSTM_bidirectional(optimizer, learning_rate, hidden_layer_size, dense_units,
                             activation), X, Y,
             X_test, Y_test, epochs, batch_size, patience, monitor)
-        filename = '../../trained_models/RNN/models_segments_overlap-LSTMBI' \
+        filename = '../../trained_models/RNN/models_segments_overlap-14-LSTM-BI' \
                    + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
                    + str(hidden_layer_size) + 'HL' + str(dense_units) + 'DU_' \
                    + str(batch_size) + 'BS_' + str(activation) + '_' \
@@ -76,12 +91,36 @@ def train_models_and_save_CNN(n_members,data,test_size,train_group_cnn, epochs, 
         x_train, x_test, y_train, y_test = split_data(data[i], test_size)
         x_train_cnn = x_train.reshape(x_train.shape[0], 8, 1, 1)
         x_test_cnn = x_test.reshape(x_test.shape[0], 8, 1, 1)
-        network, history = train_model_sweep(build_cnn_sweep(optimizer, learning_rate, cnn_layer_size,cnn_input_nodes,dense_units), x_train_cnn,
+        network, history = train_model_sweep(build_cnn_sweep_maxpooling(optimizer, learning_rate, cnn_layer_size,cnn_input_nodes,dense_units), x_train_cnn,
                                              y_train, x_test_cnn, y_test, epochs, batch_size,patience,monitor)
         # save model
         filename = '../../trained_models/CNN/models_segments_overlap' \
                    + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
                    + str(cnn_layer_size) + 'HN_' + str(cnn_layer_size) + 'HN_'+ str(batch_size) + 'BS_' \
+                   + str(patience) + 'P_' + str(monitor) + 'M_' \
+                   + str(epochs) + 'epochs/model_' + str(i + 1) + '.h5'
+
+        network.save(filename)
+        print('>Saved %s' % filename)
+        print(history.history.keys())
+        wandb_config.finish()
+
+def train_models_and_save_1D_CNN(n_members,data,test_size,train_group_cnn, epochs, batch_size, learning_rate, optimizer, cnn_layer_size, cnn_input_nodes, patience,monitor,dense_units):
+    for i in range(n_members):
+        # fit model
+        name = "model-"+str(i+1)
+        wandb_config = wandb_init(name, train_group_cnn)
+        x_train, x_test, y_train, y_test = split_data(data[i], test_size)
+        x_train_cnn = x_train.reshape(x_train.shape[0], 8, 1)
+        x_test_cnn = x_test.reshape(x_test.shape[0], 8, 1)
+        n_timesteps = x_train_cnn.shape[1]
+
+        network, history = train_model_sweep(build_1Dcnn_sweep_maxpooling(optimizer, learning_rate, cnn_layer_size,cnn_input_nodes,dense_units,n_timesteps), x_train_cnn,
+                                             y_train, x_test_cnn, y_test, epochs, batch_size,patience,monitor)
+        # save model
+        filename = '../../trained_models/1D-CNN/models_segments_overlap' \
+                   + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
+                   + str(cnn_input_nodes) + 'IN_' + str(cnn_layer_size) + 'HN_'+ str(batch_size) + 'BS_' \
                    + str(patience) + 'P_' + str(monitor) + 'M_' \
                    + str(epochs) + 'epochs/model_' + str(i + 1) + '.h5'
 
@@ -126,7 +165,7 @@ def test_models(n_members, x_train, y_train, x_test, y_test, group, run_name, pa
 
     # plot with actual vs predicted
     fig = px.scatter(
-        data_table, x='actual_pos', y='prediction', size_max=7)
+        data_table, x='actual_pos', y='prediction', size_max=7,labels=dict(actual_pos="Actual Position", prediction="Prediction"))
     fig.update_traces(marker={'size': 7})
     x1 = max(list2)
     y1 = max(list1)
@@ -145,8 +184,11 @@ def test_models(n_members, x_train, y_train, x_test, y_test, group, run_name, pa
     print(df_actual_pos_sort)
     sort = df_actual_pos_sort.sort_values(by=['actual_pos'])
     print(df_actual_pos_sort)
-    error_plot = px.line(x=sort['actual_pos'], y=sort['error(%)'], markers=True)
-
+    error_plot = px.line(x=sort['actual_pos'], y=sort['error(%)'], markers=True,labels=dict(x="Actual Position", y="Error (%)"))
+    y_max = max(error_list)
+    if (y_max < 1):
+        y_max = 1
+    error_plot.update_yaxes(range=[0, y_max])
 
     #  second plot with actual and predicted
     for i in range(0, len(y_pred)):

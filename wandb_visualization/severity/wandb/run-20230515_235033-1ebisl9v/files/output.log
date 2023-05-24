@@ -1,0 +1,132 @@
+(7716, 8)
+(3307, 8)
+Epoch 1/150
+  3/965 [..............................] - ETA: 48s - loss: 0.1790 - mae: 0.3474 - mse: 0.1790 - root_mean_squared_error: 0.4231
+WARNING:tensorflow:Layer lstm_1 will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+WARNING:tensorflow:Layer lstm_1 will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+964/965 [============================>.] - ETA: 0s - loss: 0.0094 - mae: 0.0797 - mse: 0.0094 - root_mean_squared_error: 0.0969
+965/965 [==============================] - 62s 63ms/step - loss: 0.0094 - mae: 0.0797 - mse: 0.0094 - root_mean_squared_error: 0.0969 - val_loss: 0.0082 - val_mae: 0.0759 - val_mse: 0.0082 - val_root_mean_squared_error: 0.0906 - lr: 0.0690
+Epoch 2/150
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+965/965 [==============================] - ETA: 0s - loss: 0.0072 - mae: 0.0703 - mse: 0.0072 - root_mean_squared_error: 0.0847
+965/965 [==============================] - 54s 56ms/step - loss: 0.0072 - mae: 0.0703 - mse: 0.0072 - root_mean_squared_error: 0.0847 - val_loss: 0.0046 - val_mae: 0.0565 - val_mse: 0.0046 - val_root_mean_squared_error: 0.0675 - lr: 0.0690
+Epoch 3/150
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+965/965 [==============================] - ETA: 0s - loss: 0.0032 - mae: 0.0434 - mse: 0.0032 - root_mean_squared_error: 0.0570
+965/965 [==============================] - 51s 53ms/step - loss: 0.0032 - mae: 0.0434 - mse: 0.0032 - root_mean_squared_error: 0.0570 - val_loss: 0.0022 - val_mae: 0.0330 - val_mse: 0.0022 - val_root_mean_squared_error: 0.0467 - lr: 0.0690
+Epoch 4/150
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+803/965 [=======================>......] - ETA: 6s - loss: 0.0020 - mae: 0.0324 - mse: 0.0020 - root_mean_squared_error: 0.0452
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\severity\wrapper_test_and_train.py", line 276, in <module>
+    train_RNN()
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\severity\wrapper_test_and_train.py", line 141, in train_RNN
+    train_models_and_save_RNN(n_members,data,test_size,train_group_RNN, epochs, batch_size, learning_rate,optimizer,hidden_layer_size,patience,monitor,activation,dense_units)
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\test_and_train.py", line 54, in train_models_and_save_RNN
+    network, history = train_model_sweep(
+  File "C:\MyDocuments\Disertatie\segments\model_training\overlap\model_generating_RNN.py", line 120, in train_model_sweep
+    history = network.fit(x_train, y_train, epochs=epochs, batch_size = batch_size, validation_data=(x_test, y_test),
+  File "C:\Users\cosmi\AppData\Roaming\Python\Python39\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Users\cosmi\AppData\Roaming\Python\Python39\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Users\cosmi\AppData\Roaming\Python\Python39\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\engine\training.py", line 1564, in fit
+    tmp_logs = self.train_function(iterator)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\util\traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\eager\def_function.py", line 915, in __call__
+    result = self._call(*args, **kwds)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\eager\def_function.py", line 947, in _call
+    return self._stateless_fn(*args, **kwds)  # pylint: disable=not-callable
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\eager\function.py", line 2496, in __call__
+    return graph_function._call_flat(
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\eager\function.py", line 1862, in _call_flat
+    return self._build_call_outputs(self._inference_function.call(
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\eager\function.py", line 499, in call
+    outputs = execute.execute(
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\eager\execute.py", line 54, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+
+835/965 [========================>.....] - ETA: 5s - loss: 0.0021 - mae: 0.0325 - mse: 0.0021 - root_mean_squared_error: 0.0453

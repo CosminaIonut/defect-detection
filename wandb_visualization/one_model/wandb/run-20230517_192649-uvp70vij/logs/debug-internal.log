@@ -1,0 +1,957 @@
+2023-05-17 19:26:49,193 INFO    StreamThr :13832 [internal.py:wandb_internal():86] W&B internal server running at pid: 13832, started at: 2023-05-17 19:26:49.191901
+2023-05-17 19:26:49,195 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status
+2023-05-17 19:26:49,210 INFO    WriterThread:13832 [datastore.py:open_for_write():85] open: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\run-uvp70vij.wandb
+2023-05-17 19:26:49,212 DEBUG   SenderThread:13832 [sender.py:send():375] send: header
+2023-05-17 19:26:49,280 DEBUG   SenderThread:13832 [sender.py:send():375] send: run
+2023-05-17 19:26:50,376 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: check_version
+2023-05-17 19:26:50,380 INFO    SenderThread:13832 [dir_watcher.py:__init__():219] watching files in: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files
+2023-05-17 19:26:50,380 INFO    SenderThread:13832 [sender.py:_start_run_threads():1124] run started: uvp70vij with start time 1684340809.201406
+2023-05-17 19:26:50,380 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:26:50,382 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:26:50,383 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: check_version
+2023-05-17 19:26:51,204 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: run_start
+2023-05-17 19:26:51,233 DEBUG   HandlerThread:13832 [system_info.py:__init__():31] System info init
+2023-05-17 19:26:51,234 DEBUG   HandlerThread:13832 [system_info.py:__init__():46] System info init done
+2023-05-17 19:26:51,234 INFO    HandlerThread:13832 [system_monitor.py:start():181] Starting system monitor
+2023-05-17 19:26:51,234 INFO    SystemMonitor:13832 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-17 19:26:51,234 INFO    HandlerThread:13832 [system_monitor.py:probe():201] Collecting system info
+2023-05-17 19:26:51,239 INFO    SystemMonitor:13832 [interfaces.py:start():190] Started cpu monitoring
+2023-05-17 19:26:51,240 INFO    SystemMonitor:13832 [interfaces.py:start():190] Started disk monitoring
+2023-05-17 19:26:51,241 INFO    SystemMonitor:13832 [interfaces.py:start():190] Started gpu monitoring
+2023-05-17 19:26:51,249 INFO    SystemMonitor:13832 [interfaces.py:start():190] Started memory monitoring
+2023-05-17 19:26:51,258 INFO    SystemMonitor:13832 [interfaces.py:start():190] Started network monitoring
+2023-05-17 19:26:51,271 DEBUG   HandlerThread:13832 [system_info.py:probe():195] Probing system
+2023-05-17 19:26:51,273 DEBUG   HandlerThread:13832 [system_info.py:_probe_git():180] Probing git
+2023-05-17 19:26:51,276 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:26:51,355 DEBUG   HandlerThread:13832 [system_info.py:_probe_git():188] Probing git done
+2023-05-17 19:26:51,356 DEBUG   HandlerThread:13832 [system_info.py:probe():240] Probing system done
+2023-05-17 19:26:51,356 DEBUG   HandlerThread:13832 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.9.12', 'heartbeatAt': '2023-05-17T16:26:51.271203', 'startedAt': '2023-05-17T16:26:49.162277', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\MyDocuments\\Disertatie\\segments\\wandb_visualization\\one_model\\train_model.py', 'codePath': 'wandb_visualization\\one_model\\train_model.py', 'git': {'remote': 'https://github.com/CosminaIonut/defect-detection.git', 'commit': '0c8c305aa9c0ec28286a96204375105134282e7f'}, 'email': '62280428+CosminaIonut@users.noreply.github.com', 'root': 'C:/MyDocuments/Disertatie/segments', 'host': 'LAPTOP-FDVI9MUH', 'username': 'cosmi', 'executable': 'C:\\Users\\cosmi\\anaconda3\\envs\\tf2.12\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3302.0, 'min': 0.0, 'max': 3302.0}, 'cpu_freq_per_core': [{'current': 3302.0, 'min': 0.0, 'max': 3302.0}], 'disk': {'total': 952.3772621154785, 'used': 463.31163024902344}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 15.698577880859375}}
+2023-05-17 19:26:51,356 INFO    HandlerThread:13832 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-17 19:26:51,356 INFO    HandlerThread:13832 [system_monitor.py:probe():214] Publishing system info
+2023-05-17 19:26:51,356 DEBUG   HandlerThread:13832 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-17 19:26:51,357 DEBUG   HandlerThread:13832 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-17 19:26:51,357 DEBUG   HandlerThread:13832 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-17 19:26:51,360 ERROR   HandlerThread:13832 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "C:\Users\cosmi\AppData\Roaming\Python\Python39\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2023-05-17 19:26:51,361 DEBUG   HandlerThread:13832 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-17 19:26:51,362 INFO    HandlerThread:13832 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-17 19:26:51,372 DEBUG   SenderThread:13832 [sender.py:send():375] send: files
+2023-05-17 19:26:51,373 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-17 19:26:51,378 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:26:51,379 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:26:51,385 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:26:51,385 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\requirements.txt
+2023-05-17 19:26:51,386 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-metadata.json
+2023-05-17 19:26:51,386 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\conda-environment.yaml
+2023-05-17 19:26:51,548 DEBUG   SenderThread:13832 [sender.py:send():375] send: telemetry
+2023-05-17 19:26:53,303 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:26:53,429 INFO    wandb-upload_0:13832 [upload_job.py:push():137] Uploaded file C:\Users\cosmi\AppData\Local\Temp\tmp899ormn6wandb\ggrvb5vu-wandb-metadata.json
+2023-05-17 19:26:54,581 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:26:55,330 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:26:55,726 DEBUG   SenderThread:13832 [sender.py:send():375] send: telemetry
+2023-05-17 19:26:55,726 DEBUG   SenderThread:13832 [sender.py:send():375] send: telemetry
+2023-05-17 19:26:55,727 DEBUG   SenderThread:13832 [sender.py:send():375] send: files
+2023-05-17 19:26:55,727 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file model-best.h5 with policy live
+2023-05-17 19:26:55,728 DEBUG   SenderThread:13832 [sender.py:send():375] send: telemetry
+2023-05-17 19:26:55,728 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: get_summary
+2023-05-17 19:26:56,453 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:26:57,360 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:26:58,479 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:26:59,382 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:00,002 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:27:01,955 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:03,985 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:05,069 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:27:05,812 DEBUG   SenderThread:13832 [sender.py:send():375] send: files
+2023-05-17 19:27:05,812 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file media\graph\graph_summary_fdb62e808b5ad715cc8a.graph.json with policy now
+2023-05-17 19:27:05,814 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:05,816 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:06,048 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:27:06,049 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\media\graph\graph_summary_fdb62e808b5ad715cc8a.graph.json
+2023-05-17 19:27:06,049 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\media\graph
+2023-05-17 19:27:06,050 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:06,050 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\media
+2023-05-17 19:27:06,386 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:27:06,387 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:27:06,463 INFO    wandb-upload_0:13832 [upload_job.py:push():137] Uploaded file C:\Users\cosmi\AppData\Local\Temp\tmp899ormn6wandb\fdenax37-media/graph/graph_summary_fdb62e808b5ad715cc8a.graph.json
+2023-05-17 19:27:07,055 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:08,098 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:08,106 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:09,575 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:09,576 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:09,579 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:27:09,580 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:09,581 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:09,582 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:09,583 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:09,583 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:09,585 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:10,130 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:10,131 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:10,131 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:27:10,132 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:27:10,589 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:27:10,730 INFO    wandb-upload_0:13832 [upload_job.py:push():137] Uploaded file C:\Users\cosmi\AppData\Local\Temp\tmp899ormn6wandb\max7qufp-model-best.h5
+2023-05-17 19:27:12,162 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.index
+2023-05-17 19:27:12,163 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\saved_model.pb
+2023-05-17 19:27:12,164 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.data-00000-of-00001
+2023-05-17 19:27:12,164 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\keras_metadata.pb
+2023-05-17 19:27:12,166 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:27:12,167 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:27:12,167 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\assets
+2023-05-17 19:27:12,170 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:13,166 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:27:13,167 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:27:14,195 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:14,200 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:16,022 INFO    wandb-upload_2:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpudp9bx2c
+2023-05-17 19:27:16,085 INFO    wandb-upload_1:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpgdk0fomx
+2023-05-17 19:27:16,136 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:16,137 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:16,191 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpsw0r_6u0
+2023-05-17 19:27:16,192 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpkn6e23oi
+2023-05-17 19:27:16,219 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:27:16,229 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:17,262 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY1NTI4', 'digest': '644cf6b2aa1030c35e8892167bfa05c8', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MjEyMTAw', 'versionIndex': 2611}}, 'version': 'latest'}
+2023-05-17 19:27:17,265 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:27:17,266 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:27:17,267 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:17,272 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:17,273 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:17,274 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:17,275 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:17,277 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:18,272 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:18,273 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:27:18,274 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.index
+2023-05-17 19:27:18,277 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\saved_model.pb
+2023-05-17 19:27:18,280 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.data-00000-of-00001
+2023-05-17 19:27:18,282 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\keras_metadata.pb
+2023-05-17 19:27:18,282 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:27:18,282 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:27:18,282 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\assets
+2023-05-17 19:27:18,285 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:19,275 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:27:19,276 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:27:20,384 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:20,521 INFO    wandb-upload_2:13832 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp6xumf86q
+2023-05-17 19:27:21,423 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:27:22,267 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpx7jqya3_
+2023-05-17 19:27:22,282 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpdgvmgjfv
+2023-05-17 19:27:22,294 INFO    wandb-upload_1:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp3_raa1ua
+2023-05-17 19:27:22,700 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:23,536 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY1NjM5', 'digest': '0a7129b9f47ea9bb909ac51500537d6c', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzY1NTI4', 'versionIndex': 2612}}, 'version': 'latest'}
+2023-05-17 19:27:23,544 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:27:23,743 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:23,746 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:23,849 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:27:24,028 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:27:24,030 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:24,037 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:24,038 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:24,040 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:24,041 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:24,042 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:24,714 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:24,714 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:27:24,715 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:27:24,715 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\config.yaml
+2023-05-17 19:27:24,722 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:25,729 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.index
+2023-05-17 19:27:25,730 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\saved_model.pb
+2023-05-17 19:27:25,731 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.data-00000-of-00001
+2023-05-17 19:27:25,731 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\keras_metadata.pb
+2023-05-17 19:27:25,732 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:27:25,732 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:27:25,732 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\assets
+2023-05-17 19:27:26,644 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:27:26,645 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:27:26,756 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:26,767 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:27,853 INFO    wandb-upload_2:13832 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpjobdb0m9
+2023-05-17 19:27:28,795 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:28,805 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:29,354 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp8621kshx
+2023-05-17 19:27:29,363 INFO    wandb-upload_1:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp8u_rysyr
+2023-05-17 19:27:29,408 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp42k4f0uf
+2023-05-17 19:27:29,623 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:29,623 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:29,802 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:27:30,365 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY1NzY3', 'digest': '81d324448a6577161991ae04da65d426', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzY1NjM5', 'versionIndex': 2613}}, 'version': 'latest'}
+2023-05-17 19:27:30,368 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:27:30,368 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:27:30,369 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:30,371 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:30,372 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:30,374 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:30,375 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:30,381 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:30,849 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:27:30,861 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:31,859 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.index
+2023-05-17 19:27:31,860 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\saved_model.pb
+2023-05-17 19:27:31,860 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.data-00000-of-00001
+2023-05-17 19:27:31,861 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\keras_metadata.pb
+2023-05-17 19:27:31,861 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:27:31,862 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:27:31,862 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\assets
+2023-05-17 19:27:32,289 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:27:32,290 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:27:32,876 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:32,886 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:33,284 INFO    wandb-upload_2:13832 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpfkjty_66
+2023-05-17 19:27:34,816 INFO    wandb-upload_1:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpi7sz9q01
+2023-05-17 19:27:34,934 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp5bdky5jv
+2023-05-17 19:27:34,935 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:34,947 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmprk83hsdb
+2023-05-17 19:27:35,654 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:35,655 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:35,918 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY1ODYy', 'digest': '670b870c87323574577659207f9f2f58', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzY1NzY3', 'versionIndex': 2614}}, 'version': 'latest'}
+2023-05-17 19:27:35,920 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:27:35,921 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:27:35,922 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:35,926 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:35,926 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:35,928 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:35,928 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:35,930 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:35,933 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:27:35,933 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:27:36,438 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:27:36,439 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:27:36,950 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:36,962 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:37,955 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.index
+2023-05-17 19:27:37,956 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\saved_model.pb
+2023-05-17 19:27:37,956 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.data-00000-of-00001
+2023-05-17 19:27:37,957 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\keras_metadata.pb
+2023-05-17 19:27:37,957 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:27:37,957 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:27:37,958 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\assets
+2023-05-17 19:27:38,614 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:27:38,614 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:27:38,972 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:38,982 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:39,583 INFO    wandb-upload_2:13832 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmprycpde2j
+2023-05-17 19:27:41,017 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpqer7uhsf
+2023-05-17 19:27:41,019 INFO    wandb-upload_1:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp_wbm9i6y
+2023-05-17 19:27:41,024 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:41,052 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp5zf2a6hd
+2023-05-17 19:27:41,380 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:41,381 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:41,965 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY1OTU3', 'digest': 'eedfafad9c1a62953e83deff91e72155', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzY1ODYy', 'versionIndex': 2615}}, 'version': 'latest'}
+2023-05-17 19:27:41,969 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:27:41,970 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:27:41,971 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:41,976 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:41,977 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:41,979 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:41,980 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:41,982 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:42,023 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:27:42,024 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:27:43,049 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:43,050 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables_temp\part-00000-of-00001.data-00000-of-00001
+2023-05-17 19:27:43,051 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables_temp\part-00000-of-00001.index
+2023-05-17 19:27:43,051 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables_temp
+2023-05-17 19:27:43,052 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:27:43,052 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:27:43,058 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:43,961 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:27:43,961 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:27:45,074 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:45,086 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:45,147 INFO    wandb-upload_2:13832 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpxbt3ztf3
+2023-05-17 19:27:46,547 INFO    wandb-upload_1:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp0iiejtnp
+2023-05-17 19:27:46,629 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpmxvb_k96
+2023-05-17 19:27:46,649 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp0bgqangn
+2023-05-17 19:27:46,889 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:46,890 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:47,094 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:27:47,105 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:47,707 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY2MDQ4', 'digest': '74c2b605c9e729fb7811d903f08cabda', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzY1OTU3', 'versionIndex': 2616}}, 'version': 'latest'}
+2023-05-17 19:27:47,709 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:27:47,710 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:27:47,710 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:47,715 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:47,716 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:47,718 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:47,719 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:47,721 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:48,159 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:27:49,137 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:49,171 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:49,171 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.index
+2023-05-17 19:27:49,172 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\saved_model.pb
+2023-05-17 19:27:49,173 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.data-00000-of-00001
+2023-05-17 19:27:49,174 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\keras_metadata.pb
+2023-05-17 19:27:49,174 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:27:49,174 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:27:49,175 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\assets
+2023-05-17 19:27:49,426 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:27:49,427 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:27:50,492 INFO    wandb-upload_2:13832 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp9ax_qox7
+2023-05-17 19:27:51,176 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:51,195 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:51,262 DEBUG   SystemMonitor:13832 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-17 19:27:51,444 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:27:51,884 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp6h4hh9qt
+2023-05-17 19:27:51,897 INFO    wandb-upload_1:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpgxyah2rs
+2023-05-17 19:27:51,902 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpd2ev5uz6
+2023-05-17 19:27:51,985 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:51,986 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:52,210 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:27:53,062 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY2MTQy', 'digest': '8cf1a7d298ee1aab5c377d4226773373', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzY2MDQ4', 'versionIndex': 2617}}, 'version': 'latest'}
+2023-05-17 19:27:53,063 DEBUG   SenderThread:13832 [sender.py:send():375] send: stats
+2023-05-17 19:27:53,064 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:27:53,066 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:27:53,225 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.index
+2023-05-17 19:27:53,225 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\saved_model.pb
+2023-05-17 19:27:53,225 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.data-00000-of-00001
+2023-05-17 19:27:53,226 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:27:53,226 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:27:53,226 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\assets
+2023-05-17 19:27:53,230 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:27:53,230 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:53,231 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:53,231 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:53,231 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:53,232 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:53,233 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:53,233 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:54,235 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:27:54,235 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\keras_metadata.pb
+2023-05-17 19:27:54,235 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:27:54,380 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:27:54,381 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:27:55,249 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:55,255 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:55,427 INFO    wandb-upload_2:13832 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmptm8imikv
+2023-05-17 19:27:56,842 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpy5ewa52e
+2023-05-17 19:27:56,842 INFO    wandb-upload_1:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpjnebz3ar
+2023-05-17 19:27:56,923 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp6ki0iwgr
+2023-05-17 19:27:57,047 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:57,048 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:27:57,265 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:57,274 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:27:57,954 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY2MjE1', 'digest': '6784116e11133888c0bd56745b653be4', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzY2MTQy', 'versionIndex': 2618}}, 'version': 'latest'}
+2023-05-17 19:27:57,955 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:27:57,956 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:57,960 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:57,962 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:57,965 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:57,968 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:27:57,970 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:27:58,277 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:27:58,837 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:27:59,283 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:27:59,294 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:27:59,294 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.index
+2023-05-17 19:27:59,295 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\saved_model.pb
+2023-05-17 19:27:59,295 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.data-00000-of-00001
+2023-05-17 19:27:59,295 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\keras_metadata.pb
+2023-05-17 19:27:59,295 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:27:59,295 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:27:59,296 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\assets
+2023-05-17 19:27:59,677 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:27:59,679 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:28:00,799 INFO    wandb-upload_2:13832 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpn5morpdp
+2023-05-17 19:28:01,315 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:01,320 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:02,239 INFO    wandb-upload_1:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpgv4m4z0k
+2023-05-17 19:28:02,312 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpohd21ije
+2023-05-17 19:28:02,328 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp4xnjqdi6
+2023-05-17 19:28:02,651 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:02,652 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:03,303 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY2MzEw', 'digest': '0ec158624c8fecc53716ec41b8d76245', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzY2MjE1', 'versionIndex': 2619}}, 'version': 'latest'}
+2023-05-17 19:28:03,303 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:03,304 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:03,305 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:03,305 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:03,306 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:03,307 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:03,309 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:03,341 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:03,349 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:03,350 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:28:04,241 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:28:04,354 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.index
+2023-05-17 19:28:04,355 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\saved_model.pb
+2023-05-17 19:28:04,355 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.data-00000-of-00001
+2023-05-17 19:28:04,356 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\keras_metadata.pb
+2023-05-17 19:28:04,356 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:28:04,357 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:28:04,357 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\assets
+2023-05-17 19:28:05,182 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:28:05,183 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:28:05,373 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:05,377 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:06,425 INFO    wandb-upload_2:13832 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpoz5n9iyy
+2023-05-17 19:28:06,447 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:28:07,397 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:07,828 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpoyws32zd
+2023-05-17 19:28:07,869 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpue6d4wja
+2023-05-17 19:28:07,936 INFO    wandb-upload_1:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp03gave3g
+2023-05-17 19:28:07,981 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:07,983 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:08,952 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY2NDA1', 'digest': 'c0da1520dc98bbfab89be26f4295a6ee', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzY2MzEw', 'versionIndex': 2620}}, 'version': 'latest'}
+2023-05-17 19:28:08,954 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:28:09,128 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:09,130 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:09,136 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:09,250 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:28:09,415 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:09,421 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:10,887 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:10,888 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:10,891 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:10,892 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:10,893 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:10,894 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:10,894 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:10,895 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:10,896 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:11,436 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:11,437 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:11,437 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:28:11,447 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:13,459 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:13,460 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.index
+2023-05-17 19:28:13,461 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\saved_model.pb
+2023-05-17 19:28:13,461 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.data-00000-of-00001
+2023-05-17 19:28:13,462 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\keras_metadata.pb
+2023-05-17 19:28:13,463 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:28:13,463 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:28:13,463 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\assets
+2023-05-17 19:28:13,465 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:14,188 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:28:14,190 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:28:14,475 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:15,474 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:16,259 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:16,260 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:16,371 INFO    wandb-upload_1:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp8nm8r71a
+2023-05-17 19:28:16,383 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpxwnlf8v3
+2023-05-17 19:28:16,399 INFO    wandb-upload_2:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpzi2lx235
+2023-05-17 19:28:16,440 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpz97xw_rg
+2023-05-17 19:28:16,491 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:28:17,498 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:17,508 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.index
+2023-05-17 19:28:17,508 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\saved_model.pb
+2023-05-17 19:28:17,509 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.data-00000-of-00001
+2023-05-17 19:28:17,510 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:28:17,510 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:28:17,510 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\assets
+2023-05-17 19:28:18,513 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\keras_metadata.pb
+2023-05-17 19:28:18,514 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:28:18,552 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:28:19,537 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:19,576 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY2NTQ1', 'digest': '8524477f1938225ae652ee9c60238967', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzY2NDA1', 'versionIndex': 2621}}, 'version': 'latest'}
+2023-05-17 19:28:19,577 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:19,577 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:28:19,579 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:19,583 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:19,583 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:19,584 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:19,585 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:19,586 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:19,586 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:28:20,542 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:20,542 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:20,815 INFO    wandb-upload_1:13832 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpsfriclj5
+2023-05-17 19:28:21,194 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:21,195 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:21,460 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:28:21,571 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:21,580 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:22,141 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp2ps8k8m7
+2023-05-17 19:28:22,202 INFO    wandb-upload_2:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpm6qa7_uw
+2023-05-17 19:28:22,230 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpcrlv5r9p
+2023-05-17 19:28:23,327 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY2NjEw', 'digest': '87feaf12de4300f7f75f3eb575ff4fda', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzY2NTQ1', 'versionIndex': 2622}}, 'version': 'latest'}
+2023-05-17 19:28:23,328 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:23,328 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:23,329 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:23,330 DEBUG   SenderThread:13832 [sender.py:send():375] send: stats
+2023-05-17 19:28:23,330 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:28:23,471 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:23,471 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:23,510 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:23,511 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:23,512 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:23,512 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:23,513 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:23,513 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:23,513 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:23,695 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:23,695 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5
+2023-05-17 19:28:23,701 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:24,706 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:24,707 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.index
+2023-05-17 19:28:24,707 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\saved_model.pb
+2023-05-17 19:28:24,708 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables\variables.data-00000-of-00001
+2023-05-17 19:28:24,708 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\keras_metadata.pb
+2023-05-17 19:28:24,708 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best
+2023-05-17 19:28:24,709 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\variables
+2023-05-17 19:28:24,709 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_created():278] file/dir created: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best\assets
+2023-05-17 19:28:25,198 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-17 19:28:25,199 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: log_artifact
+2023-05-17 19:28:25,722 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:26,268 INFO    wandb-upload_1:13832 [upload_job.py:push():92] Skipped uploading C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpi33v1ks1
+2023-05-17 19:28:26,729 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:27,517 INFO    wandb-upload_3:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp6t6yuku1
+2023-05-17 19:28:27,539 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:27,540 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:27,569 INFO    wandb-upload_0:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmpqb4ymq6l
+2023-05-17 19:28:27,570 INFO    wandb-upload_2:13832 [upload_job.py:push():95] Uploaded file C:\Users\cosmi\AppData\Local\wandb\wandb\artifacts\staging\tmp30mx2lls
+2023-05-17 19:28:27,736 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:28,529 INFO    SenderThread:13832 [sender.py:send_request_log_artifact():1438] logged artifact model-model-1 - {'id': 'QXJ0aWZhY3Q6NDU4MzY2NzMx', 'digest': 'e366ee0c3fe98a6abc46f9d81b58889f', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYwODg2MTk2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzY2NjEw', 'versionIndex': 2623}}, 'version': 'latest'}
+2023-05-17 19:28:28,531 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:28,531 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:28:28,532 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:28,534 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:28,750 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:29,751 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:30,440 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:30,440 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:30,443 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:30,443 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:30,448 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:30,769 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:30,770 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:31,772 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:32,672 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:32,673 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:32,675 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:32,675 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:32,677 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:32,792 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:32,793 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:33,553 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:28:33,782 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:34,785 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:34,786 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:34,787 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:34,787 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:34,790 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:34,820 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:34,820 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:35,806 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:36,457 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:28:36,459 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:28:36,848 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:37,757 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:37,757 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:37,759 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:37,760 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:37,762 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:37,825 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:37,862 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:38,560 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:28:38,875 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:39,861 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:40,508 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:40,508 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:40,510 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:40,511 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:40,514 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:40,923 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:40,924 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:41,899 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:42,954 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:43,399 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:43,399 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:43,401 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:43,402 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:43,402 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:43,585 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:28:43,913 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:43,967 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:44,976 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:45,940 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:46,032 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:46,032 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:46,035 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:46,035 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:46,037 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:47,000 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:47,000 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:47,986 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:48,814 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:48,815 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:48,817 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:48,818 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:48,819 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:28:48,820 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:49,024 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:49,024 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:50,030 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:51,063 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:51,277 DEBUG   SenderThread:13832 [sender.py:send():375] send: stats
+2023-05-17 19:28:51,378 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:51,378 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:51,381 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:51,381 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:51,383 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:51,461 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:28:51,461 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:28:52,063 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:52,065 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:53,074 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:54,053 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:54,054 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:54,055 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:54,056 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:54,057 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:28:54,058 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:54,173 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:54,183 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:55,179 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:56,197 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:56,551 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:56,551 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:28:56,552 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:28:56,552 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:28:56,553 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:28:57,195 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:28:57,195 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:28:58,246 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:28:59,100 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:28:59,295 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:00,343 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:00,822 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:00,822 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:00,824 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:00,826 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:00,827 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:01,358 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:01,359 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:02,389 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:03,405 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:04,225 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:04,225 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:04,226 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:04,228 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:04,228 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:29:04,232 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:04,429 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:04,444 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:05,448 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:06,483 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:06,485 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:29:06,486 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:29:07,582 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:08,601 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:09,654 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:09,744 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:29:10,294 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:10,294 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:10,297 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:10,297 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:10,299 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:10,629 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:10,786 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:11,985 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:12,681 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:13,950 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:14,710 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:14,869 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:14,869 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:29:14,870 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:14,872 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:14,873 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:14,875 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:14,982 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:15,996 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:16,729 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:18,139 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:18,230 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:18,231 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:18,233 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:18,233 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:18,235 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:18,751 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:19,158 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:19,889 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:29:20,185 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:20,782 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:21,352 DEBUG   SenderThread:13832 [sender.py:send():375] send: stats
+2023-05-17 19:29:21,518 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:29:21,519 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:29:22,275 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:22,401 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:22,401 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:22,404 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:22,405 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:22,407 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:22,800 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:23,297 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:24,300 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:24,934 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:24,934 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:24,936 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:24,938 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:24,939 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:29:24,942 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:24,944 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:25,318 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:26,331 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:26,969 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:27,836 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:27,836 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:27,838 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:27,839 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:27,841 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:28,346 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:28,346 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:28,983 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:30,029 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:30,029 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:30,032 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:30,033 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:30,033 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:29:30,035 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:30,363 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:30,364 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:31,005 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:32,390 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:33,019 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:33,513 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:33,513 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:33,514 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:33,515 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:33,517 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:34,428 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:34,429 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:35,051 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:35,063 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:29:36,380 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:36,381 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:36,385 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:36,386 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:36,388 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:36,445 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:36,446 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:36,510 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:29:36,510 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:29:37,079 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:38,460 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:39,106 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:39,548 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:39,549 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:39,549 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:39,550 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:39,550 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:40,097 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:29:40,483 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:40,485 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:41,130 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:42,535 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:42,968 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:42,969 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:42,970 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:42,971 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:42,976 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:43,149 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:43,555 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:44,560 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:45,163 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:45,589 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:45,590 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:29:45,590 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:45,593 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:45,594 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:45,596 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:46,590 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:46,592 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:47,189 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:48,374 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:48,374 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:48,376 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:48,377 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:48,379 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:48,613 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:48,614 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:49,198 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:50,632 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:50,701 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:50,702 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:50,703 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:50,704 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:50,705 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:29:50,706 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:51,224 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:51,370 DEBUG   SenderThread:13832 [sender.py:send():375] send: stats
+2023-05-17 19:29:51,502 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:29:51,503 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:29:51,640 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:52,649 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:53,245 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:53,802 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:53,802 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:53,805 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:53,806 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:53,809 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:54,665 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:54,665 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:55,421 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:56,323 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:56,323 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:56,325 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:56,326 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:56,328 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:29:56,330 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:56,692 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:56,693 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:29:57,450 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:58,710 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:29:59,465 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:29:59,659 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:59,660 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:29:59,663 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:29:59,663 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:29:59,665 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:29:59,720 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:30:00,735 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:30:01,497 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:30:01,949 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:30:01,950 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:30:01,952 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:30:01,953 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:30:01,954 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:30:01,955 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:30:02,756 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:30:02,756 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:30:03,513 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:30:04,766 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:30:04,926 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:30:04,927 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:30:04,929 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:30:04,930 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:30:04,931 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:30:05,533 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:30:05,781 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:30:06,499 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-17 19:30:06,500 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: stop_status
+2023-05-17 19:30:06,789 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:30:07,005 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:30:07,562 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:30:07,750 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:30:07,750 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:30:07,753 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:30:07,754 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:30:07,757 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:30:07,800 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:30:08,821 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:30:09,580 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:30:10,444 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:30:10,445 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-17 19:30:10,447 DEBUG   SenderThread:13832 [sender.py:send():375] send: history
+2023-05-17 19:30:10,448 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: summary_record
+2023-05-17 19:30:10,450 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:30:10,841 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:30:10,842 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:30:11,607 ERROR   gpu       :13832 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-17 19:30:11,860 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:30:12,056 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:30:12,331 DEBUG   SenderThread:13832 [sender.py:send():375] send: exit
+2023-05-17 19:30:12,331 INFO    SenderThread:13832 [sender.py:send_exit():598] handling exit code: 255
+2023-05-17 19:30:12,332 INFO    SenderThread:13832 [sender.py:send_exit():600] handling runtime: 201
+2023-05-17 19:30:12,334 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:30:12,335 INFO    SenderThread:13832 [sender.py:send_exit():606] send defer
+2023-05-17 19:30:12,335 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: defer
+2023-05-17 19:30:12,335 INFO    HandlerThread:13832 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-17 19:30:12,335 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: defer
+2023-05-17 19:30:12,335 INFO    SenderThread:13832 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-17 19:30:12,336 INFO    SenderThread:13832 [sender.py:transition_state():626] send defer: 1
+2023-05-17 19:30:12,336 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: defer
+2023-05-17 19:30:12,336 INFO    HandlerThread:13832 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-17 19:30:12,336 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: defer
+2023-05-17 19:30:12,336 INFO    SenderThread:13832 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-17 19:30:12,336 INFO    SenderThread:13832 [sender.py:transition_state():626] send defer: 2
+2023-05-17 19:30:12,336 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: defer
+2023-05-17 19:30:12,336 INFO    HandlerThread:13832 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-17 19:30:12,337 INFO    HandlerThread:13832 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-17 19:30:12,337 DEBUG   SystemMonitor:13832 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-17 19:30:12,338 DEBUG   SystemMonitor:13832 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-17 19:30:12,338 INFO    HandlerThread:13832 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-17 19:30:12,374 INFO    HandlerThread:13832 [interfaces.py:finish():202] Joined disk monitor
+2023-05-17 19:30:12,427 INFO    HandlerThread:13832 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-17 19:30:12,427 INFO    HandlerThread:13832 [interfaces.py:finish():202] Joined memory monitor
+2023-05-17 19:30:12,428 INFO    HandlerThread:13832 [interfaces.py:finish():202] Joined network monitor
+2023-05-17 19:30:12,429 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: defer
+2023-05-17 19:30:12,430 INFO    SenderThread:13832 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-17 19:30:12,430 INFO    SenderThread:13832 [sender.py:transition_state():626] send defer: 3
+2023-05-17 19:30:12,430 DEBUG   SenderThread:13832 [sender.py:send():375] send: stats
+2023-05-17 19:30:12,441 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: defer
+2023-05-17 19:30:12,441 INFO    HandlerThread:13832 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-17 19:30:12,442 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: defer
+2023-05-17 19:30:12,442 INFO    SenderThread:13832 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-17 19:30:12,442 INFO    SenderThread:13832 [sender.py:transition_state():626] send defer: 4
+2023-05-17 19:30:12,442 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: defer
+2023-05-17 19:30:12,442 INFO    HandlerThread:13832 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-17 19:30:12,443 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: defer
+2023-05-17 19:30:12,443 INFO    SenderThread:13832 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-17 19:30:12,443 INFO    SenderThread:13832 [sender.py:transition_state():626] send defer: 5
+2023-05-17 19:30:12,443 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: defer
+2023-05-17 19:30:12,443 INFO    HandlerThread:13832 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-17 19:30:12,444 DEBUG   SenderThread:13832 [sender.py:send():375] send: summary
+2023-05-17 19:30:12,446 INFO    SenderThread:13832 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-17 19:30:12,446 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: defer
+2023-05-17 19:30:12,446 INFO    SenderThread:13832 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-17 19:30:12,446 INFO    SenderThread:13832 [sender.py:transition_state():626] send defer: 6
+2023-05-17 19:30:12,446 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: defer
+2023-05-17 19:30:12,446 INFO    HandlerThread:13832 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-17 19:30:12,447 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: defer
+2023-05-17 19:30:12,447 INFO    SenderThread:13832 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-17 19:30:12,447 INFO    SenderThread:13832 [sender.py:transition_state():626] send defer: 7
+2023-05-17 19:30:12,447 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: status_report
+2023-05-17 19:30:12,447 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: defer
+2023-05-17 19:30:12,447 INFO    HandlerThread:13832 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-17 19:30:12,448 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: defer
+2023-05-17 19:30:12,448 INFO    SenderThread:13832 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-17 19:30:12,863 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json
+2023-05-17 19:30:13,341 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-17 19:30:13,866 INFO    SenderThread:13832 [sender.py:transition_state():626] send defer: 8
+2023-05-17 19:30:13,866 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: poll_exit
+2023-05-17 19:30:13,867 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: defer
+2023-05-17 19:30:13,867 INFO    HandlerThread:13832 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-17 19:30:13,867 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: defer
+2023-05-17 19:30:13,867 INFO    SenderThread:13832 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-17 19:30:13,869 INFO    Thread-16 :13832 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log
+2023-05-17 19:30:13,904 INFO    SenderThread:13832 [sender.py:transition_state():626] send defer: 9
+2023-05-17 19:30:13,904 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: defer
+2023-05-17 19:30:13,905 INFO    HandlerThread:13832 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-17 19:30:13,905 DEBUG   SenderThread:13832 [sender.py:send():375] send: artifact
+2023-05-17 19:30:14,345 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-17 19:30:14,804 INFO    SenderThread:13832 [sender.py:send_artifact():1474] sent artifact job-https___github.com_CosminaIonut_defect-detection.git_wandb_visualization_one_model_train_model.py - {'id': 'QXJ0aWZhY3Q6NDU4MTc4NDA5', 'digest': '56d72e859b7c40b5d72dd90bf47669dd', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_CosminaIonut_defect-detection.git_wandb_visualization_one_model_train_model.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_CosminaIonut_defect-detection.git_wandb_visualization_one_model_train_model.py', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjcwMDM5NzM2', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU4MzU2NjY2', 'versionIndex': 1}}, 'version': 'v0'}
+2023-05-17 19:30:14,805 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: defer
+2023-05-17 19:30:14,805 INFO    SenderThread:13832 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-05-17 19:30:14,805 INFO    SenderThread:13832 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-17 19:30:14,876 INFO    SenderThread:13832 [dir_watcher.py:finish():395] scan: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files
+2023-05-17 19:30:14,877 INFO    SenderThread:13832 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\conda-environment.yaml conda-environment.yaml
+2023-05-17 19:30:14,877 INFO    SenderThread:13832 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\config.yaml config.yaml
+2023-05-17 19:30:14,877 INFO    SenderThread:13832 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\model-best.h5 model-best.h5
+2023-05-17 19:30:14,880 INFO    SenderThread:13832 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\output.log output.log
+2023-05-17 19:30:14,881 INFO    SenderThread:13832 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\requirements.txt requirements.txt
+2023-05-17 19:30:14,882 INFO    SenderThread:13832 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-metadata.json wandb-metadata.json
+2023-05-17 19:30:14,882 INFO    SenderThread:13832 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\wandb-summary.json wandb-summary.json
+2023-05-17 19:30:14,882 INFO    SenderThread:13832 [dir_watcher.py:finish():409] scan save: C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\media\graph\graph_summary_fdb62e808b5ad715cc8a.graph.json media\graph\graph_summary_fdb62e808b5ad715cc8a.graph.json
+2023-05-17 19:30:14,882 INFO    SenderThread:13832 [sender.py:transition_state():626] send defer: 10
+2023-05-17 19:30:14,883 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: poll_exit
+2023-05-17 19:30:14,884 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: defer
+2023-05-17 19:30:14,884 INFO    HandlerThread:13832 [handler.py:handle_request_defer():170] handle defer: 10
+2023-05-17 19:30:14,885 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: defer
+2023-05-17 19:30:14,885 INFO    SenderThread:13832 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-05-17 19:30:14,885 INFO    SenderThread:13832 [file_pusher.py:finish():168] shutting down file pusher
+2023-05-17 19:30:15,350 DEBUG   HandlerThread:13832 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-17 19:30:15,351 DEBUG   SenderThread:13832 [sender.py:send_request():402] send_request: poll_exit
+2023-05-17 19:30:15,405 INFO    wandb-upload_1:13832 [upload_job.py:push():137] Uploaded file C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\wandb\run-20230517_192649-uvp70vij\files\config.yaml

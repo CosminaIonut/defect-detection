@@ -1,0 +1,104 @@
+[[4.57940730e-05 4.04788824e-04 2.39682913e-04 ... 1.05105905e-05
+  3.44128656e-04 2.16670248e-04]
+ [6.29476665e-05 5.56415060e-04 3.29463598e-04 ... 1.44476589e-05
+  4.73032740e-04 2.97830824e-04]
+ [1.13144166e-04 1.00011837e-03 5.92188495e-04 ... 2.59686881e-05
+  8.50244301e-04 5.35330728e-04]
+ ...
+ [1.60486197e-03 1.94532278e-03 3.72726044e-03 ... 1.95121954e-02
+  2.38999045e-02 2.49474846e-02]
+ [1.60779573e-03 2.03479215e-03 4.26964843e-03 ... 2.40666717e-02
+  2.95696135e-02 3.08834590e-02]
+ [1.61194777e-03 2.16141463e-03 5.03726887e-03 ... 3.05124432e-02
+  3.75937300e-02 3.92844107e-02]]
+[[0.6]
+ [0.6]
+ [0.6]
+ ...
+ [0.9]
+ [0.9]
+ [0.9]]
+(8818, 8)
+(2205, 8)
+(8818, 8, 1)
+(8818, 1)
+(2205, 8, 1)
+(2205, 1)
+Epoch 1/400
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+wandb: WARNING The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1102/1103 [============================>.] - ETA: 0s - loss: 0.0077 - mae: 0.0674 - mse: 0.0077
+1103/1103 [==============================] - 50s 44ms/step - loss: 0.0077 - mae: 0.0674 - mse: 0.0077 - val_loss: 0.0029 - val_mae: 0.0402 - val_mse: 0.0029 - lr: 0.0690
+Epoch 2/400
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 768/1103 [===================>..........] - ETA: 13s - loss: 0.0026 - mae: 0.0373 - mse: 0.0026
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 366, in <module>
+    train_RNN()
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\wrapper_test_and_train.py", line 231, in train_RNN
+    train_models_and_save_RNN(n_members,data,test_size,train_group_RNN, epochs, batch_size, learning_rate,optimizer,hidden_layer_size,patience,monitor,activation,dense_units)
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\overlap\test_and_train.py", line 68, in train_models_and_save_RNN
+    network, history = train_model_sweep(
+  File "C:\MyDocuments\Disertatie\segments\model_training\overlap\model_generating_RNN.py", line 122, in train_model_sweep
+    history = network.fit(x_train, y_train, epochs=epochs, batch_size = batch_size, validation_data=(x_test, y_test),
+  File "C:\Users\cosmi\AppData\Roaming\Python\Python39\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Users\cosmi\AppData\Roaming\Python\Python39\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Users\cosmi\AppData\Roaming\Python\Python39\site-packages\wandb\integration\keras\keras.py", line 174, in new_v2
+    return old_v2(*args, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\keras\engine\training.py", line 1564, in fit
+    tmp_logs = self.train_function(iterator)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\util\traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\eager\def_function.py", line 915, in __call__
+    result = self._call(*args, **kwds)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\eager\def_function.py", line 947, in _call
+    return self._stateless_fn(*args, **kwds)  # pylint: disable=not-callable
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\eager\function.py", line 2496, in __call__
+    return graph_function._call_flat(
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\eager\function.py", line 1862, in _call_flat
+    return self._build_call_outputs(self._inference_function.call(
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\eager\function.py", line 499, in call
+    outputs = execute.execute(
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\tensorflow\python\eager\execute.py", line 54, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+
+ 797/1103 [====================>.........] - ETA: 12s - loss: 0.0026 - mae: 0.0371 - mse: 0.0026

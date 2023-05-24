@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "C:\MyDocuments\Disertatie\segments\wandb_visualization\one_model\train_model.py", line 38, in <module>
+    x_train, x_test, y_train, y_test = split_data(data[0], test_size)
+  File "C:\MyDocuments\Disertatie\segments\model_training\one_model\one_model_generating.py", line 92, in split_data
+    df_samples_slim = pd.read_excel(data, engine='openpyxl')
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\pandas\io\excel\_base.py", line 482, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\pandas\io\excel\_base.py", line 1695, in __init__
+    self._reader = self._engines[engine](self._io, storage_options=storage_options)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\pandas\io\excel\_openpyxl.py", line 557, in __init__
+    super().__init__(filepath_or_buffer, storage_options=storage_options)
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\pandas\io\excel\_base.py", line 535, in __init__
+    self.handles = get_handle(
+  File "C:\Users\cosmi\anaconda3\envs\tf2.12\lib\site-packages\pandas\io\common.py", line 865, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '../../data//overlap/350-500.xlsx'

@@ -2,7 +2,7 @@ import sys
 import os
 
 from model_training.overlap.model_generating_CNN import build_cnn_sweep, train_model_sweep, split_data, \
-    build_cnn_sweep_maxpooling
+    build_cnn_sweep_maxpooling, build_1Dcnn_sweep_maxpooling
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
@@ -38,7 +38,7 @@ sweep_config = {
         'optimizer': {'values': ['adam', 'sgd', 'rmsprop']},
         'patience': {'values': [1, 3, 5, 10, 15]},
         'monitor': {'values': ['val_loss', 'val_mse']},
-        'dense_units': {'values': [1, 10, 40, 100, 1000]},
+        'dense_units': {'values': [1, 10, 40, 100]},
 
 
      }
@@ -46,18 +46,30 @@ sweep_config = {
 wandb.login(key="44af7bf1f24c6aab99ae33b0ae4fa5a5c8a59590", relogin=True)
 sweep_id = wandb.sweep(sweep_config,   project="Defect-Detection-Sweep", entity="cosminaionut",)
 
-data = ['../data/overlap_data/1_0-150.xlsx', '../data/overlap_data/2_100-300.xlsx',
-        '../data/overlap_data/3_250-400.xlsx', '../data/overlap_data/4_350-500.xlsx',
-        '../data/overlap_data/5_450-600.xlsx', '../data/overlap_data/6_550-700.xlsx',
-        '../data/overlap_data/7_650-800.xlsx', '../data/overlap_data/8_750-900.xlsx',
-        '../data/overlap_data/9_850-1000.xlsx']
+# data = ['../data/overlap_data/1_0-150.xlsx', '../data/overlap_data/2_100-300.xlsx',
+#         '../data/overlap_data/3_250-400.xlsx', '../data/overlap_data/4_350-500.xlsx',
+#         '../data/overlap_data/5_450-600.xlsx', '../data/overlap_data/6_550-700.xlsx',
+#         '../data/overlap_data/7_650-800.xlsx', '../data/overlap_data/8_750-900.xlsx',
+#         '../data/overlap_data/9_850-1000.xlsx']
+# data = ['../data/overlap_data/1_0-200.xlsx', '../data/overlap_data/2_0-300.xlsx',
+#         '../data/overlap_data/3_100-400.xlsx', '../data/overlap_data/4_200-500.xlsx',
+#         '../data/overlap_data/5_300-600.xlsx', '../data/overlap_data/6_400-700.xlsx',
+#         '../data/overlap_data/7_500-800.xlsx', '../data/overlap_data/8_600-900.xlsx',
+#         '../data/overlap_data/9_700-1000.xlsx','../data/overlap_data/10_800-1000.xlsx']
 
+data = ['../../data/overlap_data/0-50.xlsx','../../data/overlap_data/0_0-100.xlsx',
+        '../../data/overlap_data/1_0-200.xlsx', '../../data/overlap_data/2_0-300.xlsx',
+        '../../data/overlap_data/3_100-400.xlsx', '../../data/overlap_data/4_200-500.xlsx',
+        '../../data/overlap_data/5_300-600.xlsx', '../../data/overlap_data/6_400-700.xlsx',
+        '../../data/overlap_data/7_500-800.xlsx', '../../data/overlap_data/8_600-900.xlsx',
+        '../../data/overlap_data/9_700-1000.xlsx','../../data/overlap_data/10_800-1000.xlsx',
+        '../../data/overlap_data/11_900-1000.xlsx','../../data/overlap_data/950-1000.xlsx']
 # create the 9 models
 # fit and save models
-n_members = 9
+n_members = 14
 
 # training parameters
-test_size = 0.30
+test_size = 0.20
 
 # start a new wandb run to track this script
 def train(config=None):
@@ -70,14 +82,21 @@ def train(config=None):
             x_train, x_test, y_train, y_test = split_data(data[i], test_size)
             # x_train_cnn = x_train.reshape(x_train.shape[0], 8, 1, 1)
             # x_test_cnn = x_test.reshape(x_test.shape[0], 8, 1, 1)
-            x_train_cnn = x_train.reshape(x_train.shape[0], 4, 2, 1)
-            x_test_cnn = x_test.reshape(x_test.shape[0], 4, 2, 1)
-
+            # x_train_cnn = x_train.reshape(x_train.shape[0], 4, 2, 1)
+            # x_test_cnn = x_test.reshape(x_test.shape[0], 4, 2, 1)
+            x_train_cnn = x_train.reshape(x_train.shape[0], 8, 1)
+            x_test_cnn = x_test.reshape(x_test.shape[0], 8, 1)
+            n_timesteps = x_train_cnn.shape[1]
             # --------------------------CNN ----------------------------
+            # network, history = train_model_sweep(
+            #     build_cnn_sweep_maxpooling(config.optimizer, config.learning_rate, config.cnn_layer_size, config.cnn_input_nodes,config.dense_units), x_train_cnn, y_train,
+            #     x_test_cnn,y_test, config.epochs, config.batch_size, config.patience, config.monitor)
+
             network, history = train_model_sweep(
-                build_cnn_sweep(config.optimizer, config.learning_rate, config.cnn_layer_size, config.cnn_input_nodes,config.dense_units), x_train_cnn, y_train,
-                x_test_cnn,y_test, config.epochs, config.batch_size, config.patience, config.monitor)
-            filename = '../trained_models/CNN/models_segments_overlap-cnn' \
+                build_1Dcnn_sweep_maxpooling(config.optimizer, config.learning_rate, config.cnn_layer_size,
+                                           config.cnn_input_nodes, config.dense_units,n_timesteps), x_train_cnn, y_train,
+                x_test_cnn, y_test, config.epochs, config.batch_size, config.patience, config.monitor)
+            filename = '../trained_models/1DCNN/models_segments_overlap-cnn-more' \
                        + '_' + str(config.optimizer) + '_' + str(config.learning_rate) + 'LR_' \
                        + str(config.cnn_layer_size) + 'CHN_'+ str(config.cnn_input_nodes) + 'CNNI_' \
                        + str(config.batch_size) + 'BS_' + str(config.dense_units) + 'DU_' \

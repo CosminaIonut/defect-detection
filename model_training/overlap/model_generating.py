@@ -186,9 +186,9 @@ def build_optimizer(optimizer, learning_rate):
 
 def build_nn_sweep(optimizer, learning_rate, hidden_layer_size, length=8):
     network = Sequential()
-    network.add(Dense(length, input_shape=(length,), activation='relu'))
-
-    for neurons_numbers in hidden_layer_size:
+    network.add(Dense(hidden_layer_size[0], input_shape=(length,), activation='relu'))
+    hidden_nodes = hidden_layer_size[1:]
+    for neurons_numbers in hidden_nodes:
         network.add(Dense(neurons_numbers, activation='relu', kernel_initializer='he_uniform',
                           kernel_regularizer=l2(0.001),bias_regularizer=l2(0.001)))
     network.add(Dense(1, activation='sigmoid'))

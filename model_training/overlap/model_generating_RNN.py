@@ -61,7 +61,7 @@ def build_RNN_sweep_LSTM(optimizer, learning_rate, hidden_layer_size, dense_unit
     network = Sequential()
     for hidden_units in hidden_layer_size:
         network.add(
-            LSTM(hidden_units,return_sequences=True, input_shape=(time_steps, 1), activation=activation[0]))
+            LSTM(hidden_units, input_shape=(time_steps, 1), activation=activation[0]))
 
     # network.add(SimpleRNN(hidden_layer_size[0], activation=activation[0], return_sequences=True))
     # network.add(SimpleRNN(hidden_layer_size[0], activation=activation[0], return_sequences=False))

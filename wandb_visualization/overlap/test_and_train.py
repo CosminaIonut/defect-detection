@@ -55,7 +55,7 @@ def train_models_and_save(n_members,data,test_size,group, epochs, batch_size, le
 
 def train_models_and_save_RNN(n_members,data,test_size,group, epochs, batch_size, learning_rate, optimizer, hidden_layer_size,patience,monitor, activation, dense_units):
 
-    for i in range(9,n_members):
+    for i in range(n_members):
         # fit model
         name = "model-"+str(i+1)
         print(name)
@@ -67,10 +67,10 @@ def train_models_and_save_RNN(n_members,data,test_size,group, epochs, batch_size
         # --------------------------RNN ----------------------------
         # (optimizer, learning_rate, hidden_layer_size, dense_units,activation, length=8):
         network, history = train_model_sweep(
-            build_RNN_sweep_LSTM_bidirectional(optimizer, learning_rate, hidden_layer_size, dense_units,
+            build_RNN_sweep(optimizer, learning_rate, hidden_layer_size, dense_units,
                             activation), X, Y,
             X_test, Y_test, epochs, batch_size, patience, monitor)
-        filename = '../../trained_models/RNN/models_segments_overlap-14-LSTM-BI' \
+        filename = '../../trained_models/RNN/models_segments_overlap-9-RNN' \
                    + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
                    + str(hidden_layer_size) + 'HL' + str(dense_units) + 'DU_' \
                    + str(batch_size) + 'BS_' + str(activation) + '_' \
@@ -177,7 +177,24 @@ def test_models(n_members, x_train, y_train, x_test, y_test, group, run_name, pa
     fig.update_layout(
         shapes=[
             dict(type="line",
-                 x0=min_axes, y0=min_axes, x1=max_axes, y1=max_axes)])
+                 x0=min_axes, y0=min_axes, x1=max_axes, y1=max_axes)],
+        plot_bgcolor='white',  # Set background to white
+        paper_bgcolor='white', # Set paper background to white
+        xaxis=dict(
+            showgrid=False,  # Hide gridlines on x-axis
+            showline=True,  # Show x-axis line
+            linecolor='black',  # Set x-axis line color
+            linewidth=1,  # Set x-axis line width
+            title_text="Actual Position"  # Ensure x-axis title is visible
+        ),
+        yaxis=dict(
+            showgrid=False,  # Hide gridlines on y-axis
+            showline=True,  # Show y-axis line
+            linecolor='black',  # Set y-axis line color
+            linewidth=1,  # Set y-axis line width
+            title_text="Prediction"  # Ensure y-axis title is visible
+        ),
+    )
 
     # plot error of prediction
     df_actual_pos_sort = pd.DataFrame(data_table)
@@ -186,9 +203,28 @@ def test_models(n_members, x_train, y_train, x_test, y_test, group, run_name, pa
     print(df_actual_pos_sort)
     error_plot = px.line(x=sort['actual_pos'], y=sort['error(%)'], markers=True,labels=dict(x="Actual Position", y="Error (%)"))
     y_max = max(error_list)
-    if (y_max < 1):
-        y_max = 1
-    error_plot.update_yaxes(range=[0, y_max])
+    # if (y_max < 1):
+    #     y_max = 1
+    # error_plot.update_yaxes(range=[0, y_max])
+
+    error_plot.update_layout(
+        plot_bgcolor='white',  # Set background to white
+        paper_bgcolor='white',  # Set paper background to white
+        xaxis=dict(
+            showgrid=True,  # Show gridlines on x-axis
+            showline=True,  # Show axis line
+            linecolor='black',  # Set axis line color
+            linewidth=1,  # Set axis line width
+            title_text="Actual Position"  # Ensure x-axis title is visible
+        ),
+        yaxis=dict(
+            showgrid=True,  # Show gridlines on y-axis
+            showline=True,  # Show axis line
+            linecolor='black',  # Set axis line color
+            linewidth=1,  # Set axis line width
+            title_text="Error (%)"  # Ensure y-axis title is visible
+        )
+    )
 
     #  second plot with actual and predicted
     for i in range(0, len(y_pred)):

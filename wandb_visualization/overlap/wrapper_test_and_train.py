@@ -159,6 +159,8 @@ Y_test = np.concatenate(
 
 
 test_csv_path = "../../data/test_data/date_test.xlsx"
+# test_csv_path = "../../data/test_data/test_data_FEM.xlsx"
+# test_csv_path = "../../data/test_data/test_data_measured.xlsx"
 # test_csv_path = "../../data/test_data/date_test_RNN.xlsx"
 # test_csv_path = "../../data/test_data/date_test_1000.xlsx"
 # test_csv_path = "../../data/test_data/test_segment_400-500.xlsx"
@@ -194,7 +196,7 @@ def trainin_param_RNN():
 
 def trainin_param_CNN():
     batch_size = 64
-    epochs = 300
+    epochs = 150
     # learning_rate = 0.1176
     # cnn_layer_size = [124,516]
     # cnn_input_nodes = 32
@@ -205,15 +207,11 @@ def trainin_param_CNN():
     patience = 15
     monitor = 'val_loss'
     dense_units = 100
-
     return batch_size, epochs, learning_rate, cnn_layer_size, cnn_input_nodes, optimizer, patience, monitor,dense_units
 
 def trainin_param_1DCNN():
     batch_size = 64
     epochs = 300
-    # learning_rate = 0.1176
-    # cnn_layer_size = [124,516]
-    # cnn_input_nodes = 32
     learning_rate = 0.01337803
     cnn_layer_size = [23]
     cnn_input_nodes = 100
@@ -243,7 +241,7 @@ def train_ANN():
 def train_RNN():
     # training parameters
     batch_size, epochs, learning_rate, hidden_layer_size, dense_units, optimizer, patience, monitor, activation = trainin_param_RNN()
-    train_group_RNN = "more-overlap-14-" + 'LSTM-BI' + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
+    train_group_RNN = "more-overlap-9-" + 'RNN' + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
                       + str(hidden_layer_size) + 'HU_' + str(batch_size) + 'BS_' \
                       + str(dense_units) + 'DU_' + str(activation) + '_' \
                       + str(patience) + 'P_' + str(monitor) + 'M_' + str(dense_units) + 'DU_' \
@@ -296,13 +294,13 @@ def test_ANN():
     batch_size, epochs, learning_rate, hidden_layer_size, optimizer, patience, monitor = trainin_param_ANN()
 
 
-    test_model_path_ANN = 'ANN/best-models_segments_overlap' \
-               + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
-               + str(hidden_layer_size) + 'HN_' + str(batch_size) + 'BS_' \
-               + str(patience) + 'P_' + str(monitor) + 'M_' \
-               + str(epochs) + 'epochs'
-    # test_model_path_ANN = 'ANN/14-regurlaziers-models_segments_overlap_adam_0.0427LR_[36]HN_100BS_10P_val_mseM_300epochs'
-    test_run_name_ANN = test_model_path_ANN
+    # test_model_path_ANN = 'ANN/best-models_segments_overlap' \
+    #            + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
+    #            + str(hidden_layer_size) + 'HN_' + str(batch_size) + 'BS_' \
+    #            + str(patience) + 'P_' + str(monitor) + 'M_' \
+    #            + str(epochs) + 'epochs'
+    test_model_path_ANN = 'ANN/best-models_segments_overlap_adam_0.0427LR_[36]HN_100BS_10P_val_mseM_300epochs'
+    test_run_name_ANN = '- '+ test_model_path_ANN
     # test_model_path_ANN = 'ANN/models_segments_overlap'
 
 
@@ -336,7 +334,9 @@ def test_CNN():
                        + str(cnn_layer_size) + 'HN_' + str(cnn_layer_size) + 'HN_'+ str(batch_size) + 'BS_' \
                        + str(patience) + 'P_' + str(monitor) + 'M_'\
                        + str(epochs) + 'epochs'
-    test_run_name_cnn = test_model_path_cnn
+
+
+    test_run_name_cnn = 'FEM' + test_model_path_cnn
     # x_train_cnn = X_train.reshape(X_train.shape[0], 4, 2, 1)
     # x_test_cnn = x_test.reshape(x_test.shape[0], 4, 2, 1)
     x_train_cnn = X_train.reshape(X_train.shape[0], 8, 1, 1)
@@ -399,13 +399,13 @@ def test_RNN():
     #                    + str(patience) + 'P_' + str(monitor) + 'M_' \
     #                    + str(epochs) + 'epochs'
 
-    test_model_path_rnn = 'RNN/models_segments_overlap-14-LSTM-BI' \
-                       + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
-                       + str(hidden_layer_size) + 'HL' + str(dense_units) + 'DU_' \
-                       + str(batch_size) + 'BS_' + str(activation) + '_' \
-                       + str(patience) + 'P_' + str(monitor) + 'M_' + str(dense_units) + 'DU_' \
-                       + str(epochs) + 'epochs'
-    # test_model_path_rnn = 'RNN/models_segements_overlap_14-LSTM-BI-last5models-400epochs'
+    # test_model_path_rnn = 'RNN/models_segments_overlap-9-RNN' \
+    #                    + '_' + str(optimizer) + '_' + str(learning_rate) + 'LR_' \
+    #                    + str(hidden_layer_size) + 'HL' + str(dense_units) + 'DU_' \
+    #                    + str(batch_size) + 'BS_' + str(activation) + '_' \
+    #                    + str(patience) + 'P_' + str(monitor) + 'M_' + str(dense_units) + 'DU_' \
+    #                    + str(epochs) + 'epochs'
+    test_model_path_rnn = "RNN/models_segments_overlap-14-LSTM-BI_adam_0.06896LR_[10]HL8DU_8BS_['sigmoid', 'tanh', 'tanh']_15P_val_mseM_8DU_150epochs"
     test_run_name_rnn = test_model_path_rnn
     x_train_rnn = np.reshape(X_train, (X_train.shape[0], X_train.shape[1], 1))
     x_test_rnn = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
@@ -416,10 +416,10 @@ def test_RNN():
 # test_ANN()
 
 # train_CNN()
-test_CNN()
+# test_CNN()
 #
 # train_RNN()
-# test_RNN()
+test_RNN()
 
 
 # train_1DCNN()
